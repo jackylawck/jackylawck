@@ -13,7 +13,6 @@
     <img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator">
   </a>
 </p>
-### F.I.H.R.M. (HK) | FHKIoD | MHKCS | GBA Mediator
 
 Bridging the gap between **Transformation**, **AI Governance**, and **Dispute Resolution**.
 
