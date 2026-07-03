@@ -64,5 +64,5 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 ## 📈 My Tech Sandbox Activity
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.com/api?username=jackylawck&show_icons=true&theme=nord&hide_border=true" alt="Jacky's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=jackylawck&show_icons=true&theme=nord&hide_border=true" alt="Jacky's GitHub Stats" />
 </p>
