@@ -1,35 +1,46 @@
-name: Update Profile README with Timestamp
-
+name: Update Profile README with LinkedIn Feed
 on:
   push:
     branches:
       - main
   schedule:
-# Automatically run at 08:00 HKT (00:00 UTC) everyday
     - cron: '0 0 * * *'
-    
+  # ⚖️ 核心治理機制：允許外部自動化工具（如 Make）透過 API 直接傳送數據觸發更新
+  repository_dispatch:
+    types: [linkedin_update]
+
 jobs:
-  update-readme:
+  update-profile:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Inject Automated Timestamp
+      - name: Inject LinkedIn Post & Timestamp
         run: |
-          # 移除舊的自動化時間戳（如果存在）
+          # 獲取香港時間
+          HK_TIME=$(env TZ="Asia/Hong_Kong" date "+%Y-%m-%d %H:%M:%S")          
+          
+          # 1. 更新底部的審計時間戳記
           sed -i '/<!-- TIMESTAMP_START -->/,/<!-- TIMESTAMP_END -->/d' README.md
-          
-          # 獲取香港時間 (UTC+8)
-          HK_TIME=$(env TZ="Asia/Hong_Kong" date "+%Y-%m-%d %H:%M:%S")
-          
-          # 將最新的自動化審計時間追加到 README 最底部
           echo -e "\n<!-- TIMESTAMP_START -->\n---\n<p align=\"center\"><sub>🕒 <b>Profile Last Audited & Automated:</b> $HK_TIME (HKT) | <b>Status:</b> SECURE 🛡️</sub></p>\n<!-- TIMESTAMP_END -->" >> README.md
+
+          # 2. 如果是來自 Make 的外部數據觸發，則將最新動態寫入 README
+          if [ "${{ github.event.client_payload.post_url }}" != "" ]; then
+            POST_TITLE="${{ github.event.client_payload.post_title }}"
+            POST_URL="${{ github.event.client_payload.post_url }}"
+            
+            # 清理舊的 LinkedIn 內容
+            sed -i '/<!-- LINKEDIN_POSTS_START -->/,/<!-- LINKEDIN_POSTS_END -->/d' README.md
+            
+            # 注入最新發布的文章連結到指定錨點
+            sed -i "/## ✍️ Latest Insights & LinkedIn Perspectives/a <!-- LINKEDIN_POSTS_START -->\n\n* 📢 **Latest on LinkedIn:** [$POST_TITLE]($POST_URL)\n\n<!-- LINKEDIN_POSTS_END -->" README.md
+          fi
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff-index --quiet HEAD || git commit -m "chore: automated profile security audit timestamp [skip ci]"
+          git diff-index --quiet HEAD || git commit -m "chore: automated profile security & linkedin feed update [skip ci]"
           git push
