@@ -7,17 +7,31 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 ---
 
-## 🏆 My Strategic Moat & Credentials
+# 🛡️ My Strategic Moat & Credentials
 
-* **Academic Backbone:** Master of Laws (LLM in Common Law) & Master of Arts (MA in Sociology) from **The Chinese University of Hong Kong (CUHK)**.
-* **Board-Level Corporate Governance:** Serving as a **Fellow of The Hong Kong Institute of Directors (FHKIoD)**, bringing mature risk frameworks and compliance oversight to executive leadership.
-* **Oracle GenAI Cloud Expertise:** Officially certified **Oracle Cloud Infrastructure (OCI) Generative AI Professional**, proving deep alignment with industrial-grade AI architecture and large language model (LLM) deployments.
-* **Triple-ISO Lead Auditor (Mastermind Fellow):** Certified Lead Auditor in three pillars crucial for enterprise trust:
-  * **ISO/IEC 42001:2023** (Artificial Intelligence Governance)
-  * **ISO/IEC 27701:2025** (Data Privacy & Compliance)
-  * **ISO/IEC 27001:2022** (Information Security Management)
-* **Cross-Border Dispute Resolution:** Designated **GBA Mediator** (Department of Justice) and APCAM Certified Trainer, integrating conflict resolution, mediation, and ethical fairness metrics into automated HR transformation.
-
+### 👥 Executive HR Leadership & Workforce Transformation
+*   **Fellow of The Hong Kong Institute of Human Resource Management (F.I.H.R.M. (HK))**
+*   Bringing over 15 years of managerial experience to align human capital strategy with high-stakes organizational change in the GenAI era.
+### 🏛️ Board-Level Corporate Governance
+*   **Fellow of The Hong Kong Institute of Directors (FHKIoD)**
+*   Embedding mature enterprise risk frameworks, ethical compliance oversight, and corporate governance into executive leadership.
+### 💻 Technology Ecosystem Engagement
+*   **Member of the Hong Kong Computer Society (MHKCS)**
+*   Bridging the gap between technical execution and corporate oversight, backed by hands-on AI prototype engineering and a verifiable GitHub codebase.
+### 🎓 Academic Backbone
+*   **Master of Laws (LLM)** & **Master of Arts (MA in Sociology)** from **The Chinese University of Hong Kong (CUHK)**
+*   Blending rigorous common law legal doctrine with deep behavioral insights.
+### ☁️ Oracle GenAI Cloud Expertise
+*   Officially certified **Oracle Cloud Infrastructure (OCI) Generative AI Professional**
+*   Proving structural alignment with industrial-grade AI architecture and large language model (LLM) deployments.
+### 🔍 Triple-ISO Lead Auditor (Mastermind Fellow)
+*   Certified Lead Auditor in three interconnected pillars crucial for modern enterprise trust:
+    *   **ISO/IEC 42001:2023** (Artificial Intelligence Management System)
+    *   **ISO/IEC 27701:2025** (Privacy Information Management)
+    *   **ISO/IEC 27001:2022** (Information Security Management)
+### ⚖️ Cross-Border Dispute Resolution
+*   Designated **GBA Mediator (Department of Justice, HKSAR)** and **APCAM Certified Trainer**
+*   Integrating structural conflict resolution, algorithmic fairness metrics, and legal mediation into automated transformation.
 ---
 
 ## 🛠️ My AI Governance & Tech Sandbox
