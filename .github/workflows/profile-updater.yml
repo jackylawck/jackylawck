@@ -21,7 +21,7 @@ jobs:
           sed -i '/<!-- TIMESTAMP_START -->/,/<!-- TIMESTAMP_END -->/d' README.md
           
           # 獲取香港時間 (UTC+8)
-          HK_TIME=$(env TZ="Asia/Hong Kong" date "+%Y-%m-%d %H:%M:%S")
+          HK_TIME=$(env TZ="Asia/Hong_Kong" date "+%Y-%m-%d %H:%M:%S")
           
           # 將最新的自動化審計時間追加到 README 最底部
           echo -e "\n<!-- TIMESTAMP_START -->\n---\n<p align=\"center\"><sub>🕒 <b>Profile Last Audited & Automated:</b> $HK_TIME (HKT) | <b>Status:</b> SECURE 🛡️</sub></p>\n<!-- TIMESTAMP_END -->" >> README.md
