@@ -1,4 +1,10 @@
 # Hi, I'm Jacky Law (羅子淇) 👋
+<p align="left">
+  <img src="https://img.shields.io/badge/Oracle_GenAI-Certified-006699?style=flat-square&logo=oracle&logoColor=white" alt="Oracle GenAI">
+  <img src="https://img.shields.io/badge/ISO_42001-Lead_Auditor-333333?style=flat-square&logo=gitbook&logoColor=white" alt="ISO 42001">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator">
+</p>
 ### F.I.H.R.M. (HK) | FHKIoD | MHKCS | GBA Mediator
 
 Bridging the gap between **Transformation**, **AI Governance**, and **Dispute Resolution**.
