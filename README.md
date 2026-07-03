@@ -61,8 +61,8 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 * 🎯 *Serving corporate governance, digital transformation, and cross-border tech mediation initiatives across Hong Kong and the Greater Bay Area.*
 
 ---
-## 🏆 Repository Achievements
+## 📈 My Tech Sandbox Activity
 
 <p align="left">
-  <img src="https://github-profile-trophy.vercel.app/?username=jackylawck&theme=flat&no-bg=true&no-frame=true" alt="Jacky's Trophies" />
+  <img src="https://github-readme-stats.vercel.com/api?username=jackylawck&show_icons=true&theme=nord&hide_border=true" alt="Jacky's GitHub Stats" />
 </p>
