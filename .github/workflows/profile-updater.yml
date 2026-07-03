@@ -1,0 +1,35 @@
+name: Update Profile README with Timestamp
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # 每天香港時間早上 8 點（UTC 00:00）自動執行一次，催旺清晨木氣水氣
+    - cron: '0 0 * * *'
+    
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Inject Automated Timestamp
+        run: |
+          # 移除舊的自動化時間戳（如果存在）
+          sed -i '/<!-- TIMESTAMP_START -->/,/<!-- TIMESTAMP_END -->/d' README.md
+          
+          # 獲取香港時間 (UTC+8)
+          HK_TIME=$(env TZ="Asia/Hong Kong" date "+%Y-%m-%d %H:%M:%S")
+          
+          # 將最新的自動化審計時間追加到 README 最底部
+          echo -e "\n<!-- TIMESTAMP_START -->\n---\n<p align=\"center\"><sub>🕒 <b>Profile Last Audited & Automated:</b> $HK_TIME (HKT) | <b>Status:</b> SECURE 🛡️</sub></p>\n<!-- TIMESTAMP_END -->" >> README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff-index --quiet HEAD || git commit -m "chore: automated profile security audit timestamp [skip ci]"
+          git push
