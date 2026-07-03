@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    # 每天香港時間早上 8 點（UTC 00:00）自動執行一次，催旺清晨木氣水氣
+# Automatically run at 08:00 HKT (00:00 UTC) everyday
     - cron: '0 0 * * *'
     
 jobs:
