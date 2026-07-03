@@ -1,9 +1,17 @@
 # Hi, I'm Jacky Law (羅子淇) 👋
 <p align="left">
-  <img src="https://img.shields.io/badge/Oracle_GenAI-Certified-006699?style=flat-square&logo=oracle&logoColor=white" alt="Oracle GenAI">
-  <img src="https://img.shields.io/badge/ISO_42001-Lead_Auditor-333333?style=flat-square&logo=gitbook&logoColor=white" alt="ISO 42001">
-  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator">
+  <a href="https://www.hkihrm.org/" target="_blank">
+    <img src="https://img.shields.io/badge/F.I.H.R.M._(HK)-Fellow_Member-1E3A8A?style=flat-square&logo=handshake&logoColor=white" alt="HKIHRM Fellow">
+  </a>
+  <a href="https://www.hkiod.com/" target="_blank">
+    <img src="https://img.shields.io/badge/FHKIoD-Fellow-D4AF37?style=flat-square&logo=pages&logoColor=white" alt="HKIoD Fellow">
+  </a>
+  <a href="https://www.hkcs.org.hk/" target="_blank">
+    <img src="https://img.shields.io/badge/MHKCS-Full_Member-4B5563?style=flat-square&logo=cpu&logoColor=white" alt="HKCS Member">
+  </a>
+  <a href="https://www.doj.gov.hk/" target="_blank">
+    <img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator">
+  </a>
 </p>
 ### F.I.H.R.M. (HK) | FHKIoD | MHKCS | GBA Mediator
 
