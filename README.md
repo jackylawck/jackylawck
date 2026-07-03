@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/FHKIoD-Fellow-D4AF37?style=flat-square&logo=pages&logoColor=white" alt="HKIoD Fellow">
   </a>
   <a href="https://www.hkcs.org.hk/" target="_blank">
-    <img src="https://img.shields.io/badge/MHKCS-Full_Member-4B5563?style=flat-square&logo=cpu&logoColor=white" alt="HKCS Member">
+    <img src="https://img.shields.io/badge/MHKCS-Full_Member-1E4D2B?style=flat-square&logo=cpu&logoColor=white" alt="HKCS Member">
   </a>
   <a href="https://www.doj.gov.hk/" target="_blank">
     <img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator">
