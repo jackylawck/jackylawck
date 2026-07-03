@@ -60,9 +60,3 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 * 💼 **LinkedIn:** [linkedin.com/in/jackylawck](https://www.linkedin.com/in/jackylawck/)
 * 🎯 *Serving corporate governance, digital transformation, and cross-border tech mediation initiatives across Hong Kong and the Greater Bay Area.*
 
----
-## 📈 My Tech Sandbox Activity
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=jackylawck&show_icons=true&theme=nord&hide_border=true" alt="Jacky's GitHub Stats" />
-</p>
