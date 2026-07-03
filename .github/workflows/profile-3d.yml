@@ -21,4 +21,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A .
           git commit -m "Generated 3D Contributions Cyber City" || exit 0
-          git push
+          git push --force
