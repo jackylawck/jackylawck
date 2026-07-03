@@ -19,11 +19,6 @@ Bridging the gap between **Transformation**, **AI Governance**, and **Dispute Re
 With 15+ years of corporate HR leadership, I transform high-level responsible AI principles into concrete enterprise controls. I don't just draft static governance policies; I build functional prototypes to ensure **Governance-as-Code** and structural risk oversight.
 
 ---
-## ✍️ Latest Insights & LinkedIn Perspectives
-
-<!-- LINKEDIN_POSTS_START -->
-<!-- LINKEDIN_POSTS_END -->
-
 # 🛡️ My Strategic Moat & Credentials
 
 ### 👥 Executive HR Leadership & Workforce Transformation
@@ -56,6 +51,11 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 * **HR Transformation:** Fusing automated bias mitigation, ethical talent acquisition routing, and data leakage protection (DLP) exception governance into existing human capital workflows.
 * **Enterprise Architecture Alignment:** Hands-on validation of Microsoft Foundry IQ, Work IQ, and automated guardrails tailored for Hong Kong's PCPD ethical guidelines.
 * **Technical Stack:** Python, Prompt Engineering, OCI Generative AI Frameworks, Compliance Guardrails Implementation.
+
+## ✍️ Latest Insights & LinkedIn Perspectives
+
+<!-- LINKEDIN_POSTS_START -->
+<!-- LINKEDIN_POSTS_END -->
 
 ## 🔗 Let's Connect
 
