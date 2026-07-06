@@ -66,25 +66,3 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 * 🎯 *Serving corporate governance, digital transformation, and cross-border tech mediation initiatives across Hong Kong and the Greater Bay Area.*
 
 ![](./profile-3d-contrib/profile-green-animate.svg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- TIMESTAMP_START -->
----
-<p align="center"><sub>🕒 <b>Profile Last Audited & Automated:</b> 2026-07-06 12:00:34 (HKT) | <b>Status:</b> SECURE 🛡️</sub></p>
-<!-- TIMESTAMP_END -->
