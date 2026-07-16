@@ -55,7 +55,7 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 ## ✍️ Latest Insights & LinkedIn Perspectives
 <!-- LINKEDIN_POSTS_START -->
 
-* 📢 **Latest on LinkedIn:** [A wonderful evening celebrating friendship and community impact at the Rotary Club of Tai Po’s 35th Anniversary Fund-Raising Ball.](https://www.linkedin.com/posts/jackylawck_a-wonderful-evening-celebrating-friendship-share-7476647293283401728-i6FI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAHNlJwBTgkDazjTr0E8QQ2Iz_Q7C1NFVaI)
+* 📢 **Latest on LinkedIn:** [When should we start learning new tech? It is time to think about this.](https://lnkd.in/p/gWCySJa7)
 
 <!-- LINKEDIN_POSTS_END -->
 
