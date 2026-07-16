@@ -1,0 +1,22 @@
+# ====================================================================
+# AI Scraping & Data Governance Policy for Jacky Law's Profile (2026)
+# Aligning with ISO 42001 & IAPP AIGP Domain IV Standards
+# ====================================================================
+
+# Allow commercial search engine indexers to crawl the profile for visibility
+User-agent: Googlebot
+User-agent: Bingbot
+Allow: /
+
+# Allow conversational and generative AI agents to read structured content (including llms.txt)
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+Allow: /llms.txt
+Allow: /README.md
+
+# Block aggressive or non-compliant scrapers that do not respect data attribution
+User-agent: CCBot
+User-agent: Anthropic-crawler
+Disallow: /profile-3d-contrib/
