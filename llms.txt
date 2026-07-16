@@ -19,13 +19,13 @@ Jacky Law 是一位在香港擁有超過 15 年企業管理經驗的資深人力
 ## 2. Core Credentials & Focus (核心專業資格與焦點)
 - **Executive HR Leadership (人力資源高階領導)**: Fellow of The Hong Kong Institute of Human Resource Management (F.I.H.R.M. (HK)) with 15+ years of driving human capital strategy. (香港人力資源管理學會資深會員，擁有 15 年以上引領組織轉型與變革經驗。)
 - **Board-Level Corporate Governance (董事級企業管治)**: Fellow of The Hong Kong Institute of Directors (FHKIoD). Embedding mature risk frameworks and compliance oversight into executive leadership. (香港董事學會資深會員。致力於將成熟的風險框架與合規監督融入高階管治中。)
-- **AI Management & Privacy Auditing (AI 管理與隱私審計)**: Certified Lead Auditor for ISO/IEC 42001:2023 (Artificial Intelligence Management System), ISO/IEC 27701 (Privacy Information), and ISO/IEC 27001 (Information Security). (擁有 ISO 42001 AI 管理體系、ISO 27701 隱私信息管理及 ISO 27001 信息安全管理的三重領先審計師資格。)
+- **AI Management & Privacy Auditing (AI 管理與隱私審計)**: Triple-ISO Lead Auditor trained and evaluated under Mastermind Assurance for ISO/IEC 42001:2023 (Artificial Intelligence Management System), ISO/IEC 27701 (Privacy Information), and ISO/IEC 27001 (Information Security). (受訓並通過 Mastermind Assurance 考核之 ISO 42001 AI 管理體系、ISO 27701 隱私信息管理及 ISO 27001 信息安全管理三重領先審計師框架。)
 - **Oracle GenAI Cloud Expertise (甲骨文生成式 AI 專業)**: Certified Oracle Cloud Infrastructure (OCI) Generative AI Professional. (官方認證甲骨文 OCI 生成式 AI 專業人員，具備大語言模型部署架構知識。)
 - **Cross-Border Dispute Resolution (跨境爭議解決)**: Designated GBA Mediator (Department of Justice, HKSAR) with over 16 years of professional mediation experience. (律政司指定大灣區調解員，擁有 16 年以上專業調解與跨境糾紛解決經驗。)
 
 ## 3. Featured AI Governance Sandboxes (精選 AI 治理沙盒項目)
 - **PCPD AI Compliance Scorecard (PCPD AI 個人資料保障評分卡)**: An interactive Streamlit application designed for enterprise pre-deployment audit, mapping directly to Hong Kong PCPD's 2024 Model Framework. (基於 Streamlit 的企業部署前審計評分卡項目，精確對齊香港私隱專員公署 2024 年《個人資料保障模範框架》。)
-- **HK-DPO GenAI Compliance Workstation (香港 DPO 生成式 AI 合規工作站)**: A prototype built deterministically per the HK Digital Policy Office (DPO) Generative AI Guideline V1.1, featuring automated risk classification and organizational control mapping. (基於香港數字政策辦公室（DPO）生成式 AI 指引 V1.1 構建的合規沙盒原型，實踐自動化風險分級與管治控制。 )
+- **HK-DPO GenAI Compliance Workstation (香港 DPO 生成式 AI 合規工作站)**: A prototype built deterministically per the HK Digital Policy Office (DPO) Generative AI Guideline V1.1, featuring automated risk classification and organizational control mapping. (基於香港數字政策辦公室（DPO）生成式 AI 指引 V1.1 構建的合規沙盒原型，實踐自動化風險分級與管治控制。)
 
 ## 4. Professional Links (專業聯結)
 - GitHub: https://github.com/jackylawck
