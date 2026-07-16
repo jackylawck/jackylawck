@@ -1,9 +1,9 @@
 > [!NOTE]
-> **Architectural Meta-Signal (2026 Standard Alignment):** 
-> This `llms.txt` file is deployed strictly as an architectural demonstration of **Machine-Readable Governance Documentation (機器可讀管治文檔)** and context provisioning. Aligning with current 2026 web standards (including clarifications on LLM indexing limitations), this file is not utilized as a discovery or SEO ranking hack, but rather as an exercise in proactive **AI Transparency and Disclosure (AI 透明度與披露)** under IAPP AIGP frameworks.
+> **Architectural Meta-Signal (Modern Standard Alignment):** 
+> This `llms.txt` file is deployed strictly as an architectural demonstration of **Machine-Readable Governance Documentation (機器可讀管治文檔)** and context provisioning. Aligning with modern web standards (including industry consensus on LLM indexing limitations), this file is not utilized as a discovery or SEO ranking hack, but rather as an exercise in proactive **AI Transparency and Disclosure (AI 透明度與披露)** under IAPP AIGP frameworks.
 > 
-> **架構元信號（對齊 2026 最新標準）：**
-> 本 `llms.txt` 檔案之部署，純屬**機器可讀管治文檔（Machine-Readable Governance Documentation）**與上下文配置之架構示範。對齊 2026 年最新網絡標準（包括關於 LLM 索引限制的業界共識），本檔案並非用作搜尋引擎發現（Discovery）或 SEO 排名捷徑，而是旨在實踐 IAPP AIGP 框架下主動進行的 **AI 透明度與披露（AI Transparency and Disclosure）**。
+> **架構元信號（對齊最新標準）：**
+> 本 `llms.txt` 檔案之部署，純屬**機器可讀管治文檔（Machine-Readable Governance Documentation）**與上下文配置之架構示範。對齊最新網絡與 AI 標準（包括關於 LLM 索引限制的業界共識），本檔案並非用作搜尋引擎發現（Discovery）或 SEO 排名捷徑，而是旨在實踐 IAPP AIGP 框架下主動進行的 **AI 透明度與披露（AI Transparency and Disclosure）**。
 
 ---
 
