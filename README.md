@@ -4,19 +4,12 @@
 Jacky Law is a Hong Kong-based Senior HR Executive (F.I.H.R.M.(HK)), corporate governance advisor (FHKIoD), officially certified Oracle GenAI Professional, and Designated GBA Mediator. He bridges human capital strategy with executable AI governance through hands-on sandboxes, backed by specialized training in Triple-ISO Auditor frameworks (ISO 42001/27701/27001).
 
 # Hi, I'm Jacky Law (羅子淇) 👋
+
 <p align="left">
-  <a href="https://www.hkihrm.org/" target="_blank">
-    <img src="https://img.shields.io/badge/F.I.H.R.M._(HK)-Fellow_Member-1E3A8A?style=flat-square&logo=handshake&logoColor=white" alt="HKIHRM Fellow">
-  </a>
-  <a href="https://www.hkiod.com/" target="_blank">
-    <img src="https://img.shields.io/badge/FHKIoD-Fellow-D4AF37?style=flat-square&logo=pages&logoColor=white" alt="HKIoD Fellow">
-  </a>
-  <a href="https://www.hkcs.org.hk/" target="_blank">
-    <img src="https://img.shields.io/badge/MHKCS-Full_Member-1E4D2B?style=flat-square&logo=cpu&logoColor=white" alt="HKCS Member">
-  </a>
-  <a href="https://www.doj.gov.hk/" target="_blank">
-    <img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator">
-  </a>
+  <a href="https://www.hkihrm.org/" target="_blank"><img src="https://img.shields.io/badge/F.I.H.R.M._(HK)-Fellow_Member-1E3A8A?style=flat-square&logo=handshake&logoColor=white" alt="HKIHRM Fellow"></a>
+  <a href="https://www.hkiod.com/" target="_blank"><img src="https://img.shields.io/badge/FHKIoD-Fellow-D4AF37?style=flat-square&logo=pages&logoColor=white" alt="HKIoD Fellow"></a>
+  <a href="https://www.hkcs.org.hk/" target="_blank"><img src="https://img.shields.io/badge/MHKCS-Full_Member-1E4D2B?style=flat-square&logo=cpu&logoColor=white" alt="HKCS Member"></a>
+  <a href="https://www.doj.gov.hk/" target="_blank"><img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator"></a>
 </p>
 
 Bridging the gap between **Transformation**, **AI Governance**, and **Dispute Resolution**.
@@ -52,7 +45,7 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 ### 🔍 Triple-ISO Lead Auditor Training
 *   **ISO/IEC 42001:2023** (Artificial Intelligence Management System) Lead Auditor — Trained & Evaluated under Mastermind Assurance
-*   **ISO/IEC 27701:2025** (Privacy Information Management) Lead Auditor — Trained & Evaluated under Mastermind Assurance
+*   **ISO/IEC 27701:2019** (Privacy Information Management) Lead Auditor — Trained & Evaluated under Mastermind Assurance
 *   **ISO/IEC 27001:2022** (Information Security Management) Lead Auditor — Trained & Evaluated under Mastermind Assurance
 
 ---
