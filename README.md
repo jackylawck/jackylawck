@@ -56,12 +56,19 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 我不僅撰寫靜態的合規政策，更透過構建可運作的「代碼即管治」沙盒原型，將合規框架直接嵌入系統架構中：
 
 ### 🌟 Active Projects (實作項目)
-*   **[PCPD AI Compliance Scorecard](https://github.com/jackylawck/PCPD_ai_protection_framework) (PCPD AI 個人資料保障評分卡)**
-    *   An interactive pre-deployment risk audit tool built in Streamlit, directly mapped to the Hong Kong PCPD's Model Framework.
-    *   基於 Streamlit 的部署前風險審計工具，精確對齊香港私隱專員公署《個人資料保障模範框架》。
-*   **[HK-DPO GenAI Compliance Workstation](https://github.com/jackylawck/hk-dpo-ai-governance) (香港 DPO 生成式 AI 合規工作站)**
-    *   A deterministic compliance workstation mapping organization controls to the Hong Kong Digital Policy Office (DPO) Generative AI Guideline V1.1.
-    *   基於香港數字政策辦公室（DPO）生成式 AI 指引 V1.1 構建的合規工作站，實踐風險分級。
+
+*   **PCPD AI Privacy Protection Sandbox (PCPD AI 個人資料保障沙盒)**
+    *   A comprehensive pre-deployment audit environment directly mapped to the Hong Kong PCPD's Model Framework. 
+    *   **[Core Scorecard](https://github.com/jackylawck/PCPD_ai_protection_framework):** Streamlit-based interactive risk triage tool.
+    *   **[Local RAG Engine](https://github.com/jackylawck/PCPD_ai_protection_framework_rag):** Privacy-preserving retrieval system with encrypted audit trails.
+
+*   **HK-DPO GenAI Compliance Suite (香港 DPO 生成式 AI 合規套件)**
+    *   Enterprise governance workstations implementing the HK Digital Policy Office (DPO) Generative AI Guideline V1.1.
+    *   **[Deterministic Workstation](https://github.com/jackylawck/hk-dpo-ai-governance):** Hardcoded 4-tier risk classifier and policy readiness dashboard.
+    *   **[RAG Alignment System](https://github.com/jackylawck/hk-dpo-ai-governance_rag):** Localized knowledge retrieval aligned with ISO 42001 oversight standards.
+
+*   **[HK Employment AI Compliance Advisor](https://github.com/jackylawck/hk-employment-ordinance) (香港《僱傭條例》AI 合規顧問)**
+    *   An enterprise-grade advisor for Cap. 57 powered by a Local Privacy-Preserving Hybrid RAG architecture, bridging HR compliance, algorithmic fairness, and workplace governance.
 
 ### ⚙️ Implemented Technical Governance Controls (技術控制實踐)
 *   **Version-Controlled Policy & Prompting (版本控制提示詞管治)**: All system prompts and validation rules are managed in Git, leaving a strict audit trail of compliance changes, mitigating "prompt drift".
