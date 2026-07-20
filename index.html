@@ -1,40 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Jacky Law - AI Governance Advisor Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacky Law | Board-Level AI Governance & Corporate Transformation Advisor</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: #24292f;
+        :root {
+            --primary-color: #0f2b5c; /* 董事會深藍 */
+            --accent-color: #1a5fb4;  /* 專業天藍 */
+            --text-color: #2c3e50;    /* 高級灰黑 */
+            --bg-color: #f8fafc;      /* 現代淺灰 */
+            --card-bg: #ffffff;
         }
-        h1 { border-bottom: 1px solid #d8dee4; padding-bottom: .3em; color: #0969da; }
-        a { color: #0969da; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-        .links { margin-top: 30px; padding-top: 20px; border-top: 1px solid #d8dee4; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .header-banner {
+            background: linear-gradient(135deg, #071630 0%, #113672 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
+        }
+        .header-banner h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .header-banner p {
+            margin: 15px 0 0 0;
+            font-size: 1.2em;
+            color: #cbd5e1;
+            font-weight: 300;
+        }
+        .container {
+            max-width: 900px;
+            margin: -40px auto 60px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 35px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            margin-bottom: 30px;
+            border: 1px solid #e2e8f0;
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 12px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .statement-box {
+            background-color: #f1f5f9;
+            border-left: 4px solid #64748b;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #475569;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .badge {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .links-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            margin: 0 10px;
+        }
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+            box-shadow: 0 4px 6px rgba(26, 95, 180, 0.2);
+        }
+        .btn-primary:hover {
+            background-color: #154b8c;
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            background-color: #475569;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #334155;
+            transform: translateY(-1px);
+        }
+        @media (max-width: 600px) {
+            .header-banner h1 { font-size: 1.8em; }
+            .btn { display: block; margin: 15px auto; width: 80%; }
+        }
     </style>
 </head>
 <body>
-    <h1>羅子淇 Jacky Law, F.I.H.R.M.(HK), FHKIoD</h1>
-    <p><strong>Board-level AI Governance Advisor & HR Executive</strong></p>
-    <p>Bridging the gap between Corporate Transformation, AI Governance, and Dispute Resolution. Backed by specialized training in Triple-ISO Auditor frameworks (ISO 42001/27701/27001).</p>
-    
-    <h2>Strategic Credentials</h2>
-    <ul>
-        <li>Fellow of The Hong Kong Institute of Human Resource Management (F.I.H.R.M. (HK))</li>
-        <li>Fellow Member of The Hong Kong Institute of Directors (FHKIoD)</li>
-        <li>Designated GBA Mediator (DoJ Designated)</li>
-        <li>Certified ISO 42001 Lead Auditor & Oracle GenAI Professional</li>
-    </ul>
-    
-    <p class="links">
-        🔗 <a href="https://www.linkedin.com/in/jackylawck" target="_blank">Connect on LinkedIn</a> 
-        &nbsp;&nbsp;|&nbsp;&nbsp; 
-        💻 <a href="https://github.com/jackylawck" target="_blank">Follow on GitHub</a>
-    </p>
+
+    <div class="header-banner">
+        <h1>羅子淇 Jacky Law</h1>
+        <p>AI Governance Strategy • Corporate Risk Oversight • Dispute Resolution</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- 核心定位卡片 -->
+        <div class="card">
+            <h2>Executive Profile & Strategic Vision</h2>
+            <p>An accomplished Senior HR Executive and Corporate Governance Advisor with over 15 years of leadership experience in driving organizational change and human capital transformations. Navigating the intersection of emerging technologies and boardroom responsibilities, I specialize in translated complex AI risk into auditable, functional enterprise controls.</p>
+            
+            <div class="statement-box">
+                "My mission is not to re-invent underlying AI models, but to serve as the strategic bridge—ensuring that corporate deployment of frontier technology remains lawful, ethical, and fully aligned with auditable risk frameworks before impacting the organization."
+            </div>
+        </div>
+
+        <!-- 專業資質卡片 -->
+        <div class="card">
+            <h2>Strategic Credentials & Moat</h2>
+            <div>
+                <span class="badge">F.I.H.R.M. (HK)</span>
+                <span class="badge">FHKIoD</span>
+                <span class="badge">LL.M. (CUHK)</span>
+                <span class="badge">DoJ Designated GBA Mediator</span>
+                <span class="badge">ISO 42001 Lead Auditor</span>
+                <span class="badge">Oracle GenAI Professional</span>
+            </div>
+            <p style="margin-top: 20px;">Leveraging a unique blend of <strong>Legal Expertise (LL.M.)</strong>, <strong>International Standards (ISO 42001)</strong>, and <strong>Alternative Dispute Resolution (ADR)</strong> to protect organizations from the legal, reputational, and systemic risks in the generative AI era.</p>
+        </div>
+
+        <!-- 技術管治實踐卡片 -->
+        <div class="card">
+            <h2>Governance-as-Code Implementation</h2>
+            <p>Transitioning from static policy frameworks to functional implementation, I utilize automated sandboxes to test corporate guardrails:</p>
+            <ul>
+                <li><strong>Pre-Deployment Guardrails:</strong> Algorithmic Impact Assessment (AIIA) schema designed for executive-level AI intake approval.</li>
+                <li><strong>Post-Deployment Redress:</strong> Structured redress and remedy frameworks modeled to mitigate algorithmic bias and manage cross-border data dispute escalation within the GBA ecosystem.</li>
+            </ul>
+        </div>
+
+        <!-- 行動呼籲按鈕 -->
+        <div class="links-container">
+            <a href="https://www.linkedin.com/in/jackylawck" target="_blank" class="btn btn-primary">Connect on LinkedIn</a>
+            <a href="https://github.com/jackylawck" target="_blank" class="btn btn-secondary">Explore GitHub Repository</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
