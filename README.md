@@ -80,7 +80,7 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 ## ✍️ Latest Insights & LinkedIn Perspectives
 <!-- LINKEDIN_POSTS_START -->
 
-* 📢 **Latest on LinkedIn:** [When should we start learning new tech? It is time to think about this.](https://lnkd.in/p/gWCySJa7)
+* 📢 **Latest on LinkedIn:** [The impact of conflict in the workplace has been amplified by AI.](https://www.linkedin.com/posts/jackylawck_the-impact-of-conflict-in-the-workplace-has-share-7484129727545266177-F4UL/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAHNlJwBTgkDazjTr0E8QQ2Iz_Q7C1NFVaI)
 
 <!-- LINKEDIN_POSTS_END -->
 
