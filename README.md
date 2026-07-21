@@ -44,9 +44,9 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 *   Integrating structural conflict resolution, algorithmic fairness metrics, and legal mediation into automated transformation.
 
 ### 🔍 Triple-ISO Lead Auditor Training
-*   **ISO/IEC 42001:2023** (Artificial Intelligence Management System) Lead Auditor — Trained & Evaluated under Mastermind Assurance
-*   **ISO/IEC 27701:2019** (Privacy Information Management) Lead Auditor — Trained & Evaluated under Mastermind Assurance
-*   **ISO/IEC 27001:2022** (Information Security Management) Lead Auditor — Trained & Evaluated under Mastermind Assurance
+*   **ISO/IEC 42001:2023** (Artificial Intelligence Management System) Lead Auditor
+*   **ISO/IEC 27701:2019** (Privacy Information Management) Lead Auditor
+*   **ISO/IEC 27001:2022** (Information Security Management) Lead Auditor
 
 ---
 
