@@ -77,9 +77,10 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 
 ---
 
+![](./profile-3d-contrib/profile-green-animate.svg)
+
+
 ## 🔗 Let's Connect
 
 * 💼 **LinkedIn:** [linkedin.com/in/jackylawck](https://www.linkedin.com/in/jackylawck/)
 * 🎯 *Serving corporate governance, digital transformation, and cross-border tech mediation initiatives across Hong Kong and the Greater Bay Area.*
-
-![](./profile-3d-contrib/profile-green-animate.svg)
