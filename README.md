@@ -50,6 +50,20 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 ---
 
+## 🛡️ Executive AI Governance & Auditability Framework (企業級 AI 治理與可審計矩陣)
+
+To ensure full compliance and audit-readiness under **ISO/IEC 42001 (AIMS)**, **NIST AI RMF**, **EU AI Act**, and **Hong Kong PCPD Guidelines**, this repository maintains an active suite of compliance & transparency artifacts:
+為確保系統符合 ISO 42001 與國際 AI 監管框架之可審計要求，本專案維護完整的合規與透明度檔案庫：
+
+* 📊 **Model Architecture & Scope:** [`MODEL_CARD.md`](./MODEL_CARD.md) - Model boundaries, intended uses, and technical specifications.
+* 🔒 **Security & Vulnerability Disclosure:** [`SECURITY.md`](./SECURITY.md) - Zero Data Retention (ZDR), privacy-by-design, and reporting protocols.
+* ⚠️ **Risk Assessment Matrix:** [`docs/RISK_ASSESSMENT.md`](./docs/RISK_ASSESSMENT.md) - Identified algorithmic hazard identification and mitigation controls.
+* 👤 **Human-in-the-Loop Safeguards:** [`docs/HUMAN_OVERSIGHT.md`](./docs/HUMAN_OVERSIGHT.md) - HITL escalation pathways and decision redress mechanisms.
+* ⚖️ **Data Provenance & Lineage:** [`docs/DATA_GOVERNANCE.md`](./docs/DATA_GOVERNANCE.md) - Statutory data sources, PII masking, and data minimization rules.
+* 🔄 **Lifecycle & Drift Control:** [`docs/LIFECYCLE_MANAGEMENT.md`](./docs/LIFECYCLE_MANAGEMENT.md) - Change management and concept drift monitoring protocols.
+
+---
+
 ## 🛠️ My AI Governance & Tech Sandbox (AI 治理技術沙盒)
 
 Instead of static checklists, I build fully operational **"Governance-as-Code"** prototypes to validate and enforce compliance frameworks directly inside system architectures:
@@ -84,3 +98,5 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 
 * 💼 **LinkedIn:** [linkedin.com/in/jackylawck](https://www.linkedin.com/in/jackylawck/)
 * 🎯 *Serving transformation, governance and dispute resolution initiatives across Hong Kong and the Greater Bay Area.*
+---
+
