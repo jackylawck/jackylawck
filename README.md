@@ -87,8 +87,8 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 ### ⚡ Zero-Trust & Privacy-First PWA Tools (零信任純前端工具矩陣)
 *   **[ClauseDiff 安心對](https://github.com/jackylawck/ClauseDiff):** Privacy-first contract & policy diff tool (100% Client-Side).
 *   **[Prompt-Off 離線淨言](https://github.com/jackylawck/Prompt-Off):** Localized PII masking & prompt purification before LLM ingestion.
+*   **[Always-Celebrate 常慶功](https://github.com/jackylawck/Always-Celebrate):** AES-GCM encrypted, OWASP-aligned offline organizational achievement tracker.
 *   **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001 compliant enterprise cheque converter.
-*   **[SmartLeave 智休假](https://github.com/jackylawck/SmartLeave):** Dual-view HK public holiday optimizer & HR risk index.
 *   **[CV-Craft 排歷匠](https://github.com/jackylawck/CV-Craft):** Instant & safe offline CV formatting workstation.
 
 ### ⚙️ Implemented Technical Governance Controls (技術控制實踐)
