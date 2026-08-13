@@ -91,6 +91,9 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[Always-Celebrate 常慶功](https://github.com/jackylawck/Always-Celebrate):** AES-GCM encrypted, OWASP-aligned offline organizational achievement tracker.
 *   **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001 compliant enterprise cheque converter.
 
+### 🎮 Creative Engineering & Physics Simulations (創意工程與 WebGL 模擬器)
+*   **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade):** A 3D rigid-body Beyblade battle physics simulator built with WebGL & WebRTC, showcasing real-time physics computing and low-latency P2P networking capabilities.
+
 ### ⚙️ Implemented Technical Governance Controls (技術控制實踐)
 *   **Version-Controlled Policy & Prompting (版本控制提示詞管治)**: All system prompts and validation rules are managed in Git, leaving a strict audit trail of compliance changes, mitigating "prompt drift".
 *   **Privacy-by-Design Data Pipelines (隱私設計數據流)**: Implementation of deterministic data masking (PII extraction) on the ingestion level before data feeds into non-compliant LLM APIs.
