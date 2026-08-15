@@ -93,7 +93,7 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 
 ### 🎮 Creative Engineering & Physics Simulations (創意工程與 WebGL 模擬器)
 *   **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade):** A 3D rigid-body Beyblade battle physics simulator built with WebGL & WebRTC, showcasing real-time physics computing and low-latency P2P networking capabilities.
-*   **[BX-Score-Keeper (爆旋計分器)](https://github.com/jackylawck/BX-Score-Keeper):** A responsive, privacy-preserving tournament scoring & match management PWA built for competitive Beyblade X match orchestration.
+*   **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):** A responsive, privacy-preserving tournament scoring & match management PWA built for competitive Beyblade X match orchestration.
 
 ### ⚙️ Implemented Technical Governance Controls (技術控制實踐)
 *   **Version-Controlled Policy & Prompting (版本控制提示詞管治)**: All system prompts and validation rules are managed in Git, leaving a strict audit trail of compliance changes, mitigating "prompt drift".
