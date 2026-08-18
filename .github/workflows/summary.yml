@@ -7,12 +7,25 @@ on:
 permissions:
   issues: write
   contents: read
-  models: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.issue.number }}
+  cancel-in-progress: true
 
 jobs:
   summary:
     runs-on: ubuntu-latest
     steps:
+      - name: Harden Runner (Zero Trust Network)
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            github.com:443
+            models.inference.ai.azure.com:443
+            objects.githubusercontent.com:443
+
       - uses: actions/checkout@v4
       
       - name: Run AI inference
