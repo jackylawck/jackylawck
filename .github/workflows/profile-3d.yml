@@ -1,28 +1,43 @@
 name: GitHub Profile 3D Contributions
 
 on:
-  schedule: # 每天國際標準時間 18:00 (香港時間凌晨 02:00) 全自動背景通電執行
-    - cron: "0 18 * * *"
-  workflow_dispatch: # 允許你隨時手動點擊按鈕強行刷新
+  schedule:
+    - cron: "0 18 * * *" # UTC 18:00 → 香港時間 02:00
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.FINE_GRAINED_3D_TOKEN }}
+    name: generate-3d-contrib
+    # 僅在主分支執行，避免推送到其他分支
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
 
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate 3D contributions
+        uses: yoshi389111/github-profile-3d-contrib@v0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.FINE_GRAINED_3D_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Commit & Push Changes
+      - name: Commit and push generated files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A .
-          git commit -m "Generated 3D Contributions Cyber City" || exit 0
-          git push --force
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 僅添加 action 生成的目錄，避免誤提交臨時文件
+          git add profile-3d-contrib/
+
+          # 若無變更則正常退出
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "chore: update 3D contribution graph [skip ci]"
+          # 使用 --force-with-lease 替代 --force，安全推送
+          git push --force-with-lease
