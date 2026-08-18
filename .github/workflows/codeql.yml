@@ -30,10 +30,22 @@ jobs:
           - language: javascript-typescript
             build-mode: none
     steps:
+      - name: Harden Runner (Zero Trust Network)
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            github.com:443
+            objects.githubusercontent.com:443
+            uploads.github.com:443
+
       - uses: actions/checkout@v4
+
       - uses: github/codeql-action/init@v4
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
           queries: security-and-quality
+
       - uses: github/codeql-action/analyze@v4
