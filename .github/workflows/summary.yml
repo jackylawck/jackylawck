@@ -31,5 +31,5 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           RESPONSE: ${{ steps.inference.outputs.response }}
         run: |
-          echo "回應內容：\n\`\`\`text\n${RESPONSE}\n\`\`\`" > comment_body.txt
+          printf "回應內容：\n\`\`\`text\n%s\n\`\`\`\n" "$RESPONSE" > comment_body.txt
           gh issue comment "$ISSUE_NUMBER" --body-file comment_body.txt
