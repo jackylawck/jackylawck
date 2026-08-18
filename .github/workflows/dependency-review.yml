@@ -1,4 +1,4 @@
-name: 'Dependency Review'
+name: 'Dependency Review (Financial Grade)'
 
 on:
   pull_request:
@@ -8,14 +8,38 @@ permissions:
   contents: read
   pull-requests: write
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   dependency-review:
     runs-on: ubuntu-latest
     steps:
+      - name: Harden Runner (Zero Trust Network)
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            github.com:443
+            objects.githubusercontent.com:443
+
       - uses: actions/checkout@v4
-      - uses: actions/dependency-review-action@v4
+
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v4
         with:
           comment-summary-in-pr: always
           fail-on-severity: moderate
           deny-licenses: GPL-1.0-or-later, LGPL-2.0-or-later
           retry-on-snapshot-warnings: true
+          sbom-format: spdx
+
+      - name: Upload SBOM as Artifact (Audit Trail)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sbom-dependency-list
+          path: dependency-review-sbom.spdx
+          retention-days: 90
