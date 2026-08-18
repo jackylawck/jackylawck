@@ -20,20 +20,42 @@ jobs:
     permissions:
       security-events: write
       id-token: write
+
     steps:
+      - name: Harden Runner (Zero Trust Network)
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            api.osv.dev:443
+            api.securityscorecards.dev:443
+            auth.docker.io:443
+            fulcio.sigstore.dev:443
+            github.com:443
+            index.docker.io:443
+            oauth2.sigstore.dev:443
+            objects.githubusercontent.com:443
+            rekor.sigstore.dev:443
+            tuf-repo-cdn.sigstore.dev:443
+            www.bestpractices.dev:443
+
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+
       - uses: ossf/scorecard-action@v2.4.1
         with:
           results_file: results.sarif
           results_format: sarif
           publish_results: true
+
       - uses: actions/upload-artifact@v4
         with:
           name: SARIF file
           path: results.sarif
           retention-days: 5
+
       - uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: results.sarif
