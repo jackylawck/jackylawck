@@ -12,13 +12,10 @@ jobs:
   dependency-review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Dependency Review
-        uses: actions/dependency-review-action@v4
+      - uses: actions/checkout@v4
+      - uses: actions/dependency-review-action@v4
         with:
           comment-summary-in-pr: always
-          fail-on-severity: moderate   # 主動攔截中高風險漏洞
-          deny-licenses: GPL-1.0-or-later, LGPL-2.0-or-later  # 攔截不合規許可證
+          fail-on-severity: moderate
+          deny-licenses: GPL-1.0-or-later, LGPL-2.0-or-later
           retry-on-snapshot-warnings: true
