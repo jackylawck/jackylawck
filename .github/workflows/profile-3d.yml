@@ -2,7 +2,7 @@ name: GitHub Profile 3D Contributions
 
 on:
   schedule:
-    - cron: "0 18 * * *" # UTC 18:00 (香港時間 02:00)
+    - cron: "0 18 * * *" # UTC 18:00 → 香港時間 02:00
   workflow_dispatch:
 
 permissions:
@@ -18,16 +18,10 @@ jobs:
     if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
 
     steps:
-      - name: Harden Runner (Zero Trust Network)
+      - name: Harden Runner (Audit Mode)
         uses: step-security/harden-runner@v2
         with:
-          egress-policy: block
-          allowed-endpoints: >
-            api.github.com:443
-            avatars.githubusercontent.com:443
-            github.com:443
-            objects.githubusercontent.com:443
-            raw.githubusercontent.com:443
+          egress-policy: audit
 
       - uses: actions/checkout@v4
         with:
@@ -45,4 +39,4 @@ jobs:
           git add profile-3d-contrib/
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
           git commit -m "chore: update 3D graph [skip ci]"
-          git push --force-with-lease
+          git push
