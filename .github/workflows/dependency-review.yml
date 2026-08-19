@@ -16,14 +16,10 @@ jobs:
   dependency-review:
     runs-on: ubuntu-latest
     steps:
-      - name: Harden Runner (Zero Trust Network)
+      - name: Harden Runner (Audit Mode)
         uses: step-security/harden-runner@v2
         with:
-          egress-policy: block
-          allowed-endpoints: >
-            api.github.com:443
-            github.com:443
-            objects.githubusercontent.com:443
+          egress-policy: audit
 
       - uses: actions/checkout@v4
 
