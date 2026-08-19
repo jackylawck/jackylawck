@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '0 3 * * 0,3'
+    - cron: '0 3 * * 0,3' # 每週三、日 UTC 03:00 (香港時間 11:00)
 
 permissions:
   security-events: write
@@ -30,15 +30,10 @@ jobs:
           - language: javascript-typescript
             build-mode: none
     steps:
-      - name: Harden Runner (Zero Trust Network)
+      - name: Harden Runner (Audit Mode)
         uses: step-security/harden-runner@v2
         with:
-          egress-policy: block
-          allowed-endpoints: >
-            api.github.com:443
-            github.com:443
-            objects.githubusercontent.com:443
-            uploads.github.com:443
+          egress-policy: audit
 
       - uses: actions/checkout@v4
 
