@@ -84,6 +84,17 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[HK Employment AI Compliance Advisor](https://github.com/jackylawck/hk-employment-ordinance) (香港《僱傭條例》AI 合規顧問)**
     *   An enterprise-grade advisor for Cap. 57 powered by a Local Privacy-Preserving Hybrid RAG architecture, bridging HR compliance, algorithmic fairness, and workplace governance.
 
+*   **[AI-Risk-Registry](https://github.com/jackylawck/AI-Risk-Registry) (企業級影子 AI 動態風控註冊表)**
+    *   Dynamic enterprise governance tool mapping Shadow AI usage to ISO 27001 and ISO 42001 control domains via continuous risk tiering.
+
+*   **[TalentScout AI 慧聘 · 智析官](https://github.com/jackylawck/TalentScout) (AI 招聘偏誤緩解與勝任力系統)**
+    *   Enterprise ATS screening and competency quantification engine equipped with algorithmic bias-mitigation and structured DEI safeguards.
+
+### 🏛️ Executive & Board-Level Decision Tools (高管與董事會決策工具)
+*   **[board-dei-dashboard](https://github.com/jackylawck/board-dei-dashboard):** AIGP-aligned executive dashboard visualizing workforce analytics, pay equity, and retention risks via in-memory computing.
+*   **[finbrief](https://github.com/jackylawck/finbrief):** AI-driven strategic financial digest transforming raw annual reports into HKFRS-aligned risk audits and capital allocation insights.
+*   **[hk-mediator-copilot](https://github.com/jackylawck/hk-mediator-copilot):** Privacy-preserving RAG copilot for HK dispute resolution practitioners (Cap. 620 / DoJ 2025 Rules).
+
 ### ⚡ Zero-Trust & Privacy-First PWA Tools (零信任純前端工具矩陣)
 *   **[ClauseDiff 安心對](https://github.com/jackylawck/ClauseDiff):** Privacy-first contract & policy diff tool (100% Client-Side).
 *   **[Prompt-Off 離線淨言](https://github.com/jackylawck/Prompt-Off):** Localized PII masking & prompt purification before LLM ingestion.
@@ -91,15 +102,15 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[Always-Celebrate 常慶功](https://github.com/jackylawck/Always-Celebrate):** AES-GCM encrypted, OWASP-aligned offline organizational achievement tracker.
 *   **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001 compliant enterprise cheque converter.
 
-### 🎮 Creative Engineering & Physics Simulations (創意工程與 WebGL 模擬器)
-*   **[JarAscent 3D 躍上穹蒼](https://github.com/jackylawck/JarAscent):** An educational 3D rocket dynamics & orbital mechanics simulator built with Three.js (WebGL) & Web Audio API. Features explicit RK4 numerical mass conservation, J2 oblateness perturbations, NASA CEA-aligned thermochemistry, 3D printing STL wind tunnel analytics, and Tiangong rendezvous radar. Designed with strict Dual-Use (ITAR/EAR) boundary compliance, ISO 27701 privacy-by-design local storage, and EU AI Act Article 50 transparency notice frameworks.
-*   **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade):** A 3D rigid-body spinning-top battle physics simulator built with WebGL & WebRTC, showcasing real-time physics computing and low-latency P2P networking capabilities.
-*   **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):** A responsive, privacy-preserving tournament scoring & match management PWA built for competitive Beyblade X match orchestration.
+### 🎮 Creative Engineering & Complex Simulations (數值模擬與 WebGL 物理沙盒)
+*   **[JarAscent 3D 躍上穹蒼](https://github.com/jackylawck/JarAscent):** High-fidelity rocket launch and orbital mechanics simulator in Three.js implementing RK4 numerical integration and J2 perturbations.
+*   **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade):** 3D rigid-body spinning-top battle physics simulator built with WebGL & WebRTC for real-time P2P physics sync.
+*   **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):** Privacy-preserving tournament scoring & match management PWA compliant with Asia 12th Ed rules.
 
 ### ⚙️ Implemented Technical Governance Controls (技術控制實踐)
 *   **Version-Controlled Policy & Prompting (版本控制提示詞管治)**: All system prompts and validation rules are managed in Git, leaving a strict audit trail of compliance changes, mitigating "prompt drift".
-*   **Privacy-by-Design Data Pipelines (隱私設計數據流)**: Implementation of deterministic data masking (PII extraction) on the ingestion level before data feeds into non-compliant LLM APIs, combined with 100% client-side zero-knowledge storage models.
-*   **Automation Bias & Dual-Use Boundary Control (防範自動化偏見與敏感技術合規)**: Custom-built UI logic enforcing "Active Human-in-the-Loop (HITL)" authorization workflows, alongside clear algorithmic transparency notices that separate deterministic physics computations from export-controlled military algorithms.
+*   **Privacy-by-Design Data Pipelines (隱私設計數據流)**: Implementation of deterministic data masking (PII extraction) on the ingestion level before data feeds into non-compliant LLM APIs.
+*   **Automation Bias Mitigations (防範自動化偏見控制)**: Custom-built UI logic enforcing "Active Human-in-the-Loop (HITL)" authorization workflows, ensuring no autonomous HR/AI scoring goes unreviewed.
 
 ---
 
