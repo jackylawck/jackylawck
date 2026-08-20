@@ -96,11 +96,23 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[hk-mediator-copilot](https://github.com/jackylawck/hk-mediator-copilot):** Privacy-preserving RAG copilot for HK dispute resolution practitioners (Cap. 620 / DoJ 2025 Rules).
 
 ### ⚡ Zero-Trust & Privacy-First PWA Tools (零信任純前端工具矩陣)
-*   **[ClauseDiff 安心對](https://github.com/jackylawck/ClauseDiff):** Privacy-first contract & policy diff tool (100% Client-Side).
-*   **[Prompt-Off 離線淨言](https://github.com/jackylawck/Prompt-Off):** Localized PII masking & prompt purification before LLM ingestion.
-*   **[Safe-Off 離線守密](https://github.com/jackylawck/Safe-Off):** Zero-Knowledge, AES-GCM encrypted offline secret & password vault.
+> **Core Architectural Principle:** 100% Client-Side In-Memory Execution, Zero-Knowledge Encryption, and Zero Data Retention (ZDR).  
+> **核心架構原則：** 100% 本端記憶體運算、零知識加密、零伺服器留存。
+
+#### 🔒 Data Protection & Cryptographic Vaults (隱私防護與離線安全保險箱)
+*   **[ClauseDiff 安心對](https://github.com/jackylawck/ClauseDiff):** Privacy-first contract & policy diffing tool (100% Client-Side, zero cloud upload).
+*   **[Prompt-Off 離線淨言](https://github.com/jackylawck/Prompt-Off):** Localized PII masking & prompt sanitization guardrail prior to LLM ingestion.
+*   **[Safe-Off 離線守密](https://github.com/jackylawck/Safe-Off):** Zero-knowledge, AES-GCM encrypted offline secret and credential vault.
+*   **[Daily-Off 離線日注](https://github.com/jackylawck/Daily-Off):** Privacy-preserving personal executive journal with AES-256 local encrypted storage.
+*   **[Stillhollow 棲心樹洞](https://github.com/jackylawck/Stillhollow):** Air-gapped, zero-telemetry mental focus & reflection interface.
+
+#### 💼 Enterprise Utility & Workforce Calculations (企業實務與高管輕量工具)
+*   **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001-compliant enterprise bilingual cheque converter with live HKMA API integration.
+*   **[SmartLeave 智休假](https://github.com/jackylawck/SmartLeave):** Dual-view statutory holiday optimizer and workforce risk index calculator for HK HR leadership.
+*   **[SecUnit 秒換](https://github.com/jackylawck/SecUnit):** Ad-free, zero-storage instant converter across FX, commodities, and density metrics.
+*   **[WordWise 智識計](https://github.com/jackylawck/WordWise):** 100% client-side text analytics, character counter, and script conversion utility.
 *   **[Always-Celebrate 常慶功](https://github.com/jackylawck/Always-Celebrate):** AES-GCM encrypted, OWASP-aligned offline organizational achievement tracker.
-*   **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001 compliant enterprise cheque converter.
+*   **[Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** Air-gapped scientific and strategic executive calculator.
 
 ### 🎮 Creative Engineering & Complex Simulations (數值模擬與 WebGL 物理沙盒)
 *   **[JarAscent 3D 躍上穹蒼](https://github.com/jackylawck/JarAscent):** High-fidelity rocket launch and orbital mechanics simulator in Three.js implementing RK4 numerical integration and J2 perturbations.
