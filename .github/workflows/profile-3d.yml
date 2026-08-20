@@ -2,7 +2,7 @@ name: GitHub Profile 3D Contributions
 
 on:
   schedule:
-    - cron: "0 18 * * *" # UTC 18:00 → 香港時間 02:00
+    - cron: "0 18 * * *" # UTC 18:00 (香港時間 02:00)
   workflow_dispatch:
 
 permissions:
