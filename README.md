@@ -92,13 +92,14 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001 compliant enterprise cheque converter.
 
 ### 🎮 Creative Engineering & Physics Simulations (創意工程與 WebGL 模擬器)
+*   **[JarAscent 3D 躍上穹蒼](https://github.com/jackylawck/JarAscent):** An educational 3D rocket dynamics & orbital mechanics simulator built with Three.js (WebGL) & Web Audio API. Features explicit RK4 numerical mass conservation, J2 oblateness perturbations, NASA CEA-aligned thermochemistry, 3D printing STL wind tunnel analytics, and Tiangong rendezvous radar. Designed with strict Dual-Use (ITAR/EAR) boundary compliance, ISO 27701 privacy-by-design local storage, and EU AI Act Article 50 transparency notice frameworks.
 *   **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade):** A 3D rigid-body spinning-top battle physics simulator built with WebGL & WebRTC, showcasing real-time physics computing and low-latency P2P networking capabilities.
 *   **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):** A responsive, privacy-preserving tournament scoring & match management PWA built for competitive Beyblade X match orchestration.
 
 ### ⚙️ Implemented Technical Governance Controls (技術控制實踐)
 *   **Version-Controlled Policy & Prompting (版本控制提示詞管治)**: All system prompts and validation rules are managed in Git, leaving a strict audit trail of compliance changes, mitigating "prompt drift".
-*   **Privacy-by-Design Data Pipelines (隱私設計數據流)**: Implementation of deterministic data masking (PII extraction) on the ingestion level before data feeds into non-compliant LLM APIs.
-*   **Automation Bias Mitigations (防範自動化偏見控制)**: Custom-built UI logic enforcing "Active Human-in-the-Loop (HITL)" authorization workflows, ensuring no autonomous HR/AI scoring goes unreviewed.
+*   **Privacy-by-Design Data Pipelines (隱私設計數據流)**: Implementation of deterministic data masking (PII extraction) on the ingestion level before data feeds into non-compliant LLM APIs, combined with 100% client-side zero-knowledge storage models.
+*   **Automation Bias & Dual-Use Boundary Control (防範自動化偏見與敏感技術合規)**: Custom-built UI logic enforcing "Active Human-in-the-Loop (HITL)" authorization workflows, alongside clear algorithmic transparency notices that separate deterministic physics computations from export-controlled military algorithms.
 
 ---
 
