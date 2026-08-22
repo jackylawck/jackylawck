@@ -115,6 +115,7 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** Air-gapped scientific and strategic executive calculator.
 
 ### 🎮 Creative Engineering & Complex Simulations (數值模擬與 WebGL 物理沙盒)
+*   **[JAR Fusion Core 3D 聚變核心](https://github.com/jackylawck/jar-fusion-core):** Research-grade 1.5D Tokamak nuclear fusion simulator in Three.js featuring Crank-Nicolson heat transport, Bosch-Hale reaction cross-sections, and real-time custom STL core thermal analysis.
 *   **[JarAscent 3D 躍上穹蒼](https://github.com/jackylawck/JarAscent):** High-fidelity rocket launch and orbital mechanics simulator in Three.js implementing RK4 numerical integration and J2 perturbations.
 *   **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade):** 3D rigid-body spinning-top battle physics simulator built with WebGL & WebRTC for real-time P2P physics sync.
 *   **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):** Privacy-preserving tournament scoring & match management PWA compliant with Asia 12th Ed rules.
