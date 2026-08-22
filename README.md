@@ -105,6 +105,7 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[Safe-Off 離線守密](https://github.com/jackylawck/Safe-Off):** Zero-knowledge, AES-GCM encrypted offline secret and credential vault.
 *   **[Daily-Off 離線日注](https://github.com/jackylawck/Daily-Off):** Privacy-preserving personal executive journal with AES-256 local encrypted storage.
 *   **[Stillhollow 棲心樹洞](https://github.com/jackylawck/Stillhollow):** Air-gapped, zero-telemetry mental focus & reflection interface.
+*   **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):** Privacy-preserving tournament scoring & match management PWA compliant with Asia 12th Ed rules.
 
 #### 💼 Enterprise Utility & Workforce Calculations (企業實務與高管輕量工具)
 *   **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001-compliant enterprise bilingual cheque converter with live HKMA API integration.
@@ -118,7 +119,6 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[JAR Fusion Core 3D 聚變核心](https://github.com/jackylawck/jar-fusion-core):** Research-grade 1.5D Tokamak nuclear fusion simulator in Three.js featuring Crank-Nicolson heat transport, Bosch-Hale reaction cross-sections, and real-time custom STL core thermal analysis.
 *   **[JarAscent 3D 躍上穹蒼](https://github.com/jackylawck/JarAscent):** High-fidelity rocket launch and orbital mechanics simulator in Three.js implementing RK4 numerical integration and J2 perturbations.
 *   **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade):** 3D rigid-body spinning-top battle physics simulator built with WebGL & WebRTC for real-time P2P physics sync.
-*   **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):** Privacy-preserving tournament scoring & match management PWA compliant with Asia 12th Ed rules.
 
 ### ⚙️ Implemented Technical Governance Controls (技術控制實踐)
 *   **Version-Controlled Policy & Prompting (版本控制提示詞管治)**: All system prompts and validation rules are managed in Git, leaving a strict audit trail of compliance changes, mitigating "prompt drift".
