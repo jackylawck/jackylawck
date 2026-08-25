@@ -115,7 +115,7 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[Always-Celebrate 常慶功](https://github.com/jackylawck/Always-Celebrate):** AES-GCM encrypted, OWASP-aligned offline organizational achievement tracker.
 *   **[Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** Air-gapped scientific and strategic executive calculator.
 
-## 🌌 J.A.R. 聯合科學模擬矩陣 (J.A.R. Science Ecosystem)
+## 🌌 J.A.R. 科學矩陣 (J.A.R. Science Ecosystem)
 本專案隸屬於 **J.A.R. · Joint Applied Research (聯合應用科學探索系列)**，旨在利用純前端 WebGL/WebGPU 與數值物理引擎，將前沿科研級物理視覺化並普及於下一代科學教育：
 * 🌌 **[JAR Black Hole 3D 黑洞奇異點](https://github.com/jackylawck/JAR-Black-Hole)**: Research-grade General Relativity & Kerr black hole ray-tracing simulator in Three.js featuring 4D Carter geodesics, Kerr-Schild horizon-penetrating coordinates, and Novikov-Thorne relativistic accretion disk radiative transfer.
 * ⚛️ **[JAR Fusion Core 3D 聚變核心](https://github.com/jackylawck/jar-fusion-core)**: Research-grade 1.5D Tokamak nuclear fusion simulator in Three.js featuring Crank-Nicolson heat transport, Bosch-Hale reaction cross-sections, and real-time custom STL core thermal analysis.
