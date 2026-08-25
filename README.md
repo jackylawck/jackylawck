@@ -115,11 +115,15 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 *   **[Always-Celebrate 常慶功](https://github.com/jackylawck/Always-Celebrate):** AES-GCM encrypted, OWASP-aligned offline organizational achievement tracker.
 *   **[Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** Air-gapped scientific and strategic executive calculator.
 
-#### 🌌 J.A.R. · Joint Applied Research (聯合應用科學探索)
-*   **[JAR Black Hole 3D 黑洞奇異點](https://github.com/jackylawck/JAR-Black-Hole):** Research-grade General Relativity & Kerr black hole ray-tracing simulator in Three.js featuring 4D Carter geodesics, Kerr-Schild horizon-penetrating coordinates, and Novikov-Thorne relativistic accretion disk radiative transfer.
-*   **[JAR Fusion Core 3D 聚變核心](https://github.com/jackylawck/jar-fusion-core):** Research-grade 1.5D Tokamak nuclear fusion simulator in Three.js featuring Crank-Nicolson heat transport, Bosch-Hale reaction cross-sections, and real-time custom STL core thermal analysis.
-*   **[JarAscent 3D 躍上穹蒼](https://github.com/jackylawck/JarAscent):** High-fidelity rocket launch and orbital mechanics simulator in Three.js implementing RK4 numerical integration and J2 perturbations.
-*   **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade):** 3D rigid-body spinning-top battle physics simulator built with WebGL & WebRTC for real-time P2P physics sync.
+## 🌌 J.A.R. 聯合科學模擬矩陣 (J.A.R. Science Ecosystem)
+本專案隸屬於 **J.A.R. · Joint Applied Research (聯合應用科學探索系列)**，旨在利用純前端 WebGL/WebGPU 與數值物理引擎，將前沿科研級物理視覺化並普及於下一代科學教育：
+* 🌌 **[JAR Black Hole 3D 黑洞奇異點](https://github.com/jackylawck/JAR-Black-Hole)**: Research-grade General Relativity & Kerr black hole ray-tracing simulator in Three.js featuring 4D Carter geodesics, Kerr-Schild horizon-penetrating coordinates, and Novikov-Thorne relativistic accretion disk radiative transfer.
+* ⚛️ **[JAR Fusion Core 3D 聚變核心](https://github.com/jackylawck/jar-fusion-core)**: Research-grade 1.5D Tokamak nuclear fusion simulator in Three.js featuring Crank-Nicolson heat transport, Bosch-Hale reaction cross-sections, and real-time custom STL core thermal analysis.
+* 🚀 **[JarAscent 3D 躍上穹蒼](https://github.com/jackylawck/JarAscent)**: High-fidelity rocket launch and orbital mechanics simulator in Three.js implementing RK4 numerical integration and J2 perturbations.
+* 🛰️ **[JAR Above Tiangong 3D 天宮之上](https://github.com/jackylawck/JAR-Above-Tiangong)**: Aerospace-grade 6-DoF space station rendezvous & docking simulator with Clohessy-Wiltshire relative orbital mechanics and zero-allocation MEKF attitude determination.
+* 🌪️ **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade)**: 3D rigid-body spinning-top battle physics simulator built with WebGL & WebRTC for real-time P2P physics sync.
+
+---
 
 ### ⚙️ Implemented Technical Governance Controls (技術控制實踐)
 *   **Version-Controlled Policy & Prompting (版本控制提示詞管治)**: All system prompts and validation rules are managed in Git, leaving a strict audit trail of compliance changes, mitigating "prompt drift".
