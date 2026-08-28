@@ -117,7 +117,7 @@ Instead of static checklists, I build fully operational **"Governance-as-Code"**
 
 ## 🌌 J.A.R. 科學矩陣 (J.A.R. Science Ecosystem)
 本專案隸屬於 **J.A.R. · Joint Applied Research (聯合應用科學探索系列)**，旨在利用純前端 WebGL/WebGPU 與數值物理引擎，將前沿科研級物理視覺化並普及於下一代科學教育：
-* 🛩️ **[JAR Skybound 3D 衝上雲霄](https://github.com/jackylawck/JAR-Skybound)**: Aerospace-grade 6-DoF flight simulator with NASA CRM transonic aerodynamics, dual turbofan dynamics, Pacejka landing gear, and mobile-first glass cockpit avionics.
+* 🛩️ **[JAR Skybound 衝上雲霄](https://github.com/jackylawck/JAR-Skybound)**: Aerospace-grade 6-DoF flight simulator with NASA CRM transonic aerodynamics, dual turbofan dynamics, Pacejka landing gear, and mobile-first glass cockpit avionics.
 * 🛰️ **[JAR Above Tiangong 3D 天宮之上](https://github.com/jackylawck/JAR-Above-Tiangong)**: Aerospace-grade 6-DoF space station rendezvous & docking simulator with Clohessy-Wiltshire relative orbital mechanics and zero-allocation MEKF attitude determination.
 * 🦾 **[JAR Beyond the Hand 3D 在手之上](https://github.com/jackylawck/JAR-Beyond-the-Hand)**: High-precision 6-DoF robotic arm kinematic simulator featuring real-time CCD-IK with DLS singularity avoidance, dynamic FFT telemetry logging, and dual-mode educational/research ergonomics.
 * 🚀 **[JarAscent 3D 躍上穹蒼](https://github.com/jackylawck/JarAscent)**: High-fidelity rocket launch and orbital mechanics simulator in Three.js implementing RK4 numerical integration and J2 perturbations.
