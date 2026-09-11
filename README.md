@@ -14,123 +14,89 @@ Jacky Law is a Hong Kong-based Senior HR Executive (F.I.H.R.M.(HK)), corporate g
 
 Bridging the gap between **Transformation**, **AI Governance**, and **Dispute Resolution**.
 
-With 15+ years of corporate HR leadership, I transform high-level responsible AI principles into concrete enterprise controls. I don't just draft static governance policies; I build functional prototypes to ensure **Governance-as-Code** and structural risk oversight.
-
----
-# 🛡️ My Strategic Moat & Credentials
-
-### 👥 Executive HR Leadership & Workforce Transformation
-*   **Fellow of The Hong Kong Institute of Human Resource Management (F.I.H.R.M. (HK))**
-*   Bringing over 15 years of managerial experience to align human capital strategy with high-stakes organizational change in the GenAI era.
-
-### 🏛️ Board-Level Corporate Governance
-*   **Fellow of The Hong Kong Institute of Directors (FHKIoD)**
-*   Embedding mature enterprise risk frameworks, ethical compliance oversight, and corporate governance into executive leadership.
-
-### 💻 Technology Ecosystem Engagement
-*   **Member of the Hong Kong Computer Society (MHKCS)**
-*   Bridging the gap between technical execution and corporate oversight, backed by hands-on AI prototype engineering and a verifiable GitHub codebase.
-
-### 🎓 Academic Backbone
-*   **Master of Laws (LLM)** & **Master of Arts (MA in Sociology)** from **The Chinese University of Hong Kong (CUHK)**
-*   Blending rigorous common law legal doctrine with deep behavioral insights.
-
-### ☁️ Oracle GenAI Cloud Expertise
-*   Officially certified **Oracle Cloud Infrastructure (OCI) Generative AI Professional** (Verifiable Professional Credential)
-*   Proving structural alignment with industrial-grade AI architecture and large language model (LLM) deployments.
-
-### ⚖️ Cross-Border Dispute Resolution
-*   Designated **GBA Mediator (Department of Justice, HKSAR)** and **APCAM Certified Trainer**
-*   Integrating structural conflict resolution, algorithmic fairness metrics, and legal mediation into automated transformation.
-
-### 🔍 Triple-ISO Lead Auditor Credentials
-*   **ISO/IEC 42001:2023** (Artificial Intelligence Management System - AIMS) Lead Auditor
-*   **ISO/IEC 27701:2019** (Privacy Information Management System - PIMS) Lead Auditor
-*   **ISO/IEC 27001:2022** (Information Security Management System - ISMS) Lead Auditor
+With 15+ years of corporate HR leadership, I transform high-level responsible AI principles into concrete enterprise controls. Beyond static compliance policies, I engineer production-ready prototypes to demonstrate **Governance-as-Code**, deterministic privacy preservation, and structural risk oversight.
 
 ---
 
-## 🛡️ Executive AI Governance & Auditability Framework (企業級 AI 治理與可審計矩陣)
+## 🛡️ Strategic Moat & Credentials (專業資質與戰略護城河)
 
-To ensure full compliance and audit-readiness under **ISO/IEC 42001 (AIMS)**, **NIST AI RMF**, **EU AI Act**, and **Hong Kong PCPD Guidelines**, my repositories maintain an active suite of compliance & transparency artifacts:
-為確保系統符合 ISO 42001 與國際 AI 監管框架之可審計要求，本生態系維護完整的合規與透明度檔案庫：
-
-* 📊 **Model Architecture & Scope:** [`MODEL_CARD.md`](./MODEL_CARD.md) - Model boundaries, intended uses, and technical specifications.
-* 🔒 **Security & Vulnerability Disclosure:** [`SECURITY.md`](./SECURITY.md) - Zero Data Retention (ZDR), privacy-by-design, and reporting protocols.
-* ⚠️ **Risk Assessment Matrix:** [`docs/RISK_ASSESSMENT.md`](./docs/RISK_ASSESSMENT.md) - Algorithmic hazard identification and mitigation controls.
-* 👤 **Human-in-the-Loop Safeguards:** [`docs/HUMAN_OVERSIGHT.md`](./docs/HUMAN_OVERSIGHT.md) - HITL escalation pathways and decision redress mechanisms.
-* ⚖️ **Data Provenance & Lineage:** [`docs/DATA_GOVERNANCE.md`](./docs/DATA_GOVERNANCE.md) - Statutory data sources, PII masking, and data minimization rules.
-* 🔄 **Lifecycle & Drift Control:** [`docs/LIFECYCLE_MANAGEMENT.md`](./docs/LIFECYCLE_MANAGEMENT.md) - Change management and concept drift monitoring protocols.
-
----
-
-## 🛠️ My AI Governance & Tech Sandbox (AI 治理與輕量工具沙盒)
-
-Instead of static checklists, I build fully operational **"Governance-as-Code"** prototypes and privacy-first utilities to enforce compliance directly inside system architectures:
-我不僅撰寫靜態合規政策，更構建「代碼即管治」沙盒與零信任工具，將合規與隱私框架直接嵌入系統架構中：
-
-### 🌟 Active Enterprise Governance Projects (企業級管治項目)
-
-*   **PCPD AI Privacy Protection Sandbox (PCPD AI 個人資料保障沙盒)**
-    *   A pre-deployment audit environment mapped to the Hong Kong PCPD's Model Framework. 
-    *   **[Core Scorecard](https://github.com/jackylawck/PCPD_ai_protection_framework):** Streamlit-based interactive risk triage tool.
-    *   **[Local RAG Engine](https://github.com/jackylawck/PCPD_ai_protection_framework_rag):** Privacy-preserving retrieval system with encrypted audit trails.
-
-*   **HK-DPO GenAI Compliance Suite (香港 DPO 生成式 AI 合規套件)**
-    *   Enterprise governance workstations implementing the HK Digital Policy Office (DPO) Guideline V1.1.
-    *   **[Deterministic Workstation](https://github.com/jackylawck/hk-dpo-ai-governance):** Hardcoded 4-tier risk classifier and policy readiness dashboard.
-    *   **[RAG Alignment System](https://github.com/jackylawck/hk-dpo-ai-governance_rag):** Localized knowledge retrieval aligned with ISO 42001 oversight standards.
-
-*   **[HK Employment AI Compliance Advisor](https://github.com/jackylawck/hk-employment-ordinance) (香港《僱傭條例》AI 合規顧問)**
-    *   An enterprise-grade advisor for Cap. 57 powered by a Local Privacy-Preserving Hybrid RAG architecture, bridging HR compliance, algorithmic fairness, and workplace governance.
-
-*   **[AI-Risk-Registry](https://github.com/jackylawck/AI-Risk-Registry) (企業級影子 AI 動態風控註冊表)**
-    *   Dynamic enterprise governance tool mapping Shadow AI usage to ISO 27001 and ISO 42001 control domains via continuous risk tiering.
-
-*   **[TalentScout AI 慧聘 · 智析官](https://github.com/jackylawck/TalentScout) (AI 招聘偏誤緩解與勝任力系統)**
-    *   Enterprise ATS screening and competency quantification engine equipped with algorithmic bias-mitigation and structured DEI safeguards.
-
-### 🏛️ Executive & Board-Level Decision Tools (高管與董事會決策工具)
-*   **[board-dei-dashboard](https://github.com/jackylawck/board-dei-dashboard):** AIGP-aligned executive dashboard visualizing workforce analytics, pay equity, and retention risks via in-memory computing.
-*   **[finbrief](https://github.com/jackylawck/finbrief):** AI-driven strategic financial digest transforming raw annual reports into HKFRS-aligned risk audits and capital allocation insights.
-*   **[hk-mediator-copilot](https://github.com/jackylawck/hk-mediator-copilot):** Privacy-preserving RAG copilot for HK dispute resolution practitioners (Cap. 620 / DoJ 2025 Rules).
-
-### ⚡ Zero-Trust & Privacy-First PWA Tools (零信任純前端工具矩陣)
-> **Core Architectural Principle:** 100% Client-Side In-Memory Execution, Zero-Knowledge Encryption, and Zero Data Retention (ZDR).  
-> **核心架構原則：** 100% 本端記憶體運算、零知識加密、零伺服器留存。
-
-#### 🔒 Data Protection & Cryptographic Vaults (隱私防護與離線安全保險箱)
-*   **[ClauseDiff 安心對](https://github.com/jackylawck/ClauseDiff):** Privacy-first contract & policy diffing tool (100% Client-Side, zero cloud upload).
-*   **[Prompt-Off 離線淨言](https://github.com/jackylawck/Prompt-Off):** Localized PII masking & prompt sanitization guardrail prior to LLM ingestion.
-*   **[Safe-Off 離線守密](https://github.com/jackylawck/Safe-Off):** Zero-knowledge, AES-GCM encrypted offline secret and credential vault.
-*   **[Daily-Off 離線日注](https://github.com/jackylawck/Daily-Off):** Privacy-preserving personal executive journal with AES-256 local encrypted storage.
-*   **[Stillhollow 棲心樹洞](https://github.com/jackylawck/Stillhollow):** Air-gapped, zero-telemetry mental focus & reflection interface.
-*   **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):** Privacy-preserving tournament scoring & match management PWA compliant with Asia 12th Ed rules.
-
-#### 💼 Enterprise Utility & Workforce Calculations (企業實務與高管輕量工具)
-*   **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001-compliant enterprise bilingual cheque converter with live HKMA API integration.
-*   **[SmartLeave 智休假](https://github.com/jackylawck/SmartLeave):** Dual-view statutory holiday optimizer and workforce risk index calculator for HK HR leadership.
-*   **[SecUnit 秒換](https://github.com/jackylawck/SecUnit):** Ad-free, zero-storage instant converter across FX, commodities, and density metrics.
-*   **[WordWise 智識計](https://github.com/jackylawck/WordWise):** 100% client-side text analytics, character counter, and script conversion utility.
-*   **[Always-Celebrate 常慶功](https://github.com/jackylawck/Always-Celebrate):** AES-GCM encrypted, OWASP-aligned offline organizational achievement tracker.
-*   **[Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** Air-gapped scientific and strategic executive calculator.
-
-## 🌌 J.A.R. 科學矩陣 (J.A.R. Science Ecosystem)
-本專案隸屬於 **J.A.R. · Joint Applied Research (聯合應用科學探索系列)**，旨在利用純前端 WebGL/WebGPU 與數值物理引擎，將前沿科研級物理視覺化並普及於下一代科學教育：
-* 🛩️ **[JAR Skybound 衝上雲霄](https://github.com/jackylawck/JAR-Skybound)**: Aerospace-grade 6-DoF flight simulator with NASA CRM transonic aerodynamics, dual turbofan dynamics, Pacejka landing gear, and mobile-first glass cockpit avionics.
-* 🛰️ **[JAR Above Tiangong 天宮之上](https://github.com/jackylawck/JAR-Above-Tiangong)**: Aerospace-grade 6-DoF space station rendezvous & docking simulator with Clohessy-Wiltshire relative orbital mechanics and zero-allocation MEKF attitude determination.
-* 🦾 **[JAR Beyond the Hand 在手之上](https://github.com/jackylawck/JAR-Beyond-the-Hand)**: High-precision 6-DoF robotic arm kinematic simulator featuring real-time CCD-IK with DLS singularity avoidance, dynamic FFT telemetry logging, and dual-mode educational/research ergonomics.
-* 🚀 **[JarAscent 躍上穹蒼](https://github.com/jackylawck/JarAscent)**: High-fidelity rocket launch and orbital mechanics simulator in Three.js implementing RK4 numerical integration and J2 perturbations.
-* 🌌 **[JAR Black Hole 黑洞奇異點](https://github.com/jackylawck/JAR-Black-Hole)**: Research-grade General Relativity & Kerr black hole ray-tracing simulator in Three.js featuring 4D Carter geodesics, Kerr-Schild horizon-penetrating coordinates, and Novikov-Thorne relativistic accretion disk radiative transfer.
-* ⚛️ **[JAR Fusion Core 聚變核心](https://github.com/jackylawck/jar-fusion-core)**: Research-grade 1.5D Tokamak nuclear fusion simulator in Three.js featuring Crank-Nicolson heat transport, Bosch-Hale reaction cross-sections, and real-time custom STL core thermal analysis.
-* 🌪️ **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade)**: 3D rigid-body spinning-top battle physics simulator built with WebGL & WebRTC for real-time P2P physics sync.
+* 👥 **Executive HR Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes workforce transformation.
+* 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI oversight and enterprise risk management into board agendas.
+* 🔍 **Triple-ISO Lead Auditor:** 
+  * **ISO/IEC 42001:2023** (Artificial Intelligence Management System - AIMS)
+  * **ISO/IEC 27701:2019** (Privacy Information Management System - PIMS)
+  * **ISO/IEC 27001:2022** (Information Security Management System - ISMS)
+* ☁️ **Cloud AI Architecture:** Officially Certified **Oracle Cloud Infrastructure (OCI) Generative AI Professional**.
+* ⚖️ **Cross-Border Dispute Resolution:** Designated **GBA Mediator (Department of Justice, HKSAR)** & APCAM Certified Trainer.
+* 🎓 **Academic Backbone:** Master of Laws (**LLM in Common Law**) & Master of Arts (**MA in Sociology**) from **The Chinese University of Hong Kong (CUHK)**.
 
 ---
 
-### ⚙️ Implemented Technical Governance Controls (技術控制實踐)
-*   **Version-Controlled Policy & Prompting (版本控制提示詞管治)**: All system prompts and validation rules are managed in Git, leaving a strict audit trail of compliance changes, mitigating "prompt drift".
-*   **Privacy-by-Design Data Pipelines (隱私設計數據流)**: Implementation of deterministic data masking (PII extraction) on the ingestion level before data feeds into non-compliant LLM APIs.
-*   **Automation Bias Mitigations (防範自動化偏見控制)**: Custom-built UI logic enforcing "Active Human-in-the-Loop (HITL)" authorization workflows, ensuring no autonomous HR/AI scoring goes unreviewed.
+## 🏛️ Pillar I: Enterprise AI Governance & Auditability (企業級 AI 治理)
+
+> **"Governance-as-Code: Transforming regulatory frameworks into verifiable system controls."**  
+> 全面對齊 **ISO 42001**、**NIST AI RMF**、**歐盟 AI 法案** 及 **香港 PCPD / 數字辦指引**。
+
+### 📋 Audit & Transparency Artifacts (可審計合規基線)
+* 📊 **Model Architecture & Scope:** [`MODEL_CARD.md`](./MODEL_CARD.md) — Technical boundaries and operational scope.
+* 🔒 **Security & Disclosure:** [`SECURITY.md`](./SECURITY.md) — Zero Data Retention (ZDR) and incident response protocols.
+* ⚠️ **Risk Assessment:** [`docs/RISK_ASSESSMENT.md`](./docs/RISK_ASSESSMENT.md) — Algorithmic hazard matrix and tiering.
+* 👤 **Human Oversight:** [`docs/HUMAN_OVERSIGHT.md`](./docs/HUMAN_OVERSIGHT.md) — HITL escalation and decision redress safeguards.
+
+### 🌟 Active Governance Workstations (核心管治專案)
+* **[PCPD AI Privacy Sandbox](https://github.com/jackylawck/PCPD_ai_protection_framework):** Interactive compliance pre-audit sandbox based on the 2024 PCPD Model Framework ([Local RAG Edition](https://github.com/jackylawck/PCPD_ai_protection_framework_rag)).
+* **[HK-DPO GenAI Workstation](https://github.com/jackylawck/hk-dpo-ai-governance):** Deterministic 4-tier risk classification engine strictly mapped to HK Digital Policy Office guidelines ([Audit Trail Edition](https://github.com/jackylawck/hk-dpo-ai-governance_rag)).
+* **[AI-Risk-Registry](https://github.com/jackylawck/AI-Risk-Registry):** Enterprise Shadow-AI registry mapping unsanctioned tool usage to ISO 27001 & ISO 42001 controls.
+* **[HK Employment AI Advisor](https://github.com/jackylawck/hk-employment-ordinance):** Privacy-preserving hybrid RAG advisor for HK Cap. 57 workplace regulations.
+* **[TalentScout AI](https://github.com/jackylawck/TalentScout):** Algorithmic bias-mitigation ATS and competency quantification engine compliant with HK EOC standards.
+* **[board-dei-dashboard](https://github.com/jackylawck/board-dei-dashboard):** Executive workforce metrics and pay equity visualization tool with in-memory execution.
+* **[finbrief](https://github.com/jackylawck/finbrief):** Executive financial digest distilling annual disclosures into HKFRS-aligned risk briefs.
+
+---
+
+## ⚡ Pillar II: Zero-Trust & Privacy-by-Design Tools (零信任純前端矩陣)
+
+> **Architectural Standard:** 100% Client-Side In-Memory Computing, Zero-Knowledge Encryption, and Zero Data Retention (ZDR).  
+> **核心標準：** 100% 本端記憶體運算、零伺服器留存、零日誌歸檔。
+
+* 🔒 **[ClauseDiff 安心對](https://github.com/jackylawck/ClauseDiff):** Air-gapped, client-side legal contract & policy comparison diff engine.
+* 🛡️ **[Prompt-Off 離線淨言](https://github.com/jackylawck/Prompt-Off):** Deterministic PII masking and prompt sanitizer before external LLM ingestion.
+* 🔑 **[Safe-Off 離線守密](https://github.com/jackylawck/Safe-Off):** Zero-knowledge, AES-GCM encrypted local credential vault.
+* 📝 **[Daily-Off 離線日注](https://github.com/jackylawck/Daily-Off) / [Stillhollow 棲心樹洞](https://github.com/jackylawck/Stillhollow):** Encrypted local reflection tools with zero telemetry.
+* 💼 **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001-compliant enterprise bilingual cheque converter with HKMA API integration.
+* 📊 **[SmartLeave 智休假](https://github.com/jackylawck/SmartLeave):** Statutory holiday planner and organizational risk index optimizer for HK HR leaders.
+* 🧮 **[SecUnit 秒換](https://github.com/jackylawck/SecUnit) / [WordWise 智識計](https://github.com/jackylawck/WordWise) / [Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** High-speed, zero-cloud utility calculation suites.
+
+---
+
+## 🎮 Pillar III: Organizational Agility, P2P & Cognitive Matrix (敏捷互動與認知矩陣)
+
+> **"Reasoning without guesswork; engagement without surveillance."**  
+> 將演算法與去中心化通訊融入組織培訓、團隊競技與思維啟蒙。
+
+* 🎭 **[Two Truths & A Lie 兩真一假](https://github.com/jackylawck/two-truths-and-a-lie)**:
+  * **敏捷培訓與破冰**: 專為企業迎新與高管 Facilitation 設計，具備 1200px 投影模式與 90 秒軟計時節奏。
+  * **純前端 P2P 通訊**: 基於 WebRTC 星型架構，記憶體揮發性執行，符合 Cap. 486 與 GDPR 遺忘權，免去 AI 監管合規負擔。
+* 🏆 **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper)**:
+  * **賽事標準支援**: 符合亞洲第 12 版官方競賽規格，支援 1v1、3on3、KOF 車輪戰與 WebRTC 多機低延遲同步計分。
+* 🧩 **[Lawgic 羅輯](https://github.com/jackylawck/lawgic)**:
+  * **純演繹益智矩陣**: 包含數獨、迴路、摩天樓等 10+ 款世界賽事級題型，SMT 求解器驗證 100% 無盲猜解。
+  * **高效能引擎**: Rust + WASM 零拷貝運算，對齊皮亞傑認知發展論與 CHC 智力架構，兼顧親子啟蒙與競技推演。
+
+---
+
+## 🌌 Pillar IV: J.A.R. · Joint Applied Research (數值模擬與科學探索)
+
+> **"Science is not abstract memorization, but an interactive, auditable, and living universe."**  
+> 聯合應用科學研究系列：利用 WebGL/WebGPU 與數值物理引擎，實現高保真度科研級視覺化與下一代科學探索。
+
+* 🛩️ **[JAR Skybound 衝上雲霄](https://github.com/jackylawck/JAR-Skybound)**: Aerospace-grade 6-DoF flight simulator with NASA CRM aerodynamics and Pacejka gear dynamics.
+* 🛰️ **[JAR Above Tiangong 天宮之上](https://github.com/jackylawck/JAR-Above-Tiangong)**: 6-DoF space rendezvous & docking simulator with Clohessy-Wiltshire orbital mechanics.
+* 🦾 **[JAR Beyond the Hand 在手之上](https://github.com/jackylawck/JAR-Beyond-the-Hand)**: 6-DoF robotic arm kinematic simulator featuring real-time CCD-IK with DLS singularity avoidance.
+* 🚀 **[JarAscent 躍上穹蒼](https://github.com/jackylawck/JarAscent)**: Rocket launch and orbital mechanics sandbox implementing RK4 numerical integration and J2 perturbation.
+* 🌌 **[JAR Black Hole 黑洞奇異點](https://github.com/jackylawck/JAR-Black-Hole)**: Kerr black hole ray-tracer featuring 4D Carter geodesics and Novikov-Thorne relativistic accretion disks.
+* ⚛️ **[JAR Fusion Core 聚變核心](https://github.com/jackylawck/jar-fusion-core)**: 1.5D Tokamak nuclear fusion simulator with Crank-Nicolson heat transport modeling.
+* 🌪️ **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade)**: 3D rigid-body battle physics simulator showcasing WebGL rendering and WebRTC physics synchronization.
 
 ---
 
