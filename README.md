@@ -79,7 +79,7 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
   * **高效能引擎**: Rust + WASM 零拷貝運算，對齊皮亞傑認知發展論與 CHC 智力架構，兼顧親子啟蒙與競技推演。
 * 🏆 **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper)**:
   * **賽事標準支援**: 符合亞洲第 12 版官方競賽規格，支援 1v1、3on3、KOF 車輪戰與 WebRTC 多機低延遲同步計分。
-* 🎭 **[Two Truths & A Lie 兩真一假](https://github.com/jackylawck/two-truths-and-a-lie)**:
+* 🎭 **[Two Truths & A Lie 兩真一假](https://github.com/jackylawck/2truths1lie)**:
   * **敏捷培訓與破冰**: 專為企業迎新與高管 Facilitation 設計，具備 1200px 投影模式與 90 秒軟計時節奏。
   * **純前端 P2P 通訊**: 基於 WebRTC 星型架構，記憶體揮發性執行，符合 Cap. 486 與 GDPR 遺忘權，免去 AI 監管合規負擔。
 
