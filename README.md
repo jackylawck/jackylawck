@@ -47,12 +47,12 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 * **[PCPD AI Privacy Sandbox](https://github.com/jackylawck/PCPD_ai_protection_framework):** Interactive compliance pre-audit sandbox based on the 2024 PCPD Model Framework ([Local RAG Edition](https://github.com/jackylawck/PCPD_ai_protection_framework_rag)).
 * **[HK-DPO GenAI Workstation](https://github.com/jackylawck/hk-dpo-ai-governance):** Deterministic 4-tier risk classification engine strictly mapped to HK Digital Policy Office guidelines ([Audit Trail Edition](https://github.com/jackylawck/hk-dpo-ai-governance_rag)).
 * **[AI-Risk-Registry](https://github.com/jackylawck/AI-Risk-Registry):** Enterprise Shadow-AI registry mapping unsanctioned tool usage to ISO 27001 & ISO 42001 controls.
-* 🎙️ **[AskIf 現場互動戰情室](https://github.com/jackylawck/AskIf):** Enterprise-grade, zero-persistence live Q&A and stage moderation system for AGMs, executive summits, and town halls, powered by Cloudflare Workers & Durable Objects.
+* 🎙️ **[AskIf](https://github.com/jackylawck/AskIf):** Enterprise-grade, zero-persistence live Q&A and stage moderation system for AGMs, executive summits, and town halls, powered by Cloudflare Workers & Durable Objects.
 * **[HK Employment AI Advisor](https://github.com/jackylawck/hk-employment-ordinance):** Privacy-preserving hybrid RAG advisor for HK Cap. 57 workplace regulations.
 * **[TalentScout AI](https://github.com/jackylawck/TalentScout):** Algorithmic bias-mitigation ATS and competency quantification engine compliant with HK EOC standards.
 * **[board-dei-dashboard](https://github.com/jackylawck/board-dei-dashboard):** Executive workforce metrics and pay equity visualization tool with in-memory execution.
 * **[finbrief](https://github.com/jackylawck/finbrief):** Executive financial digest distilling annual disclosures into HKFRS-aligned risk briefs.
-* **[mgmt-faq (現代管理學實戰知識庫)](https://github.com/jackylawck/mgmt-faq):** Executive Management FAQ & Framework navigator aligned with CMI & ICPM for corporate change management.
+* **[mgmt-faq](https://github.com/jackylawck/mgmt-faq):** Executive Management FAQ & Framework navigator aligned with CMI & ICPM for corporate change management.
 
 ---
 
