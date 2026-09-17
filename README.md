@@ -21,12 +21,12 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 * 👥 **Executive HR Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes workforce transformation.
 * 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI oversight and enterprise risk management into board agendas.
+* ⚖️ **Cross-Border Dispute Resolution:** Designated **GBA Mediator (Department of Justice, HKSAR)** & APCAM Certified Trainer.
+* ☁️ **Cloud AI Architecture:** Officially Certified **Oracle Cloud Infrastructure (OCI) Generative AI Professional**.
 * 🔍 **Triple-ISO Lead Auditor:** 
   * **ISO/IEC 42001:2023** (Artificial Intelligence Management System - AIMS)
   * **ISO/IEC 27701:2019** (Privacy Information Management System - PIMS)
   * **ISO/IEC 27001:2022** (Information Security Management System - ISMS)
-* ☁️ **Cloud AI Architecture:** Officially Certified **Oracle Cloud Infrastructure (OCI) Generative AI Professional**.
-* ⚖️ **Cross-Border Dispute Resolution:** Designated **GBA Mediator (Department of Justice, HKSAR)** & APCAM Certified Trainer.
 * 🎓 **Academic Backbone:** Master of Laws (**LLM in Common Law**) & Master of Arts (**MA in Sociology**) from **The Chinese University of Hong Kong (CUHK)**.
 
 ---
