@@ -43,16 +43,16 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 * 👤 **Human Oversight:** [`docs/HUMAN_OVERSIGHT.md`](./docs/HUMAN_OVERSIGHT.md) — HITL escalation and decision redress safeguards.
 
 ### 🌟 Active Governance Workstations (核心管治專案)
-* **[EU AI Act FAQ & Navigator](https://github.com/jackylawck/euaiact-faq):** Bilingual (ZH/EN) compliance navigator for Regulation (EU) 2024/1689 covering risk tiering, GPAI obligations, and conformity assessments.
-* **[PCPD AI Privacy Sandbox](https://github.com/jackylawck/PCPD_ai_protection_framework):** Interactive compliance pre-audit sandbox based on the 2024 PCPD Model Framework ([Local RAG Edition](https://github.com/jackylawck/PCPD_ai_protection_framework_rag)).
-* **[HK-DPO GenAI Workstation](https://github.com/jackylawck/hk-dpo-ai-governance):** Deterministic 4-tier risk classification engine strictly mapped to HK Digital Policy Office guidelines ([Audit Trail Edition](https://github.com/jackylawck/hk-dpo-ai-governance_rag)).
-* **[AI-Risk-Registry](https://github.com/jackylawck/AI-Risk-Registry):** Enterprise Shadow-AI registry mapping unsanctioned tool usage to ISO 27001 & ISO 42001 controls.
-* 🎙️ **[AskIf](https://github.com/jackylawck/AskIf):** Enterprise-grade, zero-persistence live Q&A and stage moderation system for AGMs, executive summits, and town halls, powered by Cloudflare Workers & Durable Objects.
-* **[HK Employment AI Advisor](https://github.com/jackylawck/hk-employment-ordinance):** Privacy-preserving hybrid RAG advisor for HK Cap. 57 workplace regulations.
-* **[TalentScout AI](https://github.com/jackylawck/TalentScout):** Algorithmic bias-mitigation ATS and competency quantification engine compliant with HK EOC standards.
-* **[board-dei-dashboard](https://github.com/jackylawck/board-dei-dashboard):** Executive workforce metrics and pay equity visualization tool with in-memory execution.
-* **[finbrief](https://github.com/jackylawck/finbrief):** Executive financial digest distilling annual disclosures into HKFRS-aligned risk briefs.
-* **[mgmt-faq](https://github.com/jackylawck/mgmt-faq):** Executive Management FAQ & Framework navigator aligned with CMI & ICPM for corporate change management.
+* **[EU AI Act FAQ & Navigator 歐盟 AI 法案導航](https://github.com/jackylawck/euaiact-faq):** Bilingual (ZH/EN) compliance navigator for Regulation (EU) 2024/1689 covering risk tiering, GPAI obligations, and conformity assessments.
+* **[PCPD AI Privacy Protection Sandbox PCPD AI 私隱預審沙盒](https://github.com/jackylawck/PCPD_ai_protection_framework):** Interactive compliance pre-audit sandbox based on the 2024 PCPD Model Framework ([Local RAG Edition 地端檢索版](https://github.com/jackylawck/PCPD_ai_protection_framework_rag)).
+* **[HK-DPO GenAI Compliance Workstation 香港數字辦生成式 AI 合規工作站](https://github.com/jackylawck/hk-dpo-ai-governance):** Deterministic 4-tier risk classification engine strictly mapped to HK Digital Policy Office guidelines ([Audit Trail Edition 密碼學審計版](https://github.com/jackylawck/hk-dpo-ai-governance_rag)).
+* **[AI-Risk-Registry 影子 AI 風控註冊表](https://github.com/jackylawck/AI-Risk-Registry):** Enterprise Shadow-AI registry mapping unsanctioned tool usage to ISO 27001 & ISO 42001 controls.
+* 🎙️ **[AskIf 現場互動戰情室](https://github.com/jackylawck/AskIf):** Enterprise-grade, zero-persistence live Q&A and stage moderation system for AGMs, executive summits, and town halls, powered by Cloudflare Workers & Durable Objects.
+* **[HK Employment Ordinance AI Advisor 香港《僱傭條例》AI 合規顧問](https://github.com/jackylawck/hk-employment-ordinance):** Privacy-preserving hybrid RAG advisor for HK Cap. 57 workplace regulations.
+* **[TalentScout AI 慧聘 · 智析官](https://github.com/jackylawck/TalentScout):** Algorithmic bias-mitigation ATS and competency quantification engine compliant with HK EOC standards.
+* **[board-dei-dashboard 董事會 DEI 與薪酬平等儀表板](https://github.com/jackylawck/board-dei-dashboard):** Executive workforce metrics and pay equity visualization tool with in-memory execution.
+* **[finbrief 財報智析](https://github.com/jackylawck/finbrief):** Executive financial digest distilling annual disclosures into HKFRS-aligned risk briefs.
+* **[mgmt-faq 現代管理學實戰知識庫](https://github.com/jackylawck/mgmt-faq):** Executive Management FAQ & Framework navigator aligned with CMI & ICPM for corporate change management.
 
 ---
 
@@ -66,8 +66,9 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 * 🔑 **[Safe-Off 離線守密](https://github.com/jackylawck/Safe-Off):** Zero-knowledge, AES-GCM encrypted local credential vault.
 * 💼 **[ChequeEasy 支票易](https://github.com/jackylawck/ChequeEasy):** ISO 27001-compliant enterprise bilingual cheque converter with HKMA API integration.
 * 📊 **[SmartLeave 智休假](https://github.com/jackylawck/SmartLeave):** Statutory holiday planner and organizational risk index optimizer for HK HR leaders.
-* 📝 **[Daily-Off 離線日注](https://github.com/jackylawck/Daily-Off) / [Stillhollow 棲心樹洞](https://github.com/jackylawck/Stillhollow):** Encrypted local reflection tools with zero telemetry.
-* 🧮 **[SecUnit 秒換](https://github.com/jackylawck/SecUnit) / [WordWise 智識計](https://github.com/jackylawck/WordWise) / [Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** High-speed, zero-cloud utility calculation suites.
+* 📝 **[Daily-Off 離線日注](https://github.com/jackylawck/Daily-Off)** / **[Stillhollow 棲心樹洞](https://github.com/jackylawck/Stillhollow):** Encrypted local reflection tools with zero telemetry.
+* 🧮 **[SecUnit 秒換](https://github.com/jackylawck/SecUnit)** / **[WordWise 智識計](https://github.com/jackylawck/WordWise)** / **[Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** High-speed, zero-cloud utility calculation suites.
+* 🎯 **[Always-Celebrate 常慶功](https://github.com/jackylawck/Always-Celebrate):** OWASP-aligned offline team achievement and motivation tracker.
 
 ---
 
