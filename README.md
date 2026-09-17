@@ -17,7 +17,7 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 ---
 
-## 🛡️ Strategic Moat & Credentials (專業資質與戰略護城河)
+## 🛡️ Credentials (專業資質)
 
 * 👥 **Executive HR Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes workforce transformation.
 * 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI oversight and enterprise risk management into board agendas.
@@ -72,7 +72,7 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 ---
 
-## 🎮 Pillar III: Organizational Agility, P2P & Cognitive Matrix (敏捷互動與認知矩陣)
+## 🎮 Pillar III: Organizational Agility, P2P & Cognitive Matrix (互動與認知矩陣)
 
 > **"Reasoning without guesswork; engagement without surveillance."**  
 > 將演算法與去中心化通訊融入組織培訓、團隊競技與思維啟蒙。
@@ -89,7 +89,7 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 ---
 
-## 🌌 Pillar IV: J.A.R. · Joint Applied Research (數值模擬與科學探索)
+## 🌌 Pillar IV: J.A.R. · Joint Applied Research (科學探索)
 
 > **"Science is not abstract memorization, but an interactive, auditable, and living universe."**  
 > 聯合應用科學研究系列：利用 WebGL/WebGPU 與數值物理引擎，實現高保真度科研級視覺化與下一代科學探索。
