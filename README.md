@@ -19,14 +19,10 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 ---
 
-## 🪭 Core Philosophy: Simplicity & Human-Centricity (核心精神：以人為本・大巧不工)
+## 🪭 Core Philosophy: Simplicity & Human-Centricity (核心精神：以人為本・大巧不
+A lifelong learner navigating human capital, organizational transformation, and corporate governance. Anchored by a human-centric ethos, I venture into the AI landscape with reverence and curiosity—exploring how technology can genuinely remain in service of humanity.
 
-> **"Simplicity is the ultimate sophistication." — Leonardo da Vinci**  
-> **「簡單是複雜的最高境界。」—— 達文西**
-
-I am not a conventional software engineer, but a lifelong practitioner in human capital, organizational change, and corporate governance. Rooted in a **human-centric** ethos, I embrace generative AI with humility, treating code not as a barrier, but as a medium to empower people:
-
-我並非傳統科班出身的程序員，而是一位深耕人力資源、組織變革與企業管治的終身實踐者。秉持**「以人為本」**的初心，我帶著好奇與敬畏面對生成式 AI，讓技術回歸服務於人：
+我是一位在人力資源、組織變革與企業管治路上前行的終身學習者。秉持「以人為本」的初心，我懷著敬畏與好奇走進 AI 世界，探求如何讓科技始終保持服務於人的本質。
 
 * 🤝 **Human-AI Synergy with Humility (謙遜探索・人機協同)**:  
 * 🛡️ **Radical Simplicity & Zero-Trust (極簡運算・絕對尊重)**:  
