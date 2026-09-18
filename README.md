@@ -26,7 +26,7 @@ A lifelong learner navigating human capital, organizational transformation, and 
 
 * 🌱 **Human-Centric & Inclusive (以人為本・惠澤社群)** 
 * 🤝 **Human-AI Synergy with Humility (懷謹同行・人機協作)**  
-* 🛡️ **Radical Simplicity & Zero-Trust (極簡運算・恪守尊重)**  
+* 🛡️ **Radical Simplicity & Zero-Trust (極緻簡約・恪守尊重)**  
 
 ---
 
