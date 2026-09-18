@@ -13,7 +13,7 @@ Jacky Law is a Hong Kong-based Senior HR Executive (F.I.H.R.M.(HK)), corporate g
 </p>
 
 Bridging the gap between **Transformation**, **AI Governance**, and **Dispute Resolution**.  
-連繫**組織變革**、**AI 管治**與**爭議解決**的實踐者。
+連繫**組織變革**、**AI 治理**與**爭議解決**的實踐者。
 
 With 15+ years of corporate HR leadership, I transform high-level responsible AI principles into concrete enterprise controls. Beyond static compliance policies, I engineer production-ready prototypes to demonstrate **Governance-as-Code**, deterministic privacy preservation, and structural risk oversight.
 
