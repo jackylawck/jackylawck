@@ -19,18 +19,18 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 ---
 
-## 🪭 Core Philosophy: Simplicity & Human-Centricity (核心精神：以人為本・大巧不
+## 🪭 Core Philosophy: Simplicity & Human-Centricity (核心精神：以人為本・大巧不工)
 A lifelong learner navigating human capital, organizational transformation, and corporate governance. Anchored by a human-centric ethos, I venture into the AI landscape with reverence and curiosity—exploring how technology can genuinely remain in service of humanity.
 
 我是一位在人力資源、組織變革與企業管治路上前行的終身學習者。秉持「以人為本」的初心，我懷著敬畏與好奇走進 AI 世界，探求如何讓科技始終保持服務於人的本質。
 
-* 🤝 **Human-AI Synergy with Humility (謙遜探索・人機協同)**:  
-* 🛡️ **Radical Simplicity & Zero-Trust (極簡運算・絕對尊重)**:  
-* 🌸 **Human-Centric & Inclusive (以人為本・普惠大眾)**:  
-  
+* 🌱 **Human-Centric & Inclusive (以人為本・惠澤社群)** 
+* 🤝 **Human-AI Synergy with Humility (懷謹同行・人機協作)**  
+* 🛡️ **Radical Simplicity & Zero-Trust (極簡運算・恪守尊重)**  
+
 ---
 
-## 🛡️ Professional Credentials (專業資質與護城河)
+## 🛡️ Professional Credentials (專業資質)
 
 * 👥 **Executive HR Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes corporate transformation. (香港人力資源管理學會資深會員)
 * 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI and risk oversight into executive agendas. (香港董事學會資深會員)
