@@ -20,6 +20,7 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 ---
 
 ## 🪭 Core Philosophy: Simplicity & Human-Centricity (核心精神：以人為本・大巧不工)
+
 A lifelong learner navigating human capital, organizational transformation, and corporate governance. Anchored by a human-centric ethos, I venture into the AI landscape with reverence and curiosity—exploring how technology can genuinely remain in service of humanity.
 
 我是一位在人力資源、組織變革與企業管治路上前行的終身學習者。秉持「以人為本」的初心，我懷著敬畏與好奇走進 AI 世界，探求如何讓科技始終保持服務於人的本質。
@@ -56,6 +57,7 @@ A lifelong learner navigating human capital, organizational transformation, and 
 * 👤 **Human Oversight:** [`docs/HUMAN_OVERSIGHT.md`](./docs/HUMAN_OVERSIGHT.md) — HITL escalation and decision redress safeguards. (人機協同與補救機制)
 
 ### 🌟 Active Governance Workstations (核心管治專案)
+* **[The Veil 揭帷](https://github.com/jackylawck/veil):** Global sovereign UAP disclosure & declassification ledger enforcing Tier-1 auditability, cryptographic SHA-256 integrity, EAR/ITAR exemptions, and ISO 27001/42001 governance standards. (全球主權防衛與官方解密情報總帳・審計級開源情報庫)
 * **[EU AI Act FAQ & Navigator 歐盟 AI 法案導航](https://github.com/jackylawck/euaiact-faq):** Bilingual compliance navigator for Regulation (EU) 2024/1689 covering risk tiering, GPAI rules, and conformity assessments. (歐盟人工智能法案雙語導航手冊)
 * **[PCPD AI Privacy Protection Sandbox PCPD AI 私隱預審沙盒](https://github.com/jackylawck/PCPD_ai_protection_framework):** Interactive compliance pre-audit sandbox based on the 2024 PCPD Model Framework ([Local RAG Edition 地端檢索版](https://github.com/jackylawck/PCPD_ai_protection_framework_rag)). (基於 PCPD 模範框架之合規預審工作站)
 * **[HK-DPO GenAI Compliance Workstation 香港數字辦生成式 AI 合規工作站](https://github.com/jackylawck/hk-dpo-ai-governance):** Deterministic 4-tier risk classification engine strictly mapped to HK Digital Policy Office guidelines ([Audit Trail Edition 密碼學審計版](https://github.com/jackylawck/hk-dpo-ai-governance_rag)). (數字辦生成式 AI 決定性合規審計系統)
@@ -74,6 +76,7 @@ A lifelong learner navigating human capital, organizational transformation, and 
 > **Architectural Standard:** 100% Client-Side In-Memory Computing, Zero-Knowledge Encryption, and Zero Data Retention (ZDR).  
 > **核心標準：** 100% 本端記憶體運算、零伺服器留存、零日誌歸檔。
 
+* 🕊️ **[RailPeace 鐵和平](https://github.com/jackylawck/RailPeace):** A low-friction transit de-escalation cheatsheet for Hong Kong commuters, built with zero dependencies, WAAPI smoothness, and strict PDPO compliance. (香港鐵路通勤「低摩擦」避火拆彈心法卡・以人為本生活降溫工具)
 * 🔒 **[ClauseDiff 安心對](https://github.com/jackylawck/ClauseDiff):** Air-gapped, client-side legal contract & policy comparison diff engine. (離線純前端合約與政策版本比對工具)
 * 🛡️ **[Prompt-Off 離線淨言](https://github.com/jackylawck/Prompt-Off):** Deterministic PII masking and prompt sanitizer before external LLM ingestion. (本地端個人敏感資料去識別化與提示詞脫敏工具)
 * 🔑 **[Safe-Off 離線守密](https://github.com/jackylawck/Safe-Off):** Zero-knowledge, AES-GCM encrypted local credential vault. (基於 AES-GCM 之零知識純前端密鑰保險箱)
@@ -93,6 +96,8 @@ A lifelong learner navigating human capital, organizational transformation, and 
 * 🧩 **[Lawgic 羅輯 (Logic Games & Psychometrics)](https://github.com/jackylawck/lawgic):**
   * **Pure-Deduction Engine (純演繹益智矩陣):** 10+ puzzle types with SMT-verified unique solutions and zero-guessing proof. (數獨、迴路等 10+ 款世界賽事級益智題型，保證解空間唯一)
   * **High-Performance WASM (高效能運算):** Sub-5ms input latency powered by Rust + WASM, aligned with Piaget's stages and CHC psychometrics. (Rust 零拷貝核心驅動，對齊皮亞傑認知發展論與 CHC 智力模型)
+* 🏷️ **[Social Tag 到處留名](https://github.com/jackylawck/SocialTag):** Serverless P2P icebreaker & networking platform for corporate workshops with multi-room isolation, 50-player capacity guard, and Privacy-by-Design architecture. (企業培訓與團隊破冰社交貼名牌工具・純前端零後端 P2P 互動系統)
+* 💣 **[Number Bomb 開口中・數字炸彈](https://github.com/jackylawck/NumberBomb):** Lightweight, serverless party game featuring Pass & Play and WebRTC P2P multi-device sync, strict token-based authorization, and haptic tension pacing. (現代感純前端數字炸彈・支援單機傳機與 WebRTC 多人掃碼連線)
 * 🏆 **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):**
   * **Tournament Standard (賽事規範支援):** Fully compliant with Asia 12th Ed rules across 1v1, 3on3, and KOF team modes. (符合亞洲第 12 版官方競賽規格)
   * **WebRTC Live Sync (低延遲連線):** Multi-device instant synchronization across referee boards and spectators. (WebRTC 點對點多機即時投影與賽事計分)
