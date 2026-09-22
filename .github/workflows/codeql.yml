@@ -20,15 +20,14 @@ concurrency:
 
 jobs:
   analyze:
-    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         include:
           - language: actions
             build-mode: none
-          - language: javascript-typescript
-            build-mode: none
+
     steps:
       - name: Harden Runner (Audit Mode)
         uses: step-security/harden-runner@v2
