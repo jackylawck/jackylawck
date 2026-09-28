@@ -19,7 +19,7 @@ With 15+ years of corporate HR leadership, I transform high-level responsible AI
 
 ---
 
-## ⚖️ Core Philosophy: Simplicity & Human-Centricity (核心精神：以人為本・大巧不工)
+## ☯️ Core Philosophy: Simplicity & Human-Centricity (核心精神：以人為本・大巧不工)
 
 A lifelong learner navigating human capital, organizational transformation, and corporate governance. Anchored by a human-centric ethos, I venture into the AI landscape with reverence and curiosity—exploring how technology can genuinely remain in service of humanity.
 
