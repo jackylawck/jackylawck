@@ -99,14 +99,16 @@ A lifelong learner navigating human capital, organizational transformation, and 
 - 🧩 **[Lawgic 羅輯 (Logic Games & Psychometrics)](https://github.com/jackylawck/lawgic):**
   * **Pure-Deduction Engine (純演繹益智矩陣):** 10+ puzzle types with SMT-verified unique solutions and zero-guessing proof. (數獨、迴路等 10+ 款世界賽事級益智題型，保證解空間唯一)
   * **High-Performance WASM (高效能運算):** Sub-5ms input latency powered by Rust + WASM, aligned with Piaget's stages and CHC psychometrics. (Rust 零拷貝核心驅動，對齊皮亞傑認知發展論與 CHC 智力模型)
-- 🏷️ **[Social Tag 到處留名](https://github.com/jackylawck/SocialTag):** Serverless P2P icebreaker & networking platform for corporate workshops with multi-room isolation, 50-player capacity guard, and Privacy-by-Design architecture. (企業培訓與團隊破冰社交貼名牌工具・純前端零後端 P2P 互動系統)
-- 💣 **[Number Bomb 開口中・數字炸彈](https://github.com/jackylawck/NumberBomb):** Lightweight, serverless party game featuring Pass & Play and WebRTC P2P multi-device sync, strict token-based authorization, and haptic tension pacing. (現代感純前端數字炸彈・支援單機傳機與 WebRTC 多人掃碼連線)
 - 🏆 **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):**
   * **Tournament Standard (賽事規範支援):** Fully compliant with Asia 12th Ed rules across 1v1, 3on3, and KOF team modes. (符合亞洲第 12 版官方競賽規格)
   * **WebRTC Live Sync (低延遲連線):** Multi-device instant synchronization across referee boards and spectators. (WebRTC 點對點多機即時投影與賽事計分)
 - 🎭 **[Two Truths & A Lie 兩真一假](https://github.com/jackylawck/2truths1lie):**
   * **Agile Facilitation (敏捷培訓與破冰):** Designed for executive workshops with a 1200px projection mode and soft-pacing timers. (專為企業迎新與培訓設計之大螢幕互動破冰工具)
   * **Serverless P2P Privacy (無痕通訊架構):** Volatile in-memory WebRTC mesh architecture compliant with PDPO and GDPR erasure rights. (純記憶體點對點通訊，分頁關閉即刻銷毀數據)
+- 🏷️ **[Social Tag 到處留名](https://github.com/jackylawck/SocialTag):**
+  * **Serverless P2P icebreaker & networking platform for corporate workshops with multi-room isolation, 50-player capacity guard, and Privacy-by-Design architecture. (企業培訓與團隊破冰社交貼名牌工具・純前端零後端 P2P 互動系統)
+- 💣 **[Number Bomb 開口中・數字炸彈](https://github.com/jackylawck/NumberBomb):**
+  * **Lightweight, serverless party game featuring Pass & Play and WebRTC P2P multi-device sync, strict token-based authorization, and haptic tension pacing. (現代感純前端數字炸彈・支援單機傳機與 WebRTC 多人掃碼連線)
 
 ---
 
