@@ -31,7 +31,7 @@ A lifelong learner navigating human capital, organizational transformation, and 
 
 ---
 
-## 🛡️ Professional Credentials (專業資質)
+## 📜 Professional Credentials (專業資質)
 
 - 👥 **Executive HR Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes corporate transformation. (香港人力資源管理學會資深會員)
 - 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI and risk oversight into executive agendas. (香港董事學會資深會員)
