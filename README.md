@@ -106,9 +106,9 @@ A lifelong learner navigating human capital, organizational transformation, and 
   * **Agile Facilitation (敏捷培訓與破冰):** Designed for executive workshops with a 1200px projection mode and soft-pacing timers. (專為企業迎新與培訓設計之大螢幕互動破冰工具)
   * **Serverless P2P Privacy (無痕通訊架構):** Volatile in-memory WebRTC mesh architecture compliant with PDPO and GDPR erasure rights. (純記憶體點對點通訊，分頁關閉即刻銷毀數據)
 - 🏷️ **[Social Tag 到處留名](https://github.com/jackylawck/SocialTag):**
-  * **Serverless P2P icebreaker & networking platform for corporate workshops with multi-room isolation, 50-player capacity guard, and Privacy-by-Design architecture. (企業培訓與團隊破冰社交貼名牌工具・純前端零後端 P2P 互動系統)
+  * Serverless P2P icebreaker & networking platform for corporate workshops with multi-room isolation, 50-player capacity guard, and Privacy-by-Design architecture. (企業培訓與團隊破冰社交貼名牌工具・純前端零後端 P2P 互動系統)
 - 💣 **[Number Bomb 開口中・數字炸彈](https://github.com/jackylawck/NumberBomb):**
-  * **Lightweight, serverless party game featuring Pass & Play and WebRTC P2P multi-device sync, strict token-based authorization, and haptic tension pacing. (現代感純前端數字炸彈・支援單機傳機與 WebRTC 多人掃碼連線)
+  * Lightweight, serverless party game featuring Pass & Play and WebRTC P2P multi-device sync, strict token-based authorization, and haptic tension pacing. (現代感純前端數字炸彈・支援單機傳機與 WebRTC 多人掃碼連線)
 
 ---
 
