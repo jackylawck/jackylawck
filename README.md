@@ -112,7 +112,7 @@ A lifelong learner navigating human capital, organizational transformation, and 
 
 ---
 
-## 🌌 Pillar IV: J.A.R. · Joint Applied Research (數值模擬與科學探索)
+## 🔭 Pillar IV: J.A.R. · Joint Applied Research (數值模擬與科學探索)
 
 > **"Science is not abstract memorization, but an interactive, auditable, and living universe."**  
 > 聯合應用科學研究系列：利用 WebGL/WebGPU 與數值物理引擎，實現高保真度科研級視覺化與下一代科學探索。
