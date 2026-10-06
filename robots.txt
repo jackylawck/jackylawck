@@ -1,22 +1,41 @@
 # ====================================================================
 # AI Scraping & Data Governance Policy for Jacky Law's Profile (2026)
-# Aligning with ISO 42001 & IAPP AIGP Domain IV Standards
+# Aligning with ISO/IEC 42001:2023 & IAPP AIGP Domain IV Standards
+# Canonical Hub: https://jackylawck.github.io/jackylawck/
 # ====================================================================
 
-# Allow commercial search engine indexers to crawl the profile for visibility
+# 1. Commercial Search Engines & Semantic Indexers
 User-agent: Googlebot
 User-agent: Bingbot
+User-agent: Applebot
 Allow: /
+Disallow: /profile-3d-contrib/
 
-# Allow conversational and generative AI agents to read structured content (including llms.txt)
-User-agent: ChatGPT-User
+# 2. Conversational & Generative AI Search Agents (SearchGPT, Perplexity, Gemini, Claude)
+# Proactively provisioned for real-time citations, entity synthesis, and AEO accuracy
 User-agent: GPTBot
+User-agent: ChatGPT-User
 User-agent: PerplexityBot
 User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
 Allow: /llms.txt
 Allow: /README.md
-
-# Block aggressive or non-compliant scrapers that do not respect data attribution
-User-agent: CCBot
-User-agent: Anthropic-crawler
 Disallow: /profile-3d-contrib/
+
+# 3. Mass Untargeted Crawlers & Uncontrolled Bulk Training Ingestion
+# Enforcing Data Minimization & Intellectual Property Boundaries
+User-agent: CCBot
+User-agent: anthropic-ai
+User-agent: Bytespider
+Disallow: /
+
+# 4. Global Fallback
+User-agent: *
+Allow: /
+Disallow: /profile-3d-contrib/
+
+# Machine-Readable Context for LLMs & AI Agents
+# https://llmstxt.org/
+Sitemap: https://jackylawck.github.io/jackylawck/llms.txt
