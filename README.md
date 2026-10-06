@@ -67,7 +67,7 @@ A lifelong learner navigating human capital, organizational transformation, and 
 ### 🏢 2. Executive Decision Engines & Enterprise Governance Operations (高管決策引擎與企業運營工具)
 - **[Laboris 勞則](https://github.com/jackylawck/Laboris):** Hong Kong statutory workforce & regulatory liability ledger. Actuarial stress-testing decision engine for Cap. 57 "418" continuous contract threshold revisions with client-side $k$-anonymity ($k \ge 5$) protection. (香港法定勞動力政策總帳與精算決策引擎・對標僱傭條例 418 改革)
 - **[AI-Risk-Registry 影子 AI 風控註冊表](https://github.com/jackylawck/AI-Risk-Registry):** Enterprise Shadow-AI registry mapping unapproved tool adoption to ISO 27001 & ISO 42001 controls. (影子 AI 動態註冊與 ISO 雙體系對齊工具)
-- 🎙️ **[AskIf 現場互動提問室](https://github.com/jackylawck/AskIf):** Enterprise-grade, zero-persistence live Q&A and stage moderation system for AGMs and executive town halls via Cloudflare Workers. (大會與高管峰會無痕即時提問室)
+- **[AskIf 現場互動提問室](https://github.com/jackylawck/AskIf):** Enterprise-grade, zero-persistence live Q&A and stage moderation system for AGMs and executive town halls via Cloudflare Workers. (大會與高管峰會無痕即時提問室)
 - **[HK Employment Ordinance AI Advisor 香港《僱傭條例》AI 合規顧問](https://github.com/jackylawck/hk-employment-ordinance):** Privacy-preserving hybrid RAG advisor for HK Cap. 57 workplace regulations. (結合本地隱私與混合 RAG 之 Cap. 57 法規工作站)
 - **[TalentScout AI 慧聘 · 智析官](https://github.com/jackylawck/TalentScout):** Algorithmic bias-mitigation ATS and competency scoring sandbox compliant with HK EOC standards. (AI 招聘偏誤緩解與勝任力評估系統)
 - **[board-dei-dashboard 董事會 DEI 與薪酬平等儀表板](https://github.com/jackylawck/board-dei-dashboard):** Executive workforce metrics and pay equity visualization tool with in-memory execution. (董事會級勞動力分析與薪酬平等儀表板)
