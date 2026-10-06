@@ -53,7 +53,7 @@ A lifelong learner navigating human capital, organizational transformation, and 
 ### 📋 Audit & Transparency Artifacts (可審計合規基線)
 - 📊 **Model Architecture & Scope:** [`MODEL_CARD.md`](./MODEL_CARD.md) — Technical boundaries and operational scope. (模型卡與邊界定義)
 - 🔒 **Security & Disclosure:** [`SECURITY.md`](./SECURITY.md) — Zero Data Retention (ZDR) and incident response protocols. (安全與漏洞披露政策)
-- ⚠️ **Risk Assessment:** [`docs/RISK_ASSESSMENT.md`](./docs/RISK_ASSESSMENT.md) — Algorithmic hazard matrix and tiering. (演算法風險分級矩陣)
+- ⚠️️ **Risk Assessment:** [`docs/RISK_ASSESSMENT.md`](./docs/RISK_ASSESSMENT.md) — Algorithmic hazard matrix and tiering. (演算法風險分級矩陣)
 - 👤 **Human Oversight:** [`docs/HUMAN_OVERSIGHT.md`](./docs/HUMAN_OVERSIGHT.md) — HITL escalation and decision redress safeguards. (人機協同與補救機制)
 
 ### 🌟 Active Governance Workstations (核心管治專案)
@@ -80,6 +80,8 @@ A lifelong learner navigating human capital, organizational transformation, and 
 > **核心標準：** 100% 本端記憶體運算、零伺服器留存、零日誌歸檔。
 
 - 🕊️ **[RailPeace 鐵和平](https://github.com/jackylawck/RailPeace):** A low-friction transit de-escalation cheatsheet for Hong Kong commuters, built with zero dependencies, WAAPI smoothness, and strict PDPO compliance. (香港鐵路通勤「低摩擦」避火拆彈心法卡・以人為本生活降溫工具)
+- 🗝️ **[LeaveWell 留愛心安](https://github.com/jackylawck/LeaveWell):** Two-tier progressive disclosure emergency insurance vault. Features zero-knowledge PBKDF2 (600,000 iterations) + AES-GCM-256 encryption with physical memory clue cards. (純本機零伺服器家庭應急資產導航金庫・雙層漸進存取架構)
+- ⚡ **[ScanSign 一掃簽](https://github.com/jackylawck/ScanSign):** Enterprise-grade offline check-in PWA for 300+ guests. Powered by ECDSA P-256 asymmetric signatures and PBKDF2 + AES-256-GCM roster encryption. (企業級零伺服器離線加密簽到系統・支援飛航模式斷網核驗)
 - 🔒 **[ClauseDiff 安心對](https://github.com/jackylawck/ClauseDiff):** Air-gapped, client-side legal contract & policy comparison diff engine. (離線純前端合約與政策版本比對工具)
 - 🛡️ **[Prompt-Off 離線淨言](https://github.com/jackylawck/Prompt-Off):** Deterministic PII masking and prompt sanitizer before external LLM ingestion. (本地端個人敏感資料去識別化與提示詞脫敏工具)
 - 🔑 **[Safe-Off 離線守密](https://github.com/jackylawck/Safe-Off):** Zero-knowledge, AES-GCM encrypted local credential vault. (基於 AES-GCM 之零知識純前端密鑰保險箱)
@@ -99,16 +101,16 @@ A lifelong learner navigating human capital, organizational transformation, and 
 - 🧩 **[Lawgic 羅輯 (Logic Games & Psychometrics)](https://github.com/jackylawck/lawgic):**
   * **Pure-Deduction Engine (純演繹益智矩陣):** 10+ puzzle types with SMT-verified unique solutions and zero-guessing proof. (數獨、迴路等 10+ 款世界賽事級益智題型，保證解空間唯一)
   * **High-Performance WASM (高效能運算):** Sub-5ms input latency powered by Rust + WASM, aligned with Piaget's stages and CHC psychometrics. (Rust 零拷貝核心驅動，對齊皮亞傑認知發展論與 CHC 智力模型)
+- 🏢 **[Spatial & Deductive Reasoning Test 空間與邏輯演繹測試](https://github.com/jackylawck/Spatial-Deductive-Reasoning-Test):** Pure-deduction 4×4 skyscraper spatial reasoning sandbox powered by FastLineCSP solver with zero guessing, $G_v$/$G_f$ psychometrics, and rolling SHA-256 audit trails. (純前端 4×4 摩天透視空間演繹探索沙盒・確定性約束求解)
+- 📊 **[DISC Behavioral Assessment 行為偏好評估](https://github.com/jackylawck/DISC-Assessment):** Psychometrically sound Ipsative forced-choice architecture with dual-cost debiasing, NNPI standardized metrics, and client-side AES-GCM local report vaults. (企業級純前端雙面代價 DISC 行為評估工具)
+- 🏷️ **[Social Tag 到處留名](https://github.com/jackylawck/SocialTag):** Serverless P2P icebreaker & networking platform for corporate workshops with multi-room isolation, 50-player capacity guard, and Privacy-by-Design architecture. (企業培訓與團隊破冰社交貼名牌工具・純前端零後端 P2P 互動系統)
+- 💣 **[Number Bomb 開口中・數字炸彈](https://github.com/jackylawck/NumberBomb):** Lightweight, serverless party game featuring Pass & Play and WebRTC P2P multi-device sync, strict token-based authorization, and haptic tension pacing. (現代感純前端數字炸彈・支援單機傳機與 WebRTC 多人掃碼連線)
 - 🏆 **[BX-Score-Keeper 爆旋計分器](https://github.com/jackylawck/BX-Score-Keeper):**
   * **Tournament Standard (賽事規範支援):** Fully compliant with Asia 12th Ed rules across 1v1, 3on3, and KOF team modes. (符合亞洲第 12 版官方競賽規格)
   * **WebRTC Live Sync (低延遲連線):** Multi-device instant synchronization across referee boards and spectators. (WebRTC 點對點多機即時投影與賽事計分)
 - 🎭 **[Two Truths & A Lie 兩真一假](https://github.com/jackylawck/2truths1lie):**
   * **Agile Facilitation (敏捷培訓與破冰):** Designed for executive workshops with a 1200px projection mode and soft-pacing timers. (專為企業迎新與培訓設計之大螢幕互動破冰工具)
   * **Serverless P2P Privacy (無痕通訊架構):** Volatile in-memory WebRTC mesh architecture compliant with PDPO and GDPR erasure rights. (純記憶體點對點通訊，分頁關閉即刻銷毀數據)
-- 🏷️ **[Social Tag 到處留名](https://github.com/jackylawck/SocialTag):**
-  * Serverless P2P icebreaker & networking platform for corporate workshops with multi-room isolation, 50-player capacity guard, and Privacy-by-Design architecture. (企業培訓與團隊破冰社交貼名牌工具・純前端零後端 P2P 互動系統)
-- 💣 **[Number Bomb 開口中・數字炸彈](https://github.com/jackylawck/NumberBomb):**
-  * Lightweight, serverless party game featuring Pass & Play and WebRTC P2P multi-device sync, strict token-based authorization, and haptic tension pacing. (現代感純前端數字炸彈・支援單機傳機與 WebRTC 多人掃碼連線)
 
 ---
 
