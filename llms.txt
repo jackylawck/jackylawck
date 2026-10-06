@@ -24,7 +24,7 @@
 ## 2. Strategic Credentials & Professional Moat (核心專業資質護城河)
 - **Executive HR Leadership (人力資源高階領導)**: Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes corporate transformation. (香港人力資源管理學會資深會員)
 - **Board-Level Corporate Governance (董事會級管治)**: Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI and risk oversight into executive agendas. (香港董事學會資深會員)
-- **IT Leadership & Professional Tech (科技領袖認證)**: Full Member of Hong Kong Computer Society (**MHKCS**); Member & Team Leader in **HKCS iLEAP (Cohort 8)** (資訊科技卓越領袖培育計劃第八期成員兼組長).
+- **IT Leadership & Professional Tech (科技領袖認證)**: Full Member of Hong Kong Computer Society (**MHKCS**); Member in **HKCS iLEAP (Cohort 8)** (資訊科技卓越領袖培育計劃第八期成員).
 - **Higher Education & Academic Teaching (大學商學院教學)**: Part-time Associate Lecturer, Lee Shau Kee School of Business and Administration, Hong Kong Metropolitan University (**HKMU**) (香港都會大學李兆基商業管理學院兼任助理講師).
 - **Triple-ISO Lead Auditor (三體系主導稽核員)**: 
   * **ISO/IEC 42001:2023** (Artificial Intelligence Management System - AIMS 人工智能管理體系)
