@@ -44,3 +44,36 @@ All ground-truth knowledge bases, embeddings, and policy registries ingested int
 │         ▼                                                              │
 │ 5. Volatile Client Memory Ingestion (Runtime Zero Server Persistence)  │
 └────────────────────────────────────────────────────────────────────────┘
+
+```
+
+* **Quality Guardrails & Heuristic Filtering:** Context segments shorter than 50 words, non-reproducible drafts, or documents failing format schema validation are halted and dropped at ingestion time.
+* **Statistical Surge Circuit Breaker:** Any ingestion feed exhibiting anomalous payload variations ($\Delta M > \mu \pm 2.5\sigma$) triggers an automatic pipeline freeze to protect against upstream repository pollution.
+
+---
+
+## 3. Privacy-Preserving Minimization & Debiasing (ISO 42001 A.6.3)
+
+Prior to vector transformation or deterministic lookup indexing, raw documents undergo mandatory data sanitation:
+
+* **Complete PII Redaction:** Automated regex screening eliminates names, Hong Kong Identity Card (HKID) numbers, physical addresses, bank details, and personal telephone contacts.
+* **$k$-Anonymity Mathematical Floor ($k \ge 5$):** For actuarial or timesheet assessment modules (e.g., *Laboris*), any cohort sample smaller than 5 individuals terminates calculation immediately to eliminate indirect re-identification vectors.
+* **Epistemological Traceability:** Citations preserve exact statutory statutory paragraph anchors (e.g., `Cap. 57, Schedule 1, Section 3`), enabling 100% human-auditable reverse verification without relying on probabilistic inference.
+
+---
+
+## 4. End-to-End Cryptographic Lineage & Immutable Provenance
+
+To guarantee data non-repudiation and combat historical data manipulation:
+
+1. **SHA-256 Layer-1 Bitstream Fixity:** Every parsed chunk and exported release artifact produces an immutable SHA-256 cryptographic checksum stored adjacent to the release manifest.
+2. **Sigstore Keyless Transparency Anchoring:** Production digests are attested via Sigstore Cosign within isolated CI/CD workflows, recording cryptographic execution proofs onto the public Rekor transparency log.
+3. **Idempotent UUIDv5 Scoping:** All indicators, documents, and threat records inherit deterministic RFC 4122 UUIDv5 identifiers generated under authoritative namespaces, preventing identifier drift across recurring updates.
+
+---
+
+## 5. Data Disposal & Lifecycle Termination (ISO/IEC 27001 A.8.10)
+
+* **Zero-Persistence Ephemerality:** All end-user runtime inputs, uploaded rosters, or policy queries live strictly in local browser volatile memory (RAM).
+* **Session Auto-Purge:** Closing browser tabs, clearing caches, or navigating away forces an immediate memory wipe. Zero telemetry, logs, or secondary session records are retained on remote servers.
+* **Permanent Destruction of Workstation Artifacts:** Workstations require no remote database migrations or cloud backup buckets, completely nullifying data destruction liabilities under GDPR Article 17 and HK PDPO Principle 2.
