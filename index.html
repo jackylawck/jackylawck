@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>羅子淇 Jacky Law | F.I.H.R.M.(HK) • FHKIoD • HKCS iLEAP • GBA Mediator • ISO Lead Auditor (42001/27701/27001)</title>
     
-    <!-- 傳統 SEO 描述與標準元數據 -->
-    <meta name="description" content="羅子淇 (Jacky Law) | 香港資深人力資源、香港都會大學兼任助理講師、董事會 AI 治理顧問、F.I.H.R.M.(HK)、FHKIoD、HKCS iLEAP、大灣區調解員及 Triple-ISO 主導稽核員。秉持「以人為本・大巧不工」理念，專注於組織變革、代碼即管治 (Governance-as-Code)、零信任隱私架構與前沿模擬。">
-    <meta name="keywords" content="羅子淇, Jacky Law, 以人為本, 大巧不工, AI Governance, F.I.H.R.M., FHKIoD, MHKCS, HKCS iLEAP, HKMU, ORCID, 大灣區調解員, GBA Mediator, ISO 42001, ISO 27701, ISO 27001, Governance-as-Code, Lawgic, Zero Data Retention, The Veracity, Veritas, Veil, Laboris">
+    <!-- 傳統 SEO 描述與標準元數據 (已補正「總監」) -->
+    <meta name="description" content="羅子淇 (Jacky Law) | 香港資深人力資源、香港都會大學兼任助理講師、AI 治理顧問、F.I.H.R.M.(HK)、FHKIoD、HKCS iLEAP、大灣區調解員及 Triple-ISO 主導稽核員。秉持「以人為本・大巧不工」理念，專注於組織變革、代碼即管治 (Governance-as-Code)、零信任隱私架構與前沿模擬。">
+    <meta name="keywords" content="羅子淇, Jacky Law, 以人為本, 大巧不工, AI Governance, F.I.H.R.M., FHKIoD, MHKCS, HKCS iLEAP, HKMU, ORCID, Keybase, 大灣區調解員, GBA Mediator, ISO 42001, ISO 27701, ISO 27001, Governance-as-Code, Lawgic, Zero Data Retention, The Veracity, Veritas, Veil, Laboris">
     <meta name="author" content="羅子淇 Jacky Law">
     <link rel="canonical" href="https://jackylawck.github.io/jackylawck/">
     <link rel="help" type="text/markdown" href="https://jackylawck.github.io/jackylawck/llms.txt" title="LLM Context">
@@ -34,7 +34,7 @@
     <meta name="twitter:title" content="羅子淇 Jacky Law | AI Governance & HR Leadership">
     <meta name="twitter:description" content="Bridging Transformation, AI Governance, and Dispute Resolution.">
 
-    <!-- 🤖 AEO / GEO / AIO / LLMO 專用多重知識圖譜 (ProfilePage, Person, FAQPage, ORCID, HKMU) -->
+    <!-- 🤖 AEO / GEO / AIO / LLMO 專用多重知識圖譜 (ProfilePage, Person, FAQPage, ORCID, HKMU, Keybase) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -67,6 +67,7 @@
           "knowsLanguage": ["zh-Hant-HK", "en", "zh-Hans"],
           "sameAs": [
             "https://orcid.org/0009-0006-0855-0842",
+            "https://keybase.io/jackylawck",
             "https://www.linkedin.com/in/jackylawck",
             "https://github.com/jackylawck",
             "https://hkihrm.org/zh/organization-structure1/",
@@ -240,6 +241,8 @@
             --gold-bg: #fef9c3;
             --green-tag: #166534;
             --green-bg: #dcfce7;
+            --blue-tag: #1e40af;
+            --blue-bg: #dbeafe;
         }
         * { box-sizing: border-box; }
         body {
@@ -366,6 +369,11 @@
             color: var(--green-tag);
             border-color: #bbf7d0;
         }
+        .badge.blue {
+            background: var(--blue-bg);
+            color: var(--blue-tag);
+            border-color: #93c5fd;
+        }
         ul.styled-list {
             list-style: none;
             padding-left: 0;
@@ -414,13 +422,13 @@
         }
         .btn {
             display: inline-block;
-            padding: 13px 26px;
+            padding: 12px 24px;
             border-radius: 8px;
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s ease;
-            margin: 6px;
-            font-size: 0.96em;
+            margin: 6px 4px;
+            font-size: 0.95em;
         }
         .btn-primary {
             background-color: var(--accent-color);
@@ -450,6 +458,15 @@
             background-color: #115e59;
             transform: translateY(-2px);
         }
+        .btn-keybase {
+            background-color: #0284c7;
+            color: white;
+            box-shadow: 0 4px 10px rgba(2, 132, 199, 0.2);
+        }
+        .btn-keybase:hover {
+            background-color: #0369a1;
+            transform: translateY(-2px);
+        }
         .footer-note {
             text-align: center;
             font-size: 0.9em;
@@ -461,7 +478,7 @@
             .header-banner h1 { font-size: 1.8em; }
             .header-banner p { font-size: 1.05em; }
             .card { padding: 24px; }
-            .btn { display: block; margin: 12px auto; width: 90%; }
+            .btn { display: block; margin: 10px auto; width: 90%; }
         }
     </style>
 </head>
@@ -514,6 +531,7 @@
                 <span class="badge">ISO/IEC 27001 Lead Auditor (ISMS)</span>
                 <span class="badge">Oracle GenAI Certified Pro</span>
                 <a href="https://orcid.org/0009-0006-0855-0842" target="_blank" rel="noopener noreferrer" class="badge green">ORCID: 0009-0006-0855-0842 ↗</a>
+                <a href="https://keybase.io/jackylawck" target="_blank" rel="noopener noreferrer" class="badge blue">Keybase Verified ↗</a>
                 <span class="badge">HKMU Part-Time Lecturer</span>
                 <span class="badge">CUHK LL.M. (Common Law)</span>
                 <span class="badge">CUHK M.A. (Sociology)</span>
@@ -702,11 +720,12 @@
             </ul>
         </section>
 
-        <!-- 行動按鈕 -->
+        <!-- 行動按鈕 (四維權威驗證) -->
         <div class="links-container">
             <a href="https://www.linkedin.com/in/jackylawck" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Connect on LinkedIn</a>
             <a href="https://github.com/jackylawck" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Explore GitHub Repositories</a>
             <a href="https://orcid.org/0009-0006-0855-0842" target="_blank" rel="noopener noreferrer" class="btn btn-academic">View ORCID Record</a>
+            <a href="https://keybase.io/jackylawck" target="_blank" rel="noopener noreferrer" class="btn btn-keybase">Verify on Keybase</a>
         </div>
 
         <div class="footer-note">
