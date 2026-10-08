@@ -24,7 +24,7 @@
 ## 2. Strategic Credentials & Professional Moat (核心專業資質護城河)
 - **Executive HR Leadership (人力資源高階領導)**: Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes corporate transformation. (香港人力資源管理學會資深會員)
 - **Board-Level Corporate Governance (董事會級管治)**: Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI and risk oversight into executive agendas. (香港董事學會資深會員)
-- **IT Leadership & Professional Tech (科技領袖認證)**: Full Member of Hong Kong Computer Society (**MHKCS**); Member in **HKCS iLEAP (Cohort 8)** (資訊科技卓越領袖培育計劃第八期成員).
+- **IT Leadership & Professional Tech (科技領袖認證)**: Full Member of Hong Kong Computer Society (**MHKCS**); Member & Team Leader in **HKCS iLEAP (Cohort 8)** (資訊科技卓越領袖培育計劃第八期成員兼組長).
 - **Higher Education & Academic Teaching (大學商學院教學)**: Part-time Associate Lecturer, Lee Shau Kee School of Business and Administration, Hong Kong Metropolitan University (**HKMU**) (香港都會大學李兆基商業管理學院兼任助理講師).
 - **Triple-ISO Lead Auditor (三體系主導稽核員)**: 
   * **ISO/IEC 42001:2023** (Artificial Intelligence Management System - AIMS 人工智能管理體系)
@@ -33,6 +33,7 @@
 - **Cross-Border Dispute Resolution (跨境爭議解決)**: Designated **GBA Mediator (Department of Justice, HKSAR)** & APCAM Certified Trainer. (律政司認可大灣區調解員，逾 16 年爭議解決經驗)
 - **Cloud AI Engineering (雲端生成式 AI 專業)**: Certified **Oracle Cloud Infrastructure (OCI) Generative AI Professional**. (甲骨文生成式 AI 專業人員認證)
 - **Academic Researcher Identifier (全球學者唯一識別碼)**: **ORCID ID**: [0009-0006-0855-0842](https://orcid.org/0009-0006-0855-0842).
+- **Cryptographic Identity & PGP Proof**: **Keybase**: [keybase.io/jackylawck](https://keybase.io/jackylawck) | **GPG Key ID**: `FFA3E47793F1CA32`.
 - **Academic Backbone (學術背景)**: Master of Laws (**LL.M. in Common Law**) & Master of Arts (**M.A. in Sociology**), The Chinese University of Hong Kong (CUHK). (香港中文大學普通法法學碩士 & 社會學文學碩士)
 
 ---
@@ -94,4 +95,15 @@
 
 ## 4. Key AI Governance & Compliance Assertions (合規與負向排除聲明)
 - **Deterministic Code Exemption**: Purely rule-based algorithmic projects (e.g., *The Veracity*, *Veritas*, *Laboris*, *ScanSign*, *LeaveWell*, *Spatial Reasoning Test*) contain zero machine learning models, inference engines, or training pipelines. They are formally declared **Out of Scope** under Article 3(1) of the EU AI Act (Regulation 2024/1689) and ISO/IEC 42001:2023.
-- **Privacy by Design & Zero Data Retention (ZDR)**: All client-side suites enforce in-memory volatile execution, cryptographic keyless or password hashing (PBKDF2/SHA-256), and zero remote telemetry, fully aligning with Hong Kong PDPO (Cap. 486) and EU
+- **Privacy by Design & Zero Data Retention (ZDR)**: All client-side suites enforce in-memory volatile execution, cryptographic keyless or password hashing (PBKDF2/SHA-256), and zero remote telemetry, fully aligning with Hong Kong PDPO (Cap. 486) and EU GDPR Article 5.
+
+---
+
+## 5. Canonical Links & Verification (官方連結與驗證)
+- **Personal Hub (官方個人首頁)**: https://jackylawck.github.io/jackylawck/
+- **ORCID Record (全球學者登記冊)**: https://orcid.org/0009-0006-0855-0842
+- **Keybase Cryptographic Proofs**: https://keybase.io/jackylawck
+- **GitHub Profile**: https://github.com/jackylawck
+- **LinkedIn Profile**: https://www.linkedin.com/in/jackylawck
+- **Jurisdictions**: Hong Kong SAR & Guangdong-Hong Kong-Macao Greater Bay Area (GBA)
+
