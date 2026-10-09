@@ -39,7 +39,7 @@ A lifelong learner navigating human capital, organizational transformation, and 
 
 - 👥 **Executive HR Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes corporate transformation. (香港人力資源管理學會資深會員)
 - 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI and risk oversight into executive agendas. (香港董事學會資深會員)
-- 💻 **IT Leadership & Tech:** Full Member of HKCS ([**MHKCS Verified Credential**](https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb)); Member & Team Leader in **HKCS iLEAP (Cohort 8)**. (香港電腦學會全資格會員及資訊科技卓越領袖培育計劃第八期成員兼組長)
+- 💻 **IT Leadership & Tech:** Full Member of HKCS ([**MHKCS Verified Credential**](https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb)); Member in **HKCS iLEAP (Cohort 8)**. (香港電腦學會全資格會員及資訊科技卓越領袖培育計劃第八期成員)
 - 🎓 **Higher Education Teaching:** Part-time Associate Lecturer, Lee Shau Kee School of Business and Administration, Hong Kong Metropolitan University (**HKMU**). (香港都會大學李兆基商業管理學院兼任助理講師)
 - ⚖️ **Cross-Border Dispute Resolution:** Designated **GBA Mediator (Department of Justice, HKSAR)** & APCAM Certified Trainer. (律政司認可大灣區調解員)
 - ☁️ **Cloud AI Architecture:** Officially Certified [**Oracle Cloud Infrastructure (OCI) 2025 Generative AI Professional**](https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096). (甲骨文生成式 AI 專業認證)
