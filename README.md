@@ -99,7 +99,7 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 > **Architectural Standard:** 100% Client-Side In-Memory Computing, Zero-Knowledge Encryption, and Zero Data Retention (ZDR).  
 > **核心標準：** 100% 本端記憶體運算、零伺服器留存、零日誌歸檔。
 
-- 🌿 **[PauseWell 安心歇](https://jackylawck.github.io/PauseWell/)** *(New)*: A Zero-Telemetry, Local-First Career Transition Operating System & Resilience Anchor. Engineered with daily habit anchors, debounced pipeline tracking, automated overdue alerts, and objective weekly conversion audits. Fully compliant with HK PDPO and GDPR Art. 25 Privacy-by-Design. (純本機求職節奏與心態日誌・空窗期彈性修整系統)
+- 🌿 **[PauseWell 安心歇](https://jackylawck.github.io/PauseWell/):** A Zero-Telemetry, Local-First Career Transition Operating System & Resilience Anchor. Engineered with daily habit anchors, debounced pipeline tracking, automated overdue alerts, and objective weekly conversion audits. Fully compliant with HK PDPO and GDPR Art. 25 Privacy-by-Design. (純本機求職節奏與心態日誌・空窗期彈性修整系統)
 - 🗝 **[LeaveWell 留愛心安](https://github.com/jackylawck/LeaveWell):** Two-tier progressive disclosure emergency insurance vault. Features zero-knowledge PBKDF2 (600,000 iterations) + AES-GCM-256 encryption with physical memory clue cards. (純本機零伺服器家庭應急資產導航金庫・雙層漸進存取架構)
 - ⚡ **[ScanSign 一掃簽](https://github.com/jackylawck/ScanSign):** Enterprise-grade offline check-in PWA for 300+ guests. Powered by ECDSA P-256 asymmetric signatures and PBKDF2 + AES-256-GCM roster encryption. (企業級零伺服器離線加密簽到系統・支援飛航模式斷網核驗)
 - 🕊️ **[RailPeace 鐵和平](https://github.com/jackylawck/RailPeace):** A low-friction transit de-escalation cheatsheet for Hong Kong commuters, built with zero dependencies, WAAPI smoothness, and strict PDPO compliance. (香港鐵路通勤「低摩擦」避火拆彈心法卡・以人為本生活降溫工具)
@@ -122,7 +122,7 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - 🧩 **[Lawgic 羅輯 (Logic Games & Psychometrics)](https://github.com/jackylawck/lawgic):**
   * **Pure-Deduction Engine (純演繹益智矩陣):** 10+ puzzle types with SMT-verified unique solutions and zero-guessing proof. (數獨、迴路等 10+ 款世界賽事級益智題型，保證解空間唯一)
   * **High-Performance WASM (高效能運算):** Sub-5ms input latency powered by Rust + WASM, aligned with Piaget's stages and CHC psychometrics. (Rust 零拷貝核心驅動，對齊皮亞傑認知發展論與 CHC 智力模型)
-- 🧭 **[Nature Compass 見性羅盤](https://github.com/jackylawck/NatureCompass)** *(New)*:
+- 🧭 **[Nature Compass 見性羅盤](https://github.com/jackylawck/NatureCompass):**
   * **Deterministic Ipsative Psychometrics:** Zero-server, client-side behavioral exploration sandbox featuring 24 balanced forced-choice sets, zero-sum net verification, +24 baseline shifting, and Hamilton-Hare Largest Remainder Method.
   * **Pure Vector SVG & A11y:** Native trigonometric rendering without third-party chart dependencies, keyboard shortcuts navigation (`1-4`, `Q-R`), and print-calibrated A4 PDF outputs.
   * **Strict Regulatory Governance:** Explicitly excluded from high-stakes selection under EU AI Act mandates; documented under a comprehensive Governance Charter and Psychometric Boundaries. (純前端確定性自比計量沙盒・高管教練與團隊覺察工具)
