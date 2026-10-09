@@ -365,7 +365,7 @@
             border-color: #93c5fd;
         }
         
-        /* 🚀 精簡版四大支柱佈局樣式 */
+        /* 🚀 做法二：原生細節摺疊與晶片標籤樣式 */
         .pillar-grid {
             display: flex;
             flex-direction: column;
@@ -376,7 +376,7 @@
             background: #f8fafc;
             border: 1px solid var(--border-color);
             border-radius: 10px;
-            padding: 16px 20px;
+            padding: 18px 20px;
         }
         .pillar-row-title {
             font-weight: 700;
@@ -390,7 +390,7 @@
         .pillar-row-desc {
             font-size: 0.93em;
             color: var(--text-sub);
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             line-height: 1.6;
         }
         .pillar-links {
@@ -401,7 +401,7 @@
         .pillar-chip {
             background: #ffffff;
             border: 1px solid #cbd5e1;
-            padding: 3px 10px;
+            padding: 4px 11px;
             border-radius: 6px;
             font-size: 12px;
             font-weight: 600;
@@ -420,6 +420,29 @@
             background: var(--accent-color);
             color: #ffffff;
             border-color: var(--accent-color);
+        }
+        
+        /* 原生 details / summary 輕量排版 */
+        details.more-projects {
+            margin-top: 12px;
+            border-top: 1px dashed var(--border-color);
+            padding-top: 10px;
+        }
+        details.more-projects summary {
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748b;
+            cursor: pointer;
+            user-select: none;
+            outline: none;
+            transition: color 0.15s ease;
+        }
+        details.more-projects summary:hover {
+            color: var(--accent-color);
+        }
+        details.more-projects[open] summary {
+            margin-bottom: 10px;
+            color: var(--primary-color);
         }
 
         ul.styled-list {
@@ -464,13 +487,13 @@
         }
         .btn {
             display: inline-block;
-            padding: 12px 20px;
+            padding: 12px 24px;
             border-radius: 8px;
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s ease;
             margin: 6px 4px;
-            font-size: 0.93em;
+            font-size: 0.95em;
         }
         .btn-primary {
             background-color: var(--accent-color);
@@ -506,15 +529,6 @@
         }
         .btn-keybase:hover {
             background-color: #0369a1;
-            transform: translateY(-2px);
-        }
-        .btn-credly {
-            background-color: #92400e;
-            color: white;
-            box-shadow: 0 4px 10px rgba(146, 64, 14, 0.2);
-        }
-        .btn-credly:hover {
-            background-color: #78350f;
             transform: translateY(-2px);
         }
         .footer-note {
@@ -589,7 +603,7 @@
             </p>
         </section>
 
-        <!-- 🚀 精煉版：四大支柱合一 (結構清晰・完整納入 PauseWell 與 Nature Compass) -->
+        <!-- 🚀 做法二：四大支柱整合 + 原生 details 展開展示全量專案 -->
         <section class="card">
             <h2><span>🏛</span> Four-Pillar Strategic Workstations (四大支柱開源工程與管治矩陣)</h2>
             <p style="color: var(--text-sub); margin-bottom: 16px;">
@@ -597,12 +611,13 @@
             </p>
 
             <div class="pillar-grid">
-                <!-- Pillar I -->
+                <!-- Pillar I: Enterprise AI Governance -->
                 <div class="pillar-row">
                     <div class="pillar-row-title"><span>🏛</span> Pillar I: Enterprise AI Governance & Decision Engines</div>
                     <div class="pillar-row-desc">
                         涵蓋主權歷史解密管線（74 國檔案）、跨國防偽 STIX 2.1 威脅情報、僱傭條例 Cap. 57 精算引擎與法規沙盒。
                     </div>
+                    <!-- 核心重點項目 -->
                     <div class="pillar-links">
                         <a class="pillar-chip" href="https://github.com/jackylawck/Veracity" target="_blank" rel="noopener noreferrer">The Veracity 揭古</a>
                         <a class="pillar-chip" href="https://github.com/jackylawck/Veritas" target="_blank" rel="noopener noreferrer">Veritas 揭偽</a>
@@ -610,17 +625,29 @@
                         <a class="pillar-chip" href="https://github.com/jackylawck/veil" target="_blank" rel="noopener noreferrer">The Veil 揭帷</a>
                         <a class="pillar-chip" href="https://github.com/jackylawck/PCPD_ai_protection_framework" target="_blank" rel="noopener noreferrer">PCPD AI 沙盒</a>
                         <a class="pillar-chip" href="https://github.com/jackylawck/hk-dpo-ai-governance" target="_blank" rel="noopener noreferrer">數字辦合規站</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/TalentScout" target="_blank" rel="noopener noreferrer">TalentScout 慧聘</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/AskIf" target="_blank" rel="noopener noreferrer">AskIf 提問室</a>
                     </div>
+                    <!-- 原生摺疊：更多專案 -->
+                    <details class="more-projects">
+                        <summary>展開更多本領域專案 (6 個) ▾</summary>
+                        <div class="pillar-links" style="margin-top: 8px;">
+                            <a class="pillar-chip" href="https://github.com/jackylawck/euaiact-faq" target="_blank" rel="noopener noreferrer">歐盟 AI 法案導航</a>
+                            <a class="pillar-chip" href="https://github.com/jackylawck/TalentScout" target="_blank" rel="noopener noreferrer">TalentScout 慧聘 (DEI)</a>
+                            <a class="pillar-chip" href="https://github.com/jackylawck/board-dei-dashboard" target="_blank" rel="noopener noreferrer">董事會 DEI 儀表板</a>
+                            <a class="pillar-chip" href="https://github.com/jackylawck/finbrief" target="_blank" rel="noopener noreferrer">finbrief 財報智析</a>
+                            <a class="pillar-chip" href="https://github.com/jackylawck/mgmt-faq" target="_blank" rel="noopener noreferrer">現代管理學知識庫</a>
+                            <a class="pillar-chip" href="https://github.com/jackylawck/AI-Risk-Registry" target="_blank" rel="noopener noreferrer">影子 AI 風控註冊表</a>
+                            <a class="pillar-chip" href="https://github.com/jackylawck/AskIf" target="_blank" rel="noopener noreferrer">AskIf 現場提問室</a>
+                        </div>
+                    </details>
                 </div>
 
-                <!-- Pillar II -->
+                <!-- Pillar II: Zero-Trust PWA Suite -->
                 <div class="pillar-row">
                     <div class="pillar-row-title"><span>⚡</span> Pillar II: Zero-Trust & Privacy-by-Design PWA Suite</div>
                     <div class="pillar-row-desc">
                         100% 純前端本機記憶體運算、零伺服器留存（ZDR）、零知識 AES-GCM / ECDSA 加密工具鏈。
                     </div>
+                    <!-- 核心重點項目 -->
                     <div class="pillar-links">
                         <a class="pillar-chip highlight" href="https://jackylawck.github.io/PauseWell/" target="_blank" rel="noopener noreferrer">PauseWell 安心歇 ✦</a>
                         <a class="pillar-chip" href="https://jackylawck.github.io/LeaveWell/" target="_blank" rel="noopener noreferrer">LeaveWell 留愛心安</a>
@@ -628,43 +655,70 @@
                         <a class="pillar-chip" href="https://github.com/jackylawck/RailPeace" target="_blank" rel="noopener noreferrer">RailPeace 鐵和平</a>
                         <a class="pillar-chip" href="https://jackylawck.github.io/ClauseDiff/" target="_blank" rel="noopener noreferrer">ClauseDiff 安心對</a>
                         <a class="pillar-chip" href="https://jackylawck.github.io/Prompt-Off/" target="_blank" rel="noopener noreferrer">Prompt-Off 離線淨言</a>
-                        <a class="pillar-chip" href="https://jackylawck.github.io/Safe-Off/" target="_blank" rel="noopener noreferrer">Safe-Off 離線守密</a>
-                        <a class="pillar-chip" href="https://jackylawck.github.io/SmartLeave/" target="_blank" rel="noopener noreferrer">SmartLeave 智休假</a>
-                        <a class="pillar-chip" href="https://jackylawck.github.io/ChequeEasy/" target="_blank" rel="noopener noreferrer">ChequeEasy 支票易</a>
                     </div>
+                    <!-- 原生摺疊：更多專案 -->
+                    <details class="more-projects">
+                        <summary>展開更多本領域專案 (8 個) ▾</summary>
+                        <div class="pillar-links" style="margin-top: 8px;">
+                            <a class="pillar-chip" href="https://jackylawck.github.io/Safe-Off/" target="_blank" rel="noopener noreferrer">Safe-Off 離線守密</a>
+                            <a class="pillar-chip" href="https://jackylawck.github.io/SmartLeave/" target="_blank" rel="noopener noreferrer">SmartLeave 智休假</a>
+                            <a class="pillar-chip" href="https://jackylawck.github.io/ChequeEasy/" target="_blank" rel="noopener noreferrer">ChequeEasy 支票易</a>
+                            <a class="pillar-chip" href="https://jackylawck.github.io/Daily-Off/" target="_blank" rel="noopener noreferrer">Daily-Off 離線日注</a>
+                            <a class="pillar-chip" href="https://jackylawck.github.io/Stillhollow/" target="_blank" rel="noopener noreferrer">Stillhollow 棲心樹洞</a>
+                            <a class="pillar-chip" href="https://jackylawck.github.io/SecUnit/" target="_blank" rel="noopener noreferrer">SecUnit 秒換</a>
+                            <a class="pillar-chip" href="https://jackylawck.github.io/WordWise/" target="_blank" rel="noopener noreferrer">WordWise 智識計</a>
+                            <a class="pillar-chip" href="https://jackylawck.github.io/Calc-OFF/" target="_blank" rel="noopener noreferrer">Calc-OFF 離線算籌</a>
+                        </div>
+                    </details>
                 </div>
 
-                <!-- Pillar III -->
+                <!-- Pillar III: Agility & Cognitive Matrix -->
                 <div class="pillar-row">
                     <div class="pillar-row-title"><span>🎮</span> Pillar III: Agility, P2P & Cognitive Matrix</div>
                     <div class="pillar-row-desc">
                         拒絕盲目猜測的純邏輯演繹運算（Rust/WASM SMT）、確定性自比計量（Hamilton-Hare 最大餘數法）與企業 WebRTC 破冰互動。
                     </div>
+                    <!-- 核心重點項目 -->
                     <div class="pillar-links">
                         <a class="pillar-chip highlight" href="https://github.com/jackylawck/NatureCompass" target="_blank" rel="noopener noreferrer">Nature Compass 見性羅盤 ✦</a>
                         <a class="pillar-chip" href="https://github.com/jackylawck/lawgic" target="_blank" rel="noopener noreferrer">Lawgic 羅輯 (Rust/WASM)</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/Spatial-Deductive-Reasoning-Test" target="_blank" rel="noopener noreferrer">空間與邏輯測試</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/DISC-Assessment" target="_blank" rel="noopener noreferrer">DISC 行為評估</a>
+                        <a class="pillar-chip" href="https://github.com/jackylawck/Spatial-Deductive-Reasoning-Test" target="_blank" rel="noopener noreferrer">空間與邏輯演繹測試</a>
+                        <a class="pillar-chip" href="https://github.com/jackylawck/DISC-Assessment" target="_blank" rel="noopener noreferrer">DISC 行為偏好評估</a>
                         <a class="pillar-chip" href="https://github.com/jackylawck/BX-Score-Keeper" target="_blank" rel="noopener noreferrer">BX-Score-Keeper 爆旋計分器</a>
                         <a class="pillar-chip" href="https://github.com/jackylawck/SocialTag" target="_blank" rel="noopener noreferrer">Social Tag 到處留名</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/NumberBomb" target="_blank" rel="noopener noreferrer">數字炸彈</a>
                     </div>
+                    <!-- 原生摺疊：更多專案 -->
+                    <details class="more-projects">
+                        <summary>展開更多本領域專案 (2 個) ▾</summary>
+                        <div class="pillar-links" style="margin-top: 8px;">
+                            <a class="pillar-chip" href="https://github.com/jackylawck/NumberBomb" target="_blank" rel="noopener noreferrer">Number Bomb 數字炸彈</a>
+                            <a class="pillar-chip" href="https://github.com/jackylawck/2truths1lie" target="_blank" rel="noopener noreferrer">Two Truths & A Lie 兩真一假</a>
+                        </div>
+                    </details>
                 </div>
 
-                <!-- Pillar IV -->
+                <!-- Pillar IV: J.A.R. Frontier Physics -->
                 <div class="pillar-row">
                     <div class="pillar-row-title"><span>🔭</span> Pillar IV: J.A.R. · Joint Applied Research</div>
                     <div class="pillar-row-desc">
                         將廣義相對論、托卡馬克核聚變及 6-DoF 航天相對軌道動力學化為即時純前端數值物理模擬。
                     </div>
+                    <!-- 核心重點項目 -->
                     <div class="pillar-links">
                         <a class="pillar-chip" href="https://github.com/jackylawck/JAR-Black-Hole" target="_blank" rel="noopener noreferrer">JAR 黑洞奇異點</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/jar-fusion-core" target="_blank" rel="noopener noreferrer">JAR 聚變核心</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/JAR-Above-Tiangong" target="_blank" rel="noopener noreferrer">JAR 天宮之上</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/JAR-Skybound" target="_blank" rel="noopener noreferrer">JAR 衝上雲霄</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/JarAscent" target="_blank" rel="noopener noreferrer">JarAscent 躍上穹蒼</a>
-                        <a class="pillar-chip" href="https://github.com/jackylawck/Jayblade" target="_blank" rel="noopener noreferrer">Jayblade 爆上陀螺</a>
+                        <a class="pillar-chip" href="https://github.com/jackylawck/jar-fusion-core" target="_blank" rel="noopener noreferrer">JAR 聚變核心 (Tokamak)</a>
+                        <a class="pillar-chip" href="https://github.com/jackylawck/JAR-Above-Tiangong" target="_blank" rel="noopener noreferrer">JAR 天宮之上 (6-DoF)</a>
+                        <a class="pillar-chip" href="https://github.com/jackylawck/JAR-Skybound" target="_blank" rel="noopener noreferrer">JAR 衝上雲霄 (NASA CRM)</a>
                     </div>
+                    <!-- 原生摺疊：更多專案 -->
+                    <details class="more-projects">
+                        <summary>展開更多本領域專案 (3 個) ▾</summary>
+                        <div class="pillar-links" style="margin-top: 8px;">
+                            <a class="pillar-chip" href="https://github.com/jackylawck/JarAscent" target="_blank" rel="noopener noreferrer">JarAscent 躍上穹蒼 (RK4)</a>
+                            <a class="pillar-chip" href="https://github.com/jackylawck/JAR-Beyond-the-Hand" target="_blank" rel="noopener noreferrer">JAR 在手之上 (CCD-IK)</a>
+                            <a class="pillar-chip" href="https://github.com/jackylawck/Jayblade" target="_blank" rel="noopener noreferrer">Jayblade 爆上陀螺 (240Hz)</a>
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
@@ -695,7 +749,7 @@
             </ul>
         </section>
 
-        <!-- 行動按鈕 (多維權威存證全面直通) -->
+        <!-- 行動按鈕 (四維對稱黃金矩陣：商界、工程、學術、密碼學身分) -->
         <div class="links-container">
             <a href="https://www.linkedin.com/in/jackylawck" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Connect on LinkedIn</a>
             <a href="https://github.com/jackylawck" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Explore GitHub Repositories</a>
