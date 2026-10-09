@@ -8,7 +8,9 @@ Who is Jacky Law? Jacky Law (羅子淇) is a Hong Kong-based Senior HR Executive
 <p align="left">
   <a href="https://www.hkihrm.org/" target="_blank"><img src="https://img.shields.io/badge/F.I.H.R.M._(HK)-Fellow_Member-1E3A8A?style=flat-square&logo=handshake&logoColor=white" alt="HKIHRM Fellow"></a>
   <a href="https://www.hkiod.com/" target="_blank"><img src="https://img.shields.io/badge/FHKIoD-Fellow-D4AF37?style=flat-square&logo=pages&logoColor=white" alt="HKIoD Fellow"></a>
-  <a href="https://www.hkcs.org.hk/" target="_blank"><img src="https://img.shields.io/badge/HKCS-iLEAP_Cohort_8-1E4D2B?style=flat-square&logo=cpu&logoColor=white" alt="HKCS iLEAP"></a>
+  <a href="https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb" target="_blank"><img src="https://img.shields.io/badge/MHKCS-Verified_Credential-1E4D2B?style=flat-square&logo=cpu&logoColor=white" alt="HKCS Verified"></a>
+  <a href="https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url" target="_blank"><img src="https://img.shields.io/badge/Triple--ISO_Lead_Auditor-Credly_Verified-D4AF37?style=flat-square&logo=credly&logoColor=white" alt="Credly Triple-ISO"></a>
+  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096" target="_blank"><img src="https://img.shields.io/badge/Oracle_GenAI-Certified_Pro-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle GenAI Certified"></a>
   <a href="https://www.doj.gov.hk/" target="_blank"><img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator"></a>
   <a href="https://orcid.org/0009-0006-0855-0842" target="_blank"><img src="https://img.shields.io/badge/ORCID-0009--0006--0855--0842-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID"></a>
   <a href="https://keybase.io/jackylawck" target="_blank"><img src="https://img.shields.io/badge/Keybase-Verified-33A0FF?style=flat-square&logo=keybase&logoColor=white" alt="Keybase Verified"></a>
@@ -37,13 +39,13 @@ A lifelong learner navigating human capital, organizational transformation, and 
 
 - 👥 **Executive HR Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes corporate transformation. (香港人力資源管理學會資深會員)
 - 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI and risk oversight into executive agendas. (香港董事學會資深會員)
-- 💻 **IT Leadership & Tech:** Full Member of HKCS (**MHKCS**); Member & Team Leader in **HKCS iLEAP (Cohort 8)**. (香港電腦學會資訊科技卓越領袖培育計劃第八期成員兼組長)
+- 💻 **IT Leadership & Tech:** Full Member of HKCS ([**MHKCS Verified Credential**](https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb)); Member & Team Leader in **HKCS iLEAP (Cohort 8)**. (香港電腦學會全資格會員及資訊科技卓越領袖培育計劃第八期成員兼組長)
 - 🎓 **Higher Education Teaching:** Part-time Associate Lecturer, Lee Shau Kee School of Business and Administration, Hong Kong Metropolitan University (**HKMU**). (香港都會大學李兆基商業管理學院兼任助理講師)
 - ⚖️ **Cross-Border Dispute Resolution:** Designated **GBA Mediator (Department of Justice, HKSAR)** & APCAM Certified Trainer. (律政司認可大灣區調解員)
-- ☁️ **Cloud AI Architecture:** Officially Certified **Oracle Cloud Infrastructure (OCI) Generative AI Professional**. (甲骨文生成式 AI 專業認證)
-- 🔍 **Triple-ISO Lead Auditor (三體系主導稽核員):** 
+- ☁️ **Cloud AI Architecture:** Officially Certified [**Oracle Cloud Infrastructure (OCI) 2025 Generative AI Professional**](https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096). (甲骨文生成式 AI 專業認證)
+- 🔍 **Triple-ISO Lead Auditor (三體系主導稽核員):** [**Credly Verified: Fellow of Management Systems Auditing**](https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url)
   * **ISO/IEC 42001:2023** (Artificial Intelligence Management System - AIMS 人工智能管理體系)
-  * **ISO/IEC 27701:2019** (Privacy Information Management System - PIMS 隱私資訊管理體系)
+  * **ISO/IEC 27701:2019 / 2025** (Privacy Information Management System - PIMS 隱私資訊管理體系)
   * **ISO/IEC 27001:2022** (Information Security Management System - ISMS 資訊安全管理體系)
 - 📚 **Academic Backbone:** Master of Laws (**LLM in Common Law**) & Master of Arts (**MA in Sociology**) from **The Chinese University of Hong Kong (CUHK)**. (香港中文大學普通法法學碩士 & 社會學文學碩士)
 
@@ -154,5 +156,8 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - 💼 **LinkedIn:** [linkedin.com/in/jackylawck](https://www.linkedin.com/in/jackylawck/)
 - 🌐 **Personal Hub:** [jackylawck.github.io/jackylawck](https://jackylawck.github.io/jackylawck/)
 - 🆔 **ORCID Record:** [0009-0006-0855-0842](https://orcid.org/0009-0006-0855-0842)
+- 🏅 **Credly Verification:** [Triple-ISO Lead Auditor Fellow](https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url)
+- 🏛️ **HKCS W3C Credential:** [MHKCS Verified](https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb)
+- ☁️ **Oracle CertView:** [OCI 2025 GenAI Pro](https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096)
 - 🔐 **Keybase Proofs:** [keybase.io/jackylawck](https://keybase.io/jackylawck)
 - 🎯 *Serving transformation, governance, higher education and dispute resolution initiatives across Hong Kong and the Greater Bay Area.*
