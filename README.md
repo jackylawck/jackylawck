@@ -156,11 +156,11 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 
 ## 🔗 Let's Connect
 
-- 💼 **LinkedIn:** [linkedin.com/in/jackylawck](https://www.linkedin.com/in/jackylawck/)
 - 🌐 **Personal Hub:** [jackylawck.github.io](https://jackylawck.github.io/)
+- 💼 **LinkedIn:** [linkedin.com/in/jackylawck](https://www.linkedin.com/in/jackylawck/)
 - 🆔 **ORCID Record:** [0009-0006-0855-0842](https://orcid.org/0009-0006-0855-0842)
-- 🏅 **Credly Verification:** [Triple-ISO Lead Auditor Fellow](https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url)
 - 🏛️ **HKCS W3C Credential:** [MHKCS Verified](https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb)
 - ☁️ **Oracle CertView:** [OCI 2025 GenAI Pro](https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096)
+- 🏅 **Credly Verification:** [Triple-ISO Lead Auditor Fellow](https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url)
 - 🔐 **Keybase Proofs:** [keybase.io/jackylawck](https://keybase.io/jackylawck)
 - 🎯 *Serving transformation, governance, higher education and dispute resolution initiatives across Hong Kong and the Greater Bay Area.*
