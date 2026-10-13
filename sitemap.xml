@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 官方主要門戶首頁 -->
   <url>
-    <loc>https://jackylawck.github.io/jackylawck/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://jackylawck.github.io/</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <!-- 機器可讀管治文檔 (LLMs / AI Search Agents Context) -->
+  <url>
+    <loc>https://jackylawck.github.io/llms.txt</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
