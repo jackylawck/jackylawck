@@ -2,6 +2,7 @@
 <html lang="zh-HK">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting to Jacky Law (羅子淇)...</title>
     
     <!-- 1. 0秒無縫自動跳轉 (給瀏覽器訪客) -->
@@ -15,9 +16,54 @@
     
     <!-- 4. 保留原有的 Google 驗證，確保 Search Console 產權驗證不中斷 -->
     <meta name="google-site-verification" content="JZ5UohX-CcP_fQV0_DI9VadkKY4ZoTTkUifL88-fIcY" />
+
+    <!-- 5. JavaScript 雙重保險跳轉 (覆蓋部分阻擋 Meta Refresh 的特殊瀏覽器) -->
+    <script>
+        // 使用 replace 不會產生上一頁的歷史紀錄，確保轉址乾淨俐落
+        window.location.replace("https://jackylawck.github.io/");
+    </script>
+
+    <!-- 6. 弱網環境下的優雅降級視覺 (確保那一秒鐘的載入畫面依然專業) -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8fafc; /* Slate 50 */
+            color: #334155; /* Slate 700 */
+        }
+        .loader {
+            border: 3px solid #e2e8f0; /* Slate 200 */
+            border-top: 3px solid #1d6fd8; /* Theme Blue */
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a {
+            color: #1d6fd8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body style="font-family: -apple-system, sans-serif; text-align: center; padding: 50px 20px; color: #334155;">
+<body>
+    <div class="loader"></div>
     <p>正在前往 <strong>羅子淇 Jacky Law</strong> 官方首頁...</p>
-    <p>Redirecting to <a href="https://jackylawck.github.io/" style="color: #1d6fd8; font-weight: 600;">https://jackylawck.github.io/</a></p>
+    <p style="font-size: 0.9em; margin-top: 5px; color: #64748b;">
+        If you are not redirected automatically, follow this <a href="https://jackylawck.github.io/">link</a>.
+    </p>
 </body>
 </html>
