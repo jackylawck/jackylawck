@@ -156,18 +156,18 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 
 ---
 
-### 🏢 Pillar V: M365 Enterprise Automation Demos (企業級低代碼與自動化管治矩陣)
+### 🏢 Pillar V: Enterprise Automation & Python/M365 Demos (企業級自動化與低代碼管治矩陣)
 
-> **Zero-License, Full-Audit closed-loop governance engines built on Microsoft 365.**  
-> 基於微軟 M365 原生生態（SharePoint, Power Automate, Forms）之零額外授權成本、合規審計與狀態機架構展示。
+> **Zero-License, Full-Audit closed-loop governance engines built on Microsoft 365 & Streamlit.**  
+> 結合微軟 M365 原生狀態機與 Python (Streamlit) 數據應用之零額外授權成本、合規審計與自動化管治閉環展示。
 
-- **[EnterpriseDemo-NOTAS](https://github.com/jackylawck/EnterpriseDemo-NOTAS)**: 企業非營運時段考勤治理 (Non-Operating Time Attendance) - Multi-tier approval state machine & anti-fraud directory validation.
-- **[EnterpriseDemo-DOIS](https://github.com/jackylawck/EnterpriseDemo-DOIS)**: 企業利益申報系統 (Declaration of Interests) - POBO Cap. 201 compliant conflict of interest & gift governance engine.
-- **[EnterpriseDemo-SiteworksPSPJC](https://github.com/jackylawck/EnterpriseDemo-SiteworksPSPJC)**: 施工組開工安全審批 (Siteworks Pre-Start & Post-Job Checklist) - Frontline frictionless capture to PM approval safety governance.
-- **[EnterpriseDemo-Site-KPI](https://github.com/jackylawck/EnterpriseDemo-Site-KPI)**: 地盤同事 KPI 考核系統 (Site Staff KPI) - Real-time ISO-compliant scoring and automated ReportLab PDF generation.
-- **[EnterpriseDemo-Safety-Quiz](https://github.com/jackylawck/EnterpriseDemo-Safety-Quiz)**: 入職安全訓練評估系統 (Onboarding Safety Assessment) - SED guided workflow with real-time grading and compliant PDF generation.
-- **[EnterpriseDemo-OnboardingQuiz](https://github.com/jackylawck/EnterpriseDemo-OnboardingQuiz)**: 入職培訓考核及問卷系統 (Onboarding Assessment & Feedback) - Zero-data-retention interactive assessment with SMTP dispatch.
-- **[EnterpriseDemo-TAP](https://jackylawck.github.io/EnterpriseDemo-TAP/)**: 企業示範培訓簽到平台 (Training Attendance Portal) - Serverless dynamic QR projection and automated ISO-compliant attendance logging.
+- **[EnterpriseDemo-NOTAS](https://github.com/jackylawck/EnterpriseDemo-NOTAS)**: 企業非營運時段考勤治理 (Non-Operating Time Attendance) - Multi-tier approval M365 state machine & anti-fraud directory validation.
+- **[EnterpriseDemo-DOIS](https://github.com/jackylawck/EnterpriseDemo-DOIS)**: 企業利益申報系統 (Declaration of Interests) - POBO Cap. 201 compliant conflict of interest & gift governance M365 engine.
+- **[EnterpriseDemo-SiteworksPSPJC](https://github.com/jackylawck/EnterpriseDemo-SiteworksPSPJC)**: 施工組開工安全審批 (Siteworks Pre-Start & Post-Job Checklist) - Frontline frictionless capture to PM approval M365 safety governance.
+- **[EnterpriseDemo-Site-KPI](https://github.com/jackylawck/EnterpriseDemo-Site-KPI)**: 地盤同事 KPI 考核系統 (Site Staff KPI) - Streamlit/Python real-time ISO-compliant scoring and automated ReportLab PDF generation.
+- **[EnterpriseDemo-Safety-Quiz](https://github.com/jackylawck/EnterpriseDemo-Safety-Quiz)**: 入職安全訓練評估系統 (Onboarding Safety Assessment) - Streamlit guided workflow with real-time grading and compliant PDF generation.
+- **[EnterpriseDemo-OnboardingQuiz](https://github.com/jackylawck/EnterpriseDemo-OnboardingQuiz)**: 入職培訓考核及問卷系統 (Onboarding Assessment & Feedback) - Streamlit zero-data-retention interactive assessment with Python SMTP dispatch.
+- **[EnterpriseDemo-TAP](https://jackylawck.github.io/EnterpriseDemo-TAP/)**: 企業示範培訓簽到平台 (Training Attendance Portal) - Serverless dynamic QR projection and M365 ISO-compliant attendance logging.
 
 ---
 
