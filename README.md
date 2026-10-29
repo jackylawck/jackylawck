@@ -61,7 +61,7 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 
 ---
 
-## 🏛️ Four Strategic Pillars & Governance Framework (四大核心戰略支柱與管治框架)
+## 🏛️ Five Strategic Pillars & Governance Framework (五大核心戰略支柱與管治框架)
 
 > **"Governance-as-Code: Transforming regulatory frameworks into verifiable, human-centric system controls."**  
 > 全面對齊 **ISO 42001**、**NIST AI RMF**、**歐盟 AI 法案** 及 **香港 PCPD / 數字辦指引**。
@@ -153,6 +153,21 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - 🚀 **[JarAscent 躍上穹蒼](https://github.com/jackylawck/JarAscent):** Rocket launch and orbital mechanics sandbox implementing RK4 numerical integration and J2 perturbation. (結合 RK4 數值積分與 J2 攝動之運載火箭入軌模擬沙盒)
 - 🦾 **[JAR Beyond the Hand 在手之上](https://github.com/jackylawck/JAR-Beyond-the-Hand):** 6-DoF robotic arm kinematic simulator featuring real-time CCD-IK with DLS singularity avoidance. (具備實時奇異點規避之 6 自由度機械臂運動學模擬器)
 - 🌪️ **[Jayblade 爆上陀螺](https://github.com/jackylawck/Jayblade):** 3D rigid-body battle physics simulator showcasing WebGL rendering and WebRTC physics synchronization. (基於 240Hz 剛體物理引擎與 WebRTC 同步之戰鬥陀螺模擬器)
+
+---
+
+### 🏢 Pillar V: M365 Enterprise Automation Demos (企業級低代碼與自動化管治矩陣)
+
+> **Zero-License, Full-Audit closed-loop governance engines built on Microsoft 365.**  
+> 基於微軟 M365 原生生態（SharePoint, Power Automate, Forms）之零額外授權成本、合規審計與狀態機架構展示。
+
+- **[EnterpriseDemo-NOTAS](https://github.com/jackylawck/EnterpriseDemo-NOTAS)**: 企業非營運時段考勤治理 (Non-Operating Time Attendance) - Multi-tier approval state machine & anti-fraud directory validation.
+- **[EnterpriseDemo-DOIS](https://github.com/jackylawck/EnterpriseDemo-DOIS)**: 企業利益申報系統 (Declaration of Interests) - POBO Cap. 201 compliant conflict of interest & gift governance engine.
+- **[EnterpriseDemo-SiteworksPSPJC](https://github.com/jackylawck/EnterpriseDemo-SiteworksPSPJC)**: 施工組開工安全審批 (Siteworks Pre-Start & Post-Job Checklist) - Frontline frictionless capture to PM approval safety governance.
+- **[EnterpriseDemo-Site-KPI](https://github.com/jackylawck/EnterpriseDemo-Site-KPI)**: 地盤同事 KPI 考核系統 (Site Staff KPI) - Real-time ISO-compliant scoring and automated ReportLab PDF generation.
+- **[EnterpriseDemo-Safety-Quiz](https://github.com/jackylawck/EnterpriseDemo-Safety-Quiz)**: 入職安全訓練評估系統 (Onboarding Safety Assessment) - SED guided workflow with real-time grading and compliant PDF generation.
+- **[EnterpriseDemo-OnboardingQuiz](https://github.com/jackylawck/EnterpriseDemo-OnboardingQuiz)**: 入職培訓考核及問卷系統 (Onboarding Assessment & Feedback) - Zero-data-retention interactive assessment with SMTP dispatch.
+- **[EnterpriseDemo-TAP](https://jackylawck.github.io/EnterpriseDemo-TAP/)**: 企業示範培訓簽到平台 (Training Attendance Portal) - Serverless dynamic QR projection and automated ISO-compliant attendance logging.
 
 ---
 
