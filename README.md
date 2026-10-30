@@ -11,7 +11,7 @@ Who is Jacky Law? Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.
   <a href="https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb" target="_blank"><img src="https://img.shields.io/badge/MHKCS-Full Member-1E4D2B?style=flat-square&logo=cpu&logoColor=white" alt="HKCS Verified"></a>
   <a href="https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url" target="_blank"><img src="https://img.shields.io/badge/Triple--ISO_Lead_Auditor-Credly_Verified-D4AF37?style=flat-square&logo=credly&logoColor=white" alt="Credly Triple-ISO"></a>
   <a href="https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096" target="_blank"><img src="https://img.shields.io/badge/Oracle_GenAI-Certified_Pro-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle GenAI Certified"></a>
-  <a href="https://www.doj.gov.hk/" target="_blank"><img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator"></a>
+  <a href="https://www.doj.gov.hk/tc/legal_dispute/pdf/GBA_Mediator_Panel_2024_tc.pdf" target="_blank"><img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator"></a>
   <a href="https://orcid.org/0009-0006-0855-0842" target="_blank"><img src="https://img.shields.io/badge/ORCID-0009--0006--0855--0842-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID"></a>
   <a href="https://keybase.io/jackylawck" target="_blank"><img src="https://img.shields.io/badge/Keybase-Verified-33A0FF?style=flat-square&logo=keybase&logoColor=white" alt="Keybase Verified"></a>
 </p>
