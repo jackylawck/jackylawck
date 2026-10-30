@@ -7,7 +7,7 @@ Who is Jacky Law? Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.
 
 <p align="left">
   <a href="https://www.hkihrm.org/" target="_blank"><img src="https://img.shields.io/badge/F.I.H.R.M._(HK)-Fellow-1E3A8A?style=flat-square&logo=handshake&logoColor=white" alt="HKIHRM Fellow"></a>
-  <a href="https://www.hkiod.com/" target="_blank"><img src="https://img.shields.io/badge/FHKIoD-Fellow-D4AF37?style=flat-square&logo=pages&logoColor=white" alt="HKIoD Fellow"></a>
+  <a href="https://www.hkiod.com/weblist-of-candidates-for-ined-appointment-service/" target="_blank"><img src="https://img.shields.io/badge/FHKIoD-Fellow-D4AF37?style=flat-square&logo=pages&logoColor=white" alt="HKIoD Fellow"></a>
   <a href="https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb" target="_blank"><img src="https://img.shields.io/badge/MHKCS-Full Member-1E4D2B?style=flat-square&logo=cpu&logoColor=white" alt="HKCS Verified"></a>
   <a href="https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url" target="_blank"><img src="https://img.shields.io/badge/Triple--ISO_Lead_Auditor-Credly_Verified-D4AF37?style=flat-square&logo=credly&logoColor=white" alt="Credly Triple-ISO"></a>
   <a href="https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096" target="_blank"><img src="https://img.shields.io/badge/Oracle_GenAI-Certified_Pro-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle GenAI Certified"></a>
