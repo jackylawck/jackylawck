@@ -37,11 +37,11 @@ A lifelong learner navigating human capital, organizational transformation, and 
 
 ## 📜 Professional Credentials (專業資質)
 
-- 👥 **Executive HR Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes corporate transformation. (香港人力資源管理學會資深會員)
-- 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI and risk oversight into executive agendas. (香港董事學會資深會員)
+- 👥 **Executive HR Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading high-stakes corporate transformation. [Verified via HKIHRM Roster](https://www.hkihrm.org/fellow-member-list/) (香港人力資源管理學會資深會員)
+- 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Embedding ethical AI and risk oversight into executive agendas. [Verified via HKIoD Registry](https://www.hkiod.com/weblist-of-candidates-for-ined-appointment-service/) (香港董事學會資深會員)
 - 💻 **IT Leadership & Tech:** Full Member of HKCS ([**MHKCS Verified Credential**](https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb)); Member in **HKCS iLEAP (Cohort 8)**. (香港電腦學會會員及資訊科技卓越領袖培育計劃第八期成員)
 - 🎓 **Higher Education Teaching:** Part-time Associate Lecturer, Lee Shau Kee School of Business and Administration, Hong Kong Metropolitan University (**HKMU**). (香港都會大學李兆基商業管理學院兼任助理講師)
-- ⚖️ **Cross-Border Dispute Resolution:** Designated **GBA Mediator (Department of Justice, HKSAR)** & APCAM Certified Trainer. (律政司認可大灣區調解員)
+- ⚖️ **Cross-Border Dispute Resolution:** Designated **GBA Mediator (Department of Justice, HKSAR)** & APCAM Certified Trainer. [Verified via DoJ Panel](https://www.doj.gov.hk/tc/legal_dispute/pdf/GBA_Mediator_Panel_2024_tc.pdf) (律政司認可大灣區調解員)
 - ☁️ **Cloud AI Architecture:** Officially Certified [**Oracle Cloud Infrastructure (OCI) 2025 Generative AI Professional**](https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096). (甲骨文生成式 AI 專業認證)
 - 🔍 **Triple-ISO Lead Auditor (三體系主導稽核員):** [**Credly Verified: Fellow of Management Systems Auditing**](https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url)
   * **ISO/IEC 42001:2023** (Artificial Intelligence Management System - AIMS 人工智能管理體系)
@@ -101,9 +101,9 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 > **Architectural Standard:** 100% Client-Side In-Memory Computing, Zero-Knowledge Encryption, and Zero Data Retention (ZDR).  
 > **核心標準：** 100% 本端記憶體運算、零伺服器留存、零日誌歸檔。
 
-- 👨‍👦 **[KidsDictate 童心默書](https://github.com/jackylawck/KidsDictate/):** A Privacy-First, Offline-Capable Dictation Assistant. Engineered with Edge OCR (Tesseract.js WASM) and multi-language Web Speech synthesis. Executes entirely in-memory with zero data upload. (為陪伴學童而設的純本機智能默書小助手・邊緣光學辨識與零隱私外洩)
-- ✍️ **[KidsWriteTC 童寫繁體字](https://github.com/jackylawck/KidsWriteTC/):** A Clean-Room Stroke Order & Tracing PWA. Features a Three-State Data Governance architecture strictly aligned with HK EDB lexical standards, combined with a responsive dual-canvas ink layer and zero telemetry. (專為香港學童設計的繁體字筆順與描紅 PWA・首創三態資料治理與乾淨室架構)
-- 🌿 **[PauseWell 安心歇](https://github.com/jackylawck/PauseWell/):** A Zero-Telemetry, Local-First Career Transition Operating System & Resilience Anchor. Engineered with daily habit anchors, debounced pipeline tracking, automated overdue alerts, and objective weekly conversion audits. Fully compliant with HK PDPO and GDPR Art. 25 Privacy-by-Design. (純本機求職節奏與心態日誌・空窗期彈性修整系統)
+- 👨‍👦 **[KidsDictate 童心默書](https://jackylawck.github.io/KidsDictate/):** A Privacy-First, Offline-Capable Dictation Assistant. Engineered with Edge OCR (Tesseract.js WASM) and multi-language Web Speech synthesis. Executes entirely in-memory with zero data upload. (為陪伴學童而設的純本機智能默書小助手・邊緣光學辨識與零隱私外洩)
+- ✍️ **[KidsWriteTC 童寫繁體字](https://jackylawck.github.io/KidsWriteTC/):** A Clean-Room Stroke Order & Tracing PWA. Features a Three-State Data Governance architecture strictly aligned with HK EDB lexical standards, combined with a responsive dual-canvas ink layer and zero telemetry. (專為香港學童設計的繁體字筆順與描紅 PWA・首創三態資料治理與乾淨室架構)
+- 🌿 **[PauseWell 安心歇](https://jackylawck.github.io/PauseWell/):** A Zero-Telemetry, Local-First Career Transition Operating System & Resilience Anchor. Engineered with daily habit anchors, debounced pipeline tracking, automated overdue alerts, and objective weekly conversion audits. Fully compliant with HK PDPO and GDPR Art. 25 Privacy-by-Design. (純本機求職節奏與心態日誌・空窗期彈性修整系統)
 - 🗝 **[LeaveWell 留愛心安](https://github.com/jackylawck/LeaveWell):** Two-tier progressive disclosure emergency insurance vault. Features zero-knowledge PBKDF2 (600,000 iterations) + AES-GCM-256 encryption with physical memory clue cards. (純本機零伺服器家庭應急資產導航金庫・雙層漸進存取架構)
 - ⚡ **[ScanSign 一掃簽](https://github.com/jackylawck/ScanSign):** Enterprise-grade offline check-in PWA for 300+ guests. Powered by ECDSA P-256 asymmetric signatures and PBKDF2 + AES-256-GCM roster encryption. (企業級零伺服器離線加密簽到系統・支援飛航模式斷網核驗)
 - 🕊️ **[RailPeace 鐵和平](https://github.com/jackylawck/RailPeace):** A low-friction transit de-escalation cheatsheet for Hong Kong commuters, built with zero dependencies, WAAPI smoothness, and strict PDPO compliance. (香港鐵路通勤「低摩擦」避火拆彈心法卡・以人為本生活降溫工具)
@@ -156,18 +156,23 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 
 ---
 
-### 🏢 Pillar V: Enterprise Automation & Python/M365 Demos (企業級自動化與低代碼管治矩陣)
+### 🏢 Pillar V: Enterprise AI, Automation & Low-Code Demos (企業級 AI、自動化與低代碼管治矩陣)
 
-> **Zero-License, Full-Audit closed-loop governance engines built on Microsoft 365 & Streamlit.**  
-> 結合微軟 M365 原生狀態機與 Python (Streamlit) 數據應用之零額外授權成本、合規審計與自動化管治閉環展示。
+> **Zero-License, Full-Audit closed-loop governance engines built on Microsoft 365, Python & Streamlit.**  
+> 專注於企業痛點落地之 AI 智能管治、M365 原生狀態機與 Python 數據應用，實現零額外授權（Zero-License）與合規審計閉環。
 
-- **[EnterpriseDemo-NOTAS](https://github.com/jackylawck/EnterpriseDemo-NOTAS)**: 企業非營運時段考勤治理 (Non-Operating Time Attendance) - Multi-tier approval M365 state machine & anti-fraud directory validation.
-- **[EnterpriseDemo-DOIS](https://github.com/jackylawck/EnterpriseDemo-DOIS)**: 企業利益申報系統 (Declaration of Interests) - POBO Cap. 201 compliant conflict of interest & gift governance M365 engine.
-- **[EnterpriseDemo-SiteworksPSPJC](https://github.com/jackylawck/EnterpriseDemo-SiteworksPSPJC)**: 施工組開工安全審批 (Siteworks Pre-Start & Post-Job Checklist) - Frontline frictionless capture to PM approval M365 safety governance.
-- **[EnterpriseDemo-Site-KPI](https://github.com/jackylawck/EnterpriseDemo-Site-KPI)**: 地盤同事 KPI 考核系統 (Site Staff KPI) - Streamlit/Python real-time ISO-compliant scoring and automated ReportLab PDF generation.
-- **[EnterpriseDemo-Safety-Quiz](https://github.com/jackylawck/EnterpriseDemo-Safety-Quiz)**: 入職安全訓練評估系統 (Onboarding Safety Assessment) - Streamlit guided workflow with real-time grading and compliant PDF generation.
-- **[EnterpriseDemo-OnboardingQuiz](https://github.com/jackylawck/EnterpriseDemo-OnboardingQuiz)**: 入職培訓考核及問卷系統 (Onboarding Assessment & Feedback) - Streamlit zero-data-retention interactive assessment with Python SMTP dispatch.
-- **[EnterpriseDemo-TAP](https://jackylawck.github.io/EnterpriseDemo-TAP/)**: 企業示範培訓簽到平台 (Training Attendance Portal) - Serverless dynamic QR projection and M365 ISO-compliant attendance logging.
+- **[EnterpriseDemo-ChargeCodeAssistant 企業智能扣帳方查詢系統](https://github.com/jackylawck/EnterpriseDemo-ChargeCodeAssistant):** ISO 42001 aligned compliance query architecture using local FAISS semantic embeddings. Air-gapped from external LLMs for zero hallucination and zero commercial IP exfiltration. (以純本地端 FAISS 語意檢索取代生成式大模型，確保零幻覺與來源絕對可溯)
+- **[EnterpriseDemo-eHRPAlign 企業級入職文檔智能對齊系統](https://github.com/jackylawck/EnterpriseDemo-eHRPAlign):** Multimodal document cognition engine with Source Grounding verification. Normalizes scanned onboarding packages into eHRP schemas within volatile session memory. (結合多模態視覺與指向性單一事實來源核對之入職文檔自動標準化引擎)
+- **[EnterpriseDemo-StaffHandbookRAG 企業員工手冊智能查詢系統](https://github.com/jackylawck/EnterpriseDemo-StaffHandbookRAG):** Enterprise AI assistant combining FAISS and BM25 (Hybrid Retrieval) via Reciprocal Rank Fusion (RRF). Features dynamic policy overriding to ensure updated corporate addendums. (採用雙引擎混合檢索技術與最新政策覆蓋機制之企業內部語意知識庫)
+- **[EnterpriseDemo-CustomerSurveyDataConsolidation 企業客戶滿意度問卷整合系統](https://github.com/jackylawck/EnterpriseDemo-CustomerSurveyDataConsolidation):** Dual-mode execution (Client-side Web App & Offline Desktop CLI) for strictly isolated raw MS Forms CSAT data standardization. (具備純前端網頁與本機 Python 批次處理雙軌模式之問卷標準化排版引擎)
+- **[EnterpriseDemo-PunchProblemDetector 企業打卡異常偵測工具](https://github.com/jackylawck/EnterpriseDemo-PunchProblemDetector):** Zero-data-retention client-side SheetJS attendance audit workstation. Secures PII while applying deterministic corporate anomaly filters. (採用純客戶端記憶體沙盒運算之考勤完整性快篩過濾器)
+- **[EnterpriseDemo-NOTAS](https://github.com/jackylawck/EnterpriseDemo-NOTAS):** 企業非營運時段考勤治理 (Non-Operating Time Attendance) - Multi-tier approval M365 state machine & anti-fraud directory validation.
+- **[EnterpriseDemo-DOIS](https://github.com/jackylawck/EnterpriseDemo-DOIS):** 企業利益申報系統 (Declaration of Interests) - POBO Cap. 201 compliant conflict of interest & gift governance M365 engine.
+- **[EnterpriseDemo-SiteworksPSPJC](https://github.com/jackylawck/EnterpriseDemo-SiteworksPSPJC):** 施工組開工安全審批 (Siteworks Pre-Start & Post-Job Checklist) - Frontline frictionless capture to PM approval M365 safety governance.
+- **[EnterpriseDemo-Site-KPI](https://github.com/jackylawck/EnterpriseDemo-Site-KPI):** 地盤同事 KPI 考核系統 (Site Staff KPI) - Streamlit/Python real-time ISO-compliant scoring and automated ReportLab PDF generation.
+- **[EnterpriseDemo-Safety-Quiz](https://github.com/jackylawck/EnterpriseDemo-Safety-Quiz):** 入職安全訓練評估系統 (Onboarding Safety Assessment) - Streamlit guided workflow with real-time grading and compliant PDF generation.
+- **[EnterpriseDemo-OnboardingQuiz](https://github.com/jackylawck/EnterpriseDemo-OnboardingQuiz):** 入職培訓考核及問卷系統 (Onboarding Assessment & Feedback) - Streamlit zero-data-retention interactive assessment with Python SMTP dispatch.
+- **[EnterpriseDemo-TAP](https://jackylawck.github.io/EnterpriseDemo-TAP/):** 企業示範培訓簽到平台 (Training Attendance Portal) - Serverless dynamic QR projection and M365 ISO-compliant attendance logging.
 
 ---
 
@@ -176,9 +181,12 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 ## 🔗 Let's Connect
 
 - 🌐 **Personal Hub:** [jackylawck.github.io](https://jackylawck.github.io/)
+- 👥 **HKIHRM Fellow Roster:** [Fellow Member List](https://www.hkihrm.org/fellow-member-list/)
+- 🏛️ **HKIoD INED Candidate List:** [INED Appointment Service](https://www.hkiod.com/weblist-of-candidates-for-ined-appointment-service/)
+- ⚖️ **DoJ GBA Mediator Panel:** [Official 2024 Roster (PDF)](https://www.doj.gov.hk/tc/legal_dispute/pdf/GBA_Mediator_Panel_2024_tc.pdf)
 - 💼 **LinkedIn:** [linkedin.com/in/jackylawck](https://www.linkedin.com/in/jackylawck/)
 - 🆔 **ORCID Record:** [0009-0006-0855-0842](https://orcid.org/0009-0006-0855-0842)
-- 🏛️ **HKCS W3C Credential:** [MHKCS Verified](https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb)
+- 💻 **HKCS W3C Credential:** [MHKCS Verified](https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb)
 - ☁️ **Oracle CertView:** [OCI 2025 GenAI Pro](https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096)
 - 🏅 **Credly Verification:** [Triple-ISO Lead Auditor Fellow](https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url)
 - 🔐 **Keybase Proofs:** [keybase.io/jackylawck](https://keybase.io/jackylawck)
