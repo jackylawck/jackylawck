@@ -32,7 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Generate Evangelion Unit-01 Theme
+      - name: Apply Official Gaia/Mr.Hobby Eva-01 Palette
         run: |
           python3 - << 'EOF'
           import colorsys
@@ -44,41 +44,41 @@ jobs:
           with open(src_path, "r", encoding="utf-8") as f:
               svg = f.read()
 
-          def transform_color(match):
+          def apply_eva_colors(match):
               h_str = match.group(0)
               r = int(h_str[1:3], 16) / 255.0
               g = int(h_str[3:5], 16) / 255.0
               b = int(h_str[5:7], 16) / 255.0
               h, l, s = colorsys.rgb_to_hls(r, g, b)
 
-              # 1. 背景與拘束架底座：極深黑紫
+              # 1. 拘束架底色與背景（深邃黑紫）
               if l < 0.15 and s < 0.25:
-                  return "#0D0714"
+                  return "#0E0817"
               if 0.15 <= l < 0.35 and s < 0.25:
-                  return "#1B0B2E"
+                  return "#1A0E2A"
 
-              # 2. 綠色調元素（色相約 70° ~ 165°）：
+              # 2. 綠色調元素（所有 3D 柱體與網格）
               if 0.19 <= h <= 0.46 and s > 0.2:
-                  # 最高峰頂部面與主要亮線 -> 保留點綴螢光綠（EVA 覺醒發光部位）
+                  # 最高峰頂部與突破線 -> 塗料 EV-04 / HEV102 螢光綠點綴
                   if l >= 0.58 or (g > 0.85 and r < 0.6 and b < 0.6):
                       return "#39FF14"
-                  # 柱體主軀幹與側面光影 -> 初號機經典暗紫裝甲
+                  # 柱體主軀幹與側面光影 -> 塗料 EV-03 / HEV101 夜戰暗紫裝甲
                   else:
-                      purple_h = 0.77  # 初號機紫 (約 277°)
-                      adj_l = min(0.65, max(0.18, l * 0.95))
-                      adj_s = min(1.0, max(0.55, s * 1.15))
+                      # 依照原圖明暗比例計算暗紫裝甲階梯
+                      purple_h = 0.765  # 官方紫基準色相
+                      adj_l = min(0.60, max(0.18, l * 0.92))
+                      adj_s = min(1.0, max(0.60, s * 1.25))
                       nr, ng, nb = colorsys.hls_to_rgb(purple_h, adj_l, adj_s)
                       return f"#{int(round(nr*255)):02X}{int(round(ng*255)):02X}{int(round(nb*255)):02X}"
 
               return h_str
 
-          # 全面替換 16 進位色碼
-          converted_svg = re.sub(r'#[0-9a-fA-F]{6}', transform_color, svg)
+          converted_svg = re.sub(r'#[0-9a-fA-F]{6}', apply_eva_colors, svg)
 
           with open(dest_path, "w", encoding="utf-8") as f:
               f.write(converted_svg)
 
-          print("Successfully converted to Eva-01 Purple Armor & Neon Green Accents.")
+          print("Successfully rendered Eva-01 Official Gaia/Mr.Hobby Palette.")
           EOF
 
       - name: Commit & Push (Signed)
@@ -87,6 +87,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-3d-contrib/
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "chore: update Eva-01 3D graph [skip ci]"
+          git commit -m "chore: update Eva-01 official palette 3D graph [skip ci]"
           git pull --rebase
           git push
