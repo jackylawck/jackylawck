@@ -76,7 +76,12 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 
 ### 🌐 Pillar I: Enterprise AI Governance, Sovereign Ledgers & Decision Engines (企業級 AI 管治與決策框架)
 
-#### 1. Sovereign Provenance, Regulatory Frameworks & Auditability (主權情報、法規框架與威脅審計)
+#### 1. Air-Gapped AI & Semantic Architecture (物理隔離 AI 與語意對齊架構)
+- **[EnterpriseDemo-ChargeCodeAssistant 企業智能扣帳方查詢系統](https://github.com/jackylawck/EnterpriseDemo-ChargeCodeAssistant):** ISO 42001 aligned compliance query architecture using local FAISS semantic embeddings. Strictly air-gapped from external LLMs to ensure zero hallucination, exact line-number citations, and zero commercial IP exfiltration. (以純本地端 FAISS 語意檢索取代生成式大模型，確保零幻覺與來源絕對可溯)
+- **[EnterpriseDemo-eHRPAlign 企業級入職文檔智能對齊系統](https://github.com/jackylawck/EnterpriseDemo-eHRPAlign):** Multimodal document cognition engine with Source Grounding verification. Normalizes complex scanned onboarding packages into strict eHRP schemas entirely within volatile session memory. (結合多模態視覺與指向性單一事實來源核對之入職文檔自動標準化引擎)
+- **[EnterpriseDemo-StaffHandbookRAG 企業員工手冊智能查詢系統](https://github.com/jackylawck/EnterpriseDemo-StaffHandbookRAG):** Enterprise AI assistant combining FAISS and BM25 (Hybrid Retrieval) via Reciprocal Rank Fusion (RRF). Features dynamic policy overriding to ensure users query only the latest corporate addendums. (採用雙引擎混合檢索技術與最新政策覆蓋機制之企業內部語意知識庫)
+
+#### 2. Sovereign Provenance, Regulatory Frameworks & Auditability (主權情報、法規框架與威脅審計)
 - **[The Veracity 揭古](https://github.com/jackylawck/Veracity):** Sovereign declassification pipeline & cryptographic digital forensics ledger across 74 authorities. Enforces Layer-1 bitstream fixity, Sigstore keyless Rekor transparency anchoring, and statistical anomaly circuit breakers. (全球主權解密管線與歷史數位法證總帳・涵蓋 74 大主權機構與 Sigstore 存證)
 - **[Veritas 揭偽](https://github.com/jackylawck/Veritas):** Sovereign scam & impersonation bulletin mirror structuring alerts from 20+ statutory authorities (HKMA, SFC, CSTCB, MAS, FBI, CFTC, etc.) into machine-readable OASIS STIX 2.1 threat intelligence feeds with Sigstore Cosign attestation. (法定機構防偽與跨國詐騙公報結構化威脅情報鏡像・STIX 2.1 規格)
 - **[The Veil 揭帷](https://github.com/jackylawck/veil):** Global sovereign UAP disclosure & declassification ledger enforcing Tier-1 auditability, cryptographic SHA-256 integrity, EAR/ITAR exemptions, and ISO 27001/42001 governance standards. (全球主權防衛與官方解密情報總帳・審計級開源情報庫)
@@ -84,7 +89,7 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - **[PCPD AI Privacy Protection Sandbox PCPD AI 私隱預審沙盒](https://github.com/jackylawck/PCPD_ai_protection_framework):** Interactive compliance pre-audit sandbox based on the 2024 PCPD Model Framework ([Local RAG Edition 地端檢索版](https://github.com/jackylawck/PCPD_ai_protection_framework_rag)). (基於 PCPD 模範框架之合規預審工作站)
 - **[HK-DPO GenAI Compliance Workstation 香港數字辦生成式 AI 合規工作站](https://github.com/jackylawck/hk-dpo-ai-governance):** Deterministic 4-tier risk classification engine strictly mapped to HK Digital Policy Office guidelines ([Audit Trail Edition 密碼學審計版](https://github.com/jackylawck/hk-dpo-ai-governance_rag)). (數字辦生成式 AI 決定性合規審計系統)
 
-#### 2. Executive Decision Engines & Enterprise Governance Operations (高管決策引擎與企業運營工具)
+#### 3. Executive Decision Engines & Enterprise Governance Operations (高管決策引擎與企業運營工具)
 - **[Laboris 勞則](https://github.com/jackylawck/Laboris):** Hong Kong statutory workforce & regulatory liability ledger. Actuarial stress-testing decision engine for Cap. 57 "418" continuous contract threshold revisions with client-side $k$-anonymity ($k \ge 5$) protection. (香港法定勞動力政策總帳與精算決策引擎・對標僱傭條例 418 改革)
 - **[AI-Risk-Registry 影子 AI 風控註冊表](https://github.com/jackylawck/AI-Risk-Registry):** Enterprise Shadow-AI registry mapping unapproved tool adoption to ISO 27001 & ISO 42001 controls. (影子 AI 動態註冊與 ISO 雙體系對齊工具)
 - **[AskIf 現場互動提問室](https://github.com/jackylawck/AskIf):** Enterprise-grade, zero-persistence live Q&A and stage moderation system for AGMs and executive town halls via Cloudflare Workers. (大會與高管峰會無痕即時提問室)
@@ -176,7 +181,7 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 
 ---
 
-![](./profile-3d-contrib/profile-green-animate.svg)
+![](./profile-3d-contrib/profile-eva-01.svg)
 
 ## 🔗 Let's Connect
 
@@ -191,3 +196,4 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - 🏅 **Credly Verification:** [Triple-ISO Lead Auditor Fellow](https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url)
 - 🔐 **Keybase Proofs:** [keybase.io/jackylawck](https://keybase.io/jackylawck)
 - 🎯 *Serving transformation, governance, higher education and dispute resolution initiatives across Hong Kong and the Greater Bay Area.*
+
