@@ -44,24 +44,41 @@ jobs:
           with open(src_path, "r", encoding="utf-8") as f:
               svg = f.read()
 
-          # 1. 提交數字改為 NERV 警戒紅 (#FF1E27)，後方文字保持白色
+          # ==========================================
+          # 1. 提交總數換為 NERV 超機密警戒紅 (#FF1E27)
+          # ==========================================
+          # 替換 text 標籤本體屬性與內容，通殺原有黃色
+          def make_count_red(m):
+              full = m.group(0)
+              full = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#FF1E27"', full)
+              return full
+
+          svg = re.sub(r'<text[^>]*>\s*<tspan[^>]*>\s*\d+\s*</tspan>[^<]*contributions[^<]*</text>', make_count_red, svg, flags=re.IGNORECASE)
+          svg = re.sub(r'<text[^>]*>\s*\d+\s+contributions\s*</text>', make_count_red, svg, flags=re.IGNORECASE)
+
+          # 若仍有殘留的黃色提交數字標籤，強制將 contributions 前的文字填色改為警戒紅
           svg = re.sub(
-              r'(\b\d+\b)(\s+contributions)',
-              r'<tspan fill="#FF1E27" font-weight="bold">\1</tspan><tspan fill="#FFFFFF">\2</tspan>',
+              r'(fill=["\'])#[0-9a-fA-F]{6}(["\'][^>]*>\s*\d+)',
+              r'\g<1>#FF1E27\g<2>',
               svg,
               count=1
           )
 
-          # 2. 右上角雷達圖：安全鎖定包含 fill-opacity 的多邊形/路徑，賦予暴走螢光綠
-          def fix_radar_tag(m):
+          # ==========================================
+          # 2. 右上角雷達圖：全面切換為暴走螢光綠
+          # ==========================================
+          def fix_radar_polygon(m):
               tag = m.group(0)
               tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
               tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
+              tag = re.sub(r'fill-opacity=["\'][^"\']+["\']', 'fill-opacity="0.38"', tag)
               return tag
 
-          svg = re.sub(r'<(polygon|path)[^>]+fill-opacity=[^>]+>', fix_radar_tag, svg, flags=re.IGNORECASE)
+          svg = re.sub(r'<(polygon|path)[^>]+fill-opacity[^>]+>', fix_radar_polygon, svg, flags=re.IGNORECASE)
 
-          # 3. 語言圓形圖：EVA 各機體官方代表色
+          # ==========================================
+          # 3. 語言圓形圖：EVA 全機體代表色矩陣
+          # ==========================================
           pie_colors = {
               "#f1e05a": "#F29600",  # 零號機 綾波麗橘黃 (EV-05)
               "#3572A5": "#19325C",  # Mark.06 渚薰深藍
@@ -73,7 +90,9 @@ jobs:
           for old_c, new_c in pie_colors.items():
               svg = re.sub(re.escape(old_c), new_c, svg, flags=re.IGNORECASE)
 
-          # 4. 核心色彩分流：黑底座 + 綠導軌 + 高柱螢光綠 + 矮柱夜戰暗紫
+          # ==========================================
+          # 4. 3D 柱狀圖：高峰 360 度全綠，其餘 360 度全紫
+          # ==========================================
           protected = [c.upper() for c in pie_colors.values()] + ["#FF1E27", "#39FF14", "#00FF66", "#FFFFFF"]
 
           def process_rgb_tuple(r_val, g_val, b_val):
@@ -94,18 +113,24 @@ jobs:
               if s < 0.15 and l >= 0.55:
                   return "#FFFFFF"
 
-              # D. 3D 柱狀圖顏色分配（原圖綠色調：色相 70° ~ 165°）
+              # D. 柱體處理：
+              # 在原版 night-green 中，最高峰天數柱體整組的特徵是：g_val > 140 且 g_val 比 r/b 高很多
               if 0.18 <= h <= 0.48 and s > 0.15:
-                  # 判定高柱頂面與受光面（原圖亮度高且綠色強）：暴走蓄光螢光綠
-                  if g_val >= 160 and l >= 0.42:
-                      if l >= 0.52:
-                          return "#39FF14"  # 高柱頂部發光
+                  # 【最高峰柱（360度整根全為暴走螢光綠）】
+                  # 判定條件：只要是最高等級柱體（受光側面、頂面與陰影側面）
+                  if g_val >= 148:
+                      if l >= 0.50:
+                          return "#39FF14"  # 頂面：EV-04 純粹暴走螢光綠
+                      elif l >= 0.38:
+                          return "#28C70E"  # 左受光面：螢光綠中調
                       else:
-                          return "#28C70E"  # 高柱側面微光
-                  # 判定其餘中低矮柱及背光面：Gaia EV-03 初號機夜戰裝甲紫
+                          return "#1A8A08"  # 右背光面：螢光綠深調陰影
+                  
+                  # 【中低矮柱（360度整根全為夜戰暗紫裝甲）】
                   else:
-                      purple_h = 0.768
-                      adj_l = min(0.68, max(0.24, l * 0.88))
+                      purple_h = 0.768  # Gaia 官方初號機紫
+                      # 保留原有的光影比例，但整體色調轉為飽和深紫裝甲
+                      adj_l = min(0.68, max(0.24, l * 0.90))
                       adj_s = min(1.0, max(0.75, s * 1.5))
                       nr, ng, nb = colorsys.hls_to_rgb(purple_h, adj_l, adj_s)
                       return f"#{int(round(nr*255)):02X}{int(round(ng*255)):02X}{int(round(nb*255)):02X}"
@@ -127,14 +152,14 @@ jobs:
               new_c = process_rgb_tuple(r, g, b)
               return new_c if new_c else m.group(0)
 
-          # 全量無損替換色碼
+          # 全量無損替換
           svg = re.sub(r'#[0-9a-fA-F]{6}', hex_replacer, svg)
           svg = re.sub(r'rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)', rgb_replacer, svg)
 
           with open(dest_path, "w", encoding="utf-8") as f:
               f.write(svg)
 
-          print("Successfully generated valid Eva-01 SVG.")
+          print("Successfully rendered Eva-01 with All-Green Peaks & NERV Red Count!")
           EOF
 
       - name: Commit & Push (Signed)
@@ -143,6 +168,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-3d-contrib/
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "chore: fix SVG syntax and apply complete Eva-01 palette [skip ci]"
+          git commit -m "chore: apply Evangelion 360-degree green peaks and red count [skip ci]"
           git pull --rebase
           git push
