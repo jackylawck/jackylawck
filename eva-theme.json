@@ -7,7 +7,9 @@
       "color1": "#5325A6",
       "color2": "#762DFA",
       "color3": "#A4E400",
-      "color4": "#39FF14"
+      "color4": "#39FF14",
+      "axis": "#762DFA",
+      "text": "#A4E400"
     }
   }
 ]
