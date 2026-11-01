@@ -45,7 +45,7 @@ jobs:
               svg = f.read()
 
           # ==========================================
-          # 1. 提交數字：注入 NERV 警戒紅 (#FF1E27)
+          # 1. 提交數字：精準注入 NERV 警戒紅 (#FF1E27)
           # ==========================================
           pos = svg.lower().find("contributions")
           if pos != -1:
@@ -67,7 +67,24 @@ jobs:
                   svg = svg[:start_pos] + prefix + svg[pos:]
 
           # ==========================================
-          # 2. 語言圓形圖：EVA 全機體代表色矩陣
+          # 2. 右上角能力雷達圖：最優先鎖定為暴走螢光綠
+          # ==========================================
+          def fix_radar_polygon(m):
+              tag = m.group(0)
+              if 'fill="none"' in tag or "fill='none'" in tag:
+                  return tag
+              tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
+              tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
+              if 'fill-opacity=' in tag:
+                  tag = re.sub(r'fill-opacity=["\'][^"\']+["\']', 'fill-opacity="0.38"', tag)
+              else:
+                  tag = tag[:-1] + ' fill-opacity="0.38">'
+              return tag
+
+          svg = re.sub(r'<(polygon|path)[^>]+fill-opacity[^>]+>', fix_radar_polygon, svg, flags=re.IGNORECASE)
+
+          # ==========================================
+          # 3. 語言圓形圖：EVA 全機體代表色矩陣
           # ==========================================
           pie_colors = {
               "#f1e05a": "#F29600",  # 零號機 綾波麗橘黃 (EV-05)
@@ -81,146 +98,64 @@ jobs:
               svg = re.sub(re.escape(old_c), new_c, svg, flags=re.IGNORECASE)
 
           # ==========================================
-          # 3. 3D 柱體一體化分色（整根高柱全綠，整根矮柱全紫）
+          # 4. 核心 3D 柱體：真實門檻分色 (高柱發光綠，其餘暗夜紫)
           # ==========================================
-          # 處理單個 pillar group (<g>...</g>)
-          def process_pillar_group(match):
-              group_xml = match.group(0)
-
-              # 尋找該組內所有 path 的 fill 顏色
-              colors = re.findall(r'fill=["\'](#[0-9a-fA-F]{6}|rgb\([^)]+\))["\']', group_xml)
-              if not colors or len(colors) < 2:
-                  return group_xml  # 非 3D 柱體結構，跳過
-
-              # 解析出群組內的最高亮度與最高綠色值（通常為頂面）
-              max_g = 0
-              max_l = 0
-              for c in colors:
-                  if c.startswith('#'):
-                      r = int(c[1:3], 16) / 255.0
-                      g = int(c[3:5], 16) / 255.0
-                      b = int(c[5:7], 16) / 255.0
-                  else:
-                      rgb_m = re.findall(r'\d+', c)
-                      if len(rgb_m) >= 3:
-                          r, g, b = int(rgb_m[0])/255.0, int(rgb_m[1])/255.0, int(rgb_m[2])/255.0
-                      else:
-                          continue
-                  h, l, s = colorsys.rgb_to_hls(r, g, b)
-                  if g > max_g: max_g = g
-                  if l > max_l: max_l = l
-
-              # 判定整根柱體是否為「高活躍尖峰柱」
-              # 頂面具有顯著高綠色純度 (G >= 0.70 且亮度 >= 0.40)
-              is_tall_peak = (max_g >= 0.70 and max_l >= 0.40)
-
-              # 對該組柱體內的所有 path 進行 360 度統一換色
-              def replace_face_color(face_match):
-                  tag = face_match.group(0)
-                  c_match = re.search(r'fill=["\'](#[0-9a-fA-F]{6}|rgb\([^)]+\))["\']', tag)
-                  if not c_match: return tag
-                  c = c_match.group(1)
-                  if c.startswith('#'):
-                      r, g, b = int(c[1:3], 16)/255.0, int(c[3:5], 16)/255.0, int(c[5:7], 16)/255.0
-                  else:
-                      rgb_m = re.findall(r'\d+', c)
-                      r, g, b = int(rgb_m[0])/255.0, int(rgb_m[1])/255.0, int(rgb_m[2])/255.0
-                  _, l, _ = colorsys.rgb_to_hls(r, g, b)
-
-                  if is_tall_peak:
-                      # 整根高柱：360度暴走螢光綠明暗面
-                      if l >= 0.48:
-                          new_color = "#39FF14"  # 頂面高光
-                      elif l >= 0.35:
-                          new_color = "#28C70E"  # 受光側面
-                      else:
-                          new_color = "#1A8A08"  # 背光側面
-                  else:
-                      # 整根矮柱：360度初號機夜戰暗紫裝甲
-                      if l >= 0.48:
-                          new_color = "#8A3FFC"  # 頂面紫
-                      elif l >= 0.35:
-                          new_color = "#5A189A"  # 受光側面紫
-                      else:
-                          new_color = "#3C096C"  # 背光側面暗紫
-
-                  return re.sub(r'fill=["\'][^"\']+["\']', f'fill="{new_color}"', tag)
-
-              return re.sub(r'<path[^>]+>', replace_face_color, group_xml)
-
-          # 對所有包含 3D 柱體 path 的 <g> 標籤套用整組轉換
-          svg = re.sub(r'<g[^>]*>(?:\s*<path[^>]+>\s*){2,5}</g>', process_pillar_group, svg)
-
-          # ==========================================
-          # 4. 全域底座與文字處理
-          # ==========================================
-          protected = [
-              "#FF1E27", "#39FF14", "#00FF66", "#FFFFFF", "#000000",
-              "#15441E", "#F29600", "#19325C", "#D9001B", "#E85298", "#8A3FFC",
-              "#28C70E", "#1A8A08", "#5A189A", "#3C096C"
-          ]
-
-          def process_general_color(r_val, g_val, b_val):
+          def process_3d_color(r_val, g_val, b_val):
               r, g, b = r_val / 255.0, g_val / 255.0, b_val / 255.0
               h, l, s = colorsys.rgb_to_hls(r, g, b)
 
-              # 背景純黑
+              # A. 背景大底座 -> 使徒純黑
               if l < 0.16 and s < 0.25: return "#000000"
-              # 跑道導引地盤
+              # B. 跑道地盤與底座格線 -> 螢光綠導引軌道
               if 0.16 <= l < 0.40 and s < 0.28: return "#15441E"
               if 0.40 <= l < 0.55 and s < 0.28: return "#39FF14"
-              # 文字純白
+              # C. 標籤文字 -> 使徒純白
               if s < 0.15 and l >= 0.55: return "#FFFFFF"
 
-              # 散落未分組的中低階綠色柱面 -> 統一收攏為暗紫裝甲
+              # D. 3D 柱體光影分流
               if (g_val > r_val) and (g_val > b_val) and s > 0.15:
-                  return "#5A189A"
+                  # 【真實門檻】：高活躍尖峰頂面 (G >= 115 或 L >= 0.36)
+                  if g_val >= 115 or l >= 0.36:
+                      if l >= 0.48:
+                          return "#39FF14"  # 頂面：EV-04 暴走蓄光螢光綠
+                      elif l >= 0.32:
+                          return "#28C70E"  # 受光側面：螢光綠中調
+                      else:
+                          return "#1A8A08"  # 背光側面：螢光綠暗面
+                  # 【中低基礎裝甲】：Gaia EV-03 夜戰深紫裝甲
+                  else:
+                      if l >= 0.26:
+                          return "#6A0DAD"  # 裝甲受光亮紫
+                      else:
+                          return "#3C096C"  # 裝甲背光暗紫
 
               return None
+
+          protected = [
+              "#FF1E27", "#39FF14", "#00FF66", "#FFFFFF", "#000000",
+              "#15441E", "#F29600", "#19325C", "#D9001B", "#E85298", "#8A3FFC",
+              "#28C70E", "#1A8A08", "#6A0DAD", "#3C096C"
+          ]
 
           def hex_cleaner(m):
               c = m.group(0)
               if c.upper() in protected: return c
               r, g, b = int(c[1:3], 16), int(c[3:5], 16), int(c[5:7], 16)
-              new_c = process_general_color(r, g, b)
+              new_c = process_3d_color(r, g, b)
               return new_c if new_c else c
 
           def rgb_cleaner(m):
               r, g, b = int(m.group(1)), int(m.group(2)), int(m.group(3))
-              new_c = process_general_color(r, g, b)
+              new_c = process_3d_color(r, g, b)
               return new_c if new_c else m.group(0)
 
           svg = re.sub(r'#[0-9a-fA-F]{6}', hex_cleaner, svg)
           svg = re.sub(r'rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)', rgb_cleaner, svg)
 
-          # ==========================================
-          # 5. 右上角能力雷達圖：終極強制鎖定為螢光綠
-          # ==========================================
-          def force_radar_neon(m):
-              tag = m.group(0)
-              # 排除背景網狀格線 (fill="none")
-              if re.search(r'fill=["\']none["\']', tag, re.I):
-                  return tag
-              # 強制賦予 EV-04 暴走螢光綠面與發光外框
-              tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
-              if 'stroke=' in tag:
-                  tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
-              else:
-                  tag = tag[:-1] + ' stroke="#00FF66">'
-              if 'fill-opacity=' in tag:
-                  tag = re.sub(r'fill-opacity=["\'][^"\']+["\']', 'fill-opacity="0.45"', tag)
-              elif 'opacity=' in tag:
-                  tag = re.sub(r'opacity=["\'][^"\']+["\']', 'opacity="0.45"', tag)
-              else:
-                  tag = tag[:-1] + ' fill-opacity="0.45">'
-              return tag
-
-          svg = re.sub(r'<polygon[^>]+>', force_radar_neon, svg, flags=re.IGNORECASE)
-
           with open(dest_path, "w", encoding="utf-8") as f:
               f.write(svg)
 
-          print("Successfully generated EVA-01 Masterpiece with 360-degree pillar coherence & glowing green radar!")
+          print("Successfully generated EVA-01 Masterpiece with Glowing Neon Peaks & Green Radar!")
           EOF
 
       - name: Commit & Push (Signed)
@@ -229,6 +164,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-3d-contrib/
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "chore: enforce 360-degree pillar integrity and glowing radar [skip ci]"
+          git commit -m "chore: restore glowing green radar and balanced peak contrast [skip ci]"
           git pull --rebase
           git push
