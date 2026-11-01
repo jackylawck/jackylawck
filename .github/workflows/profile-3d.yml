@@ -52,27 +52,31 @@ jobs:
               svg = f.read()
 
           # ==========================================
-          # 1. 提交數字：以標籤邊界安全注入 NERV 警戒紅 (#FF1E27)
+          # 1. 提交數字：雙重精準鎖定 NERV 警戒紅 (#FF1E27)
           # ==========================================
-          def format_contributions_text(match):
-              block = match.group(0)
-              def style_number(tspan_match):
-                  open_tag, num, close_tag = tspan_match.groups()
+          # 策略 A：錨點回溯，鎖定緊挨著 contributions 前面的數字標籤
+          pos = svg.lower().find("contributions")
+          if pos != -1:
+              start_pos = max(0, pos - 400)
+              prefix = svg[start_pos:pos]
+              
+              pattern = r'(<(?:text|tspan)\b[^>]*>)(\s*\d+\s*)(</(?:text|tspan)>)'
+              matches = list(re.finditer(pattern, prefix, flags=re.IGNORECASE))
+              if matches:
+                  last_m = matches[-1]
+                  open_tag, num_str, close_tag = last_m.groups()
                   if 'fill=' in open_tag:
                       open_tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#FF1E27"', open_tag)
                   else:
                       open_tag = open_tag[:-1] + ' fill="#FF1E27" font-weight="bold">'
-                  return f"{open_tag}{num}{close_tag}"
+                  new_tag = f"{open_tag}{num_str}{close_tag}"
+                  prefix = prefix[:last_m.start()] + new_tag + prefix[last_m.end():]
+                  svg = svg[:start_pos] + prefix + svg[pos:]
 
-              # 優先匹配內嵌的 tspan 數字節點，若無則匹配純文字數值
-              if '<tspan' in block:
-                  return re.sub(r'(<tspan\b[^>]*>)(\s*\d+\s*)(</tspan>)', style_number, block, count=1)
-              return re.sub(r'(>\s*)(\d+)(\s*contributions)', r'\1<tspan fill="#FF1E27" font-weight="bold">\2</tspan>\3', block, count=1)
-
-          # 嚴格限制在包含 contributions 的 <text> 標籤邊界內，杜絕任意字串切片
+          # 策略 B：若數字與 contributions 在同一個標籤內，強制為數字加上紅色 tspan
           svg = re.sub(
-              r'<text\b[^>]*>(?:(?!</text>)[\s\S])*?contributions(?:(?!</text>)[\s\S])*?</text>',
-              format_contributions_text,
+              r'(>\s*)(\d+)(\s*contributions\s*<)',
+              r'\1<tspan fill="#FF1E27" font-weight="bold">\2</tspan> contributions<',
               svg,
               count=1,
               flags=re.IGNORECASE
@@ -93,7 +97,7 @@ jobs:
               svg = re.sub(re.escape(old_c), new_c, svg, flags=re.IGNORECASE)
 
           # ==========================================
-          # 3. 核心 3D 柱體與底座：HLS 運算＋記憶體快取加速
+          # 3. 核心 3D 柱體與底座：HLS 運算＋快取加速
           # ==========================================
           color_cache = {}
 
@@ -163,10 +167,8 @@ jobs:
           # ==========================================
           def replace_radar_polygon(match):
               tag = match.group(0)
-              # 排除背景五角形格線 (fill="none" 或 fill:none)
               if 'fill="none"' in tag or "fill:none" in tag or "fill='none'" in tag:
                   return tag
-              # 強制換為 EV-04 暴走螢光綠面與發光線條
               tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
               tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
               tag = re.sub(r'fill:\s*[^;"]+', 'fill:#39FF14', tag)
@@ -175,7 +177,6 @@ jobs:
                   tag = tag[:-1] + ' fill-opacity="0.45">'
               return tag
 
-          # 雷達圖資料面是 SVG 中唯一具備填充的 <polygon> 標籤
           svg = re.sub(r'<polygon\b[^>]+>', replace_radar_polygon, svg, flags=re.IGNORECASE)
 
           # ==========================================
@@ -187,7 +188,7 @@ jobs:
           with open(dest_path, "w", encoding="utf-8") as f:
               f.write(svg)
 
-          print("Successfully rendered EVA-01 Masterpiece with optimized, robust engine!")
+          print("Successfully rendered EVA-01 Masterpiece with guaranteed NERV Red count!")
           EOF
 
       - name: Commit & Push (Signed)
@@ -196,6 +197,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-3d-contrib/
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "chore: optimize EVA-01 workflow with robust tag-bounded engine [skip ci]"
+          git commit -m "fix: restore dual-mode detection for NERV red count [skip ci]"
           git pull --rebase
           git push
