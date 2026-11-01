@@ -98,7 +98,7 @@ jobs:
               svg = re.sub(re.escape(old_c), new_c, svg, flags=re.IGNORECASE)
 
           # ==========================================
-          # 4. 核心 3D 柱體：真實門檻分色 (高柱發光綠，其餘暗夜紫)
+          # 4. 核心 3D 柱體：嚴格「AND」雙通道過濾
           # ==========================================
           def process_3d_color(r_val, g_val, b_val):
               r, g, b = r_val / 255.0, g_val / 255.0, b_val / 255.0
@@ -114,18 +114,20 @@ jobs:
 
               # D. 3D 柱體光影分流
               if (g_val > r_val) and (g_val > b_val) and s > 0.15:
-                  # 【真實門檻】：高活躍尖峰頂面 (G >= 115 或 L >= 0.36)
-                  if g_val >= 115 or l >= 0.36:
-                      if l >= 0.48:
+                  # 【嚴格雙條件判定】：必須 G >= 190 且 R >= 80，只有少數最高峰能過關
+                  if (g_val >= 190 and r_val >= 80) or l >= 0.56:
+                      if l >= 0.50:
                           return "#39FF14"  # 頂面：EV-04 暴走蓄光螢光綠
-                      elif l >= 0.32:
+                      elif l >= 0.35:
                           return "#28C70E"  # 受光側面：螢光綠中調
                       else:
                           return "#1A8A08"  # 背光側面：螢光綠暗面
-                  # 【中低基礎裝甲】：Gaia EV-03 夜戰深紫裝甲
+                  # 【其餘 80% 中低柱身】：Gaia EV-03 初號機夜戰深紫裝甲
                   else:
-                      if l >= 0.26:
-                          return "#6A0DAD"  # 裝甲受光亮紫
+                      if l >= 0.30:
+                          return "#7B2CBF"  # 裝甲受光亮紫
+                      elif l >= 0.20:
+                          return "#5A189A"  # 裝甲中調紫
                       else:
                           return "#3C096C"  # 裝甲背光暗紫
 
@@ -134,7 +136,7 @@ jobs:
           protected = [
               "#FF1E27", "#39FF14", "#00FF66", "#FFFFFF", "#000000",
               "#15441E", "#F29600", "#19325C", "#D9001B", "#E85298", "#8A3FFC",
-              "#28C70E", "#1A8A08", "#6A0DAD", "#3C096C"
+              "#28C70E", "#1A8A08", "#7B2CBF", "#5A189A", "#3C096C"
           ]
 
           def hex_cleaner(m):
@@ -155,7 +157,7 @@ jobs:
           with open(dest_path, "w", encoding="utf-8") as f:
               f.write(svg)
 
-          print("Successfully generated EVA-01 Masterpiece with Glowing Neon Peaks & Green Radar!")
+          print("Successfully generated EVA-01 Masterpiece with precise purple dominance and neon peaks!")
           EOF
 
       - name: Commit & Push (Signed)
@@ -164,6 +166,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-3d-contrib/
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "chore: restore glowing green radar and balanced peak contrast [skip ci]"
+          git commit -m "fix: switch to strict AND condition for green peaks [skip ci]"
           git pull --rebase
           git push
