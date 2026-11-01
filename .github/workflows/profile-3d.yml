@@ -31,7 +31,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: "eva-theme.json"
+          SETTING_JSON: ${{ github.workspace }}/eva-theme.json
 
       - name: Commit & Push (Signed)
         run: |
