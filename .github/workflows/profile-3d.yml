@@ -45,104 +45,7 @@ jobs:
               svg = f.read()
 
           # ==========================================
-          # 1. 覆寫 <style> 樣式表，擊破 CSS 顏色覆蓋問題
-          # ==========================================
-          # 注入專屬 EVA 樣式：數字強制警戒紅、文字使徒純白
-          eva_css_override = """
-          <style>
-            text { fill: #FFFFFF !important; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important; }
-            .total, .strong, .chart-label { fill: #FF1E27 !important; font-weight: bold !important; }
-            .contributions-number { fill: #FF1E27 !important; font-weight: 800 !important; }
-          </style>
-          """
-          svg = svg.replace("</svg>", f"{eva_css_override}</svg>")
-
-          # 暴力正則直接置換 contributions 前方的數字為 NERV 警戒紅
-          svg = re.sub(
-              r'(\d+)(\s*contributions)',
-              r'<tspan fill="#FF1E27" font-weight="bold">\1</tspan><tspan fill="#FFFFFF">\2</tspan>',
-              svg,
-              count=1
-          )
-
-          # ==========================================
-          # 2. 右上角能力雷達圖：全面切換為暴走螢光綠
-          # ==========================================
-          def fix_radar_polygon(m):
-              tag = m.group(0)
-              tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
-              tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
-              tag = re.sub(r'fill-opacity=["\'][^"\']+["\']', 'fill-opacity="0.38"', tag)
-              return tag
-
-          svg = re.sub(r'<(polygon|path)[^>]+fill-opacity[^>]+>', fix_radar_polygon, svg, flags=re.IGNORECASE)
-
-          # ==========================================
-          # 3. 核心 3D 柱體與底盤轉換
-          # ==========================================
-          def process_3d_color(r_val, g_val, b_val):
-              r, g, b = r_val / 255.0, g_val / 255.0, b_val / 255.0
-              h, l, s = colorsys.rgb_to_hls(r, g, b)
-
-              # A. 背景大底座 -> 使徒純黑 (#000000)
-              if l < 0.16 and s < 0.25:
-                  return "#000000"
-
-              # B. 跑道地盤與底座格線 -> 螢光綠發光導引軌道
-              if 0.16 <= l < 0.40 and s < 0.28:
-                  return "#15441E"
-              if 0.40 <= l < 0.55 and s < 0.28:
-                  return "#39FF14"
-
-              # C. 標籤文字 -> 使徒純白
-              if s < 0.15 and l >= 0.55:
-                  return "#FFFFFF"
-
-              # D. 3D 柱體處理：
-              # 只要是綠色系（G 明顯大於 R 與 B）
-              if (g_val > r_val * 1.15) and (g_val > b_val * 1.15) and s > 0.15:
-                  # 【判定最高峰柱（360度整根全為螢光綠）】
-                  # 將門檻放寬至 G >= 95 且亮度 >= 0.30，完整覆蓋受光面與最深背光面
-                  if g_val >= 95 and l >= 0.28:
-                      if l >= 0.50:
-                          return "#39FF14"  # 頂面：暴走蓄光螢光綠
-                      elif l >= 0.36:
-                          return "#28C70E"  # 受光側面：螢光綠中調
-                      else:
-                          return "#1A8A08"  # 背光側面：螢光綠暗面
-                  
-                  # 【其餘中低矮柱（360度整根全為 Gaia EV-03 夜戰深紫）】
-                  else:
-                      purple_h = 0.768  # 初號機紫
-                      adj_l = min(0.68, max(0.24, l * 0.90))
-                      adj_s = min(1.0, max(0.75, s * 1.5))
-                      nr, ng, nb = colorsys.hls_to_rgb(purple_h, adj_l, adj_s)
-                      return f"#{int(round(nr*255)):02X}{int(round(ng*255)):02X}{int(round(nb*255)):02X}"
-
-              return None
-
-          def hex_replacer(m):
-              c = m.group(0)
-              protected = ["#FF1E27", "#39FF14", "#00FF66", "#FFFFFF", "#000000", "#15441E"]
-              if c.upper() in protected:
-                  return c
-              r = int(c[1:3], 16)
-              g = int(c[3:5], 16)
-              b = int(c[5:7], 16)
-              new_c = process_3d_color(r, g, b)
-              return new_c if new_c else c
-
-          def rgb_replacer(m):
-              r, g, b = int(m.group(1)), int(m.group(2)), int(m.group(3))
-              new_c = process_3d_color(r, g, b)
-              return new_c if new_c else m.group(0)
-
-          # 全量無損替換
-          svg = re.sub(r'#[0-9a-fA-F]{6}', hex_replacer, svg)
-          svg = re.sub(r'rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)', rgb_replacer, svg)
-
-          # ==========================================
-          # 4. 語言圓形圖：EVA 全機體代表色矩陣 (強制覆蓋)
+          # 1. 語言圓形圖：EVA 全機體代表色矩陣 (優先替換)
           # ==========================================
           pie_colors = {
               "#f1e05a": "#F29600",  # 零號機 綾波麗橘黃 (EV-05)
@@ -155,10 +58,127 @@ jobs:
           for old_c, new_c in pie_colors.items():
               svg = re.sub(re.escape(old_c), new_c, svg, flags=re.IGNORECASE)
 
+          # ==========================================
+          # 2. 右上角雷達圖：切換為暴走螢光綠
+          # ==========================================
+          def fix_radar_polygon(m):
+              tag = m.group(0)
+              if 'fill="none"' in tag or "fill='none'" in tag:
+                  return tag
+              tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
+              tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
+              tag = re.sub(r'fill-opacity=["\'][^"\']+["\']', 'fill-opacity="0.38"', tag)
+              return tag
+
+          svg = re.sub(r'<(polygon|path)[^>]+fill-opacity[^>]+>', fix_radar_polygon, svg, flags=re.IGNORECASE)
+
+          # ==========================================
+          # 3. 核心 3D 柱體與底座轉換
+          # ==========================================
+          def process_3d_color(r_val, g_val, b_val):
+              r, g, b = r_val / 255.0, g_val / 255.0, b_val / 255.0
+              h, l, s = colorsys.rgb_to_hls(r, g, b)
+
+              # A. 背景大底座 -> 使徒純黑
+              if l < 0.16 and s < 0.25:
+                  return "#000000"
+
+              # B. 跑道地盤與底座格線 -> 螢光綠導引軌道
+              if 0.16 <= l < 0.40 and s < 0.28:
+                  return "#15441E"
+              if 0.40 <= l < 0.55 and s < 0.28:
+                  return "#39FF14"
+
+              # C. 標籤文字 (Commit, Issue, Repo 等) -> 使徒純白
+              if s < 0.15 and l >= 0.55:
+                  return "#FFFFFF"
+
+              # D. 3D 柱體分色處理
+              if (g_val > r_val) and (g_val > b_val) and s > 0.15:
+                  # 【最高峰柱 360 度全綠】門檻 g_val >= 100 覆蓋受光與背光面
+                  if g_val >= 100:
+                      if l >= 0.45:
+                          return "#39FF14"  # 頂面：暴走蓄光螢光綠
+                      elif l >= 0.30:
+                          return "#28C70E"  # 受光側面：螢光綠中調
+                      else:
+                          return "#1A8A08"  # 背光側面：螢光綠暗面
+                  # 【中低矮柱 360 度夜戰暗紫裝甲】
+                  else:
+                      purple_h = 0.768  # 官方初號機紫
+                      adj_l = min(0.68, max(0.24, l * 0.90))
+                      adj_s = min(1.0, max(0.75, s * 1.5))
+                      nr, ng, nb = colorsys.hls_to_rgb(purple_h, adj_l, adj_s)
+                      return f"#{int(round(nr*255)):02X}{int(round(ng*255)):02X}{int(round(nb*255)):02X}"
+
+              return None
+
+          def hex_replacer(m):
+              c = m.group(0)
+              protected = [
+                  "#FF1E27", "#39FF14", "#00FF66", "#FFFFFF", "#000000",
+                  "#15441E", "#F29600", "#19325C", "#D9001B", "#E85298", "#8A3FFC"
+              ]
+              if c.upper() in protected:
+                  return c
+              r, g, b = int(c[1:3], 16), int(c[3:5], 16), int(c[5:7], 16)
+              new_c = process_3d_color(r, g, b)
+              return new_c if new_c else c
+
+          def rgb_replacer(m):
+              r, g, b = int(m.group(1)), int(m.group(2)), int(m.group(3))
+              new_c = process_3d_color(r, g, b)
+              return new_c if new_c else m.group(0)
+
+          # 全量無損替換色彩
+          svg = re.sub(r'#[0-9a-fA-F]{6}', hex_replacer, svg)
+          svg = re.sub(r'rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)', rgb_replacer, svg)
+
+          # ==========================================
+          # 4. 提交數字：以錨點精準注入 NERV 警戒紅 (#FF1E27)
+          # ==========================================
+          # 尋找 contributions 所在位置
+          pos = svg.lower().find("contributions")
+          if pos != -1:
+              # 取 contributions 前方 300 字元的區域
+              start_pos = max(0, pos - 300)
+              prefix = svg[start_pos:pos]
+
+              # 在 prefix 中尋找最後出現的純數字標籤（相容 <tspan> 或 <text>）
+              # 匹配形如：<tag ...>6270</tag> 或 >6270<
+              def red_injector(match):
+                  tag_open = match.group(1)
+                  num = match.group(2)
+                  tag_close = match.group(3)
+                  # 若標籤已有 fill 屬性則替換，否則注入 fill 與粗體
+                  if 'fill=' in tag_open:
+                      tag_open = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#FF1E27"', tag_open)
+                  else:
+                      tag_open = tag_open[:-1] + ' fill="#FF1E27" font-weight="bold">'
+                  return f"{tag_open}{num}{tag_close}"
+
+              # 尋找最近的一個包含數字的 XML 標籤並單獨改色
+              pattern = r'(<(?:text|tspan)[^>]*>)(\s*\d+\s*)(</(?:text|tspan)>)'
+              matches = list(re.finditer(pattern, prefix, flags=re.IGNORECASE))
+              if matches:
+                  last_m = matches[-1]
+                  new_tag = red_injector(last_m)
+                  prefix = prefix[:last_m.start()] + new_tag + prefix[last_m.end():]
+                  svg = svg[:start_pos] + prefix + svg[pos:]
+              else:
+                  # 備用機制：若直接裸露在標籤內（如 >6270 contributions<）
+                  svg = re.sub(
+                      r'(>\s*)(\d+)(\s*contributions)',
+                      r'\1<tspan fill="#FF1E27" font-weight="bold">\2</tspan> contributions',
+                      svg,
+                      count=1,
+                      flags=re.IGNORECASE
+                  )
+
           with open(dest_path, "w", encoding="utf-8") as f:
               f.write(svg)
 
-          print("Successfully rendered Eva-01 Masterpiece with CSS overrides and 360-degree green pillars!")
+          print("Successfully rendered Eva-01 Masterpiece with NERV Red Number!")
           EOF
 
       - name: Commit & Push (Signed)
@@ -167,6 +187,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-3d-contrib/
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "chore: apply CSS overrides and 360-degree green pillars [skip ci]"
+          git commit -m "chore: inject NERV red count and complete Eva-01 theme [skip ci]"
           git pull --rebase
           git push
