@@ -32,7 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Apply Neon Genesis Evangelion Palette (Red Count, Neon Green Radar & Tall Pillars)
+      - name: Apply EVA-01 Masterpiece (NERV Red Count, Neon Radar & Bi-Color Pillars)
         run: |
           python3 - << 'EOF'
           import colorsys
@@ -44,15 +44,63 @@ jobs:
           with open(src_path, "r", encoding="utf-8") as f:
               svg = f.read()
 
-          # 1. 提交數字改為 NERV 警戒紅 (#FF1E27)，後方文字保持使徒純白 (#FFFFFF)
-          svg = re.sub(
-              r'(>[^<]*?)(\b\d+\b)(\s+)(contributions)([^<]*?<)',
-              r'\1<tspan fill="#FF1E27" font-weight="bold">\2</tspan>\3<tspan fill="#FFFFFF">\4</tspan>\5',
-              svg,
-              flags=re.IGNORECASE
-          )
+          # ==========================================
+          # 1. 精準修改「6266 contributions」文字區塊
+          # ==========================================
+          if "contributions" in svg:
+              c_idx = svg.find("contributions")
+              t_start = svg.rfind("<text", 0, c_idx)
+              t_end = svg.find("</text>", c_idx)
+              if t_start != -1 and t_end != -1 and (c_idx - t_start < 400):
+                  t_end += 7
+                  block = svg[t_start:t_end]
+                  # 將整個文字標籤的基礎色轉為純白 (#FFFFFF)
+                  block = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#FFFFFF"', block)
+                  # 獨立將裡面的數字標註為 NERV 警戒紅 (#FF1E27)
+                  if re.search(r'<tspan[^>]*>\s*\d+\s*</tspan>', block):
+                      block = re.sub(
+                          r'<tspan[^>]*>(\s*\d+\s*)</tspan>',
+                          r'<tspan fill="#FF1E27" font-weight="bold">\1</tspan>',
+                          block
+                      )
+                  else:
+                      block = re.sub(
+                          r'(\b\d+\b)',
+                          r'<tspan fill="#FF1E27" font-weight="bold">\1</tspan>',
+                          block,
+                          count=1
+                      )
+                  svg = svg[:t_start] + block + svg[t_end:]
 
-          # 2. 圓形圖：EVA 全機體代表色矩陣
+          # ==========================================
+          # 2. 右上角能力雷達圖：鎖定為 Gaia EV-04 螢光綠
+          # ==========================================
+          for anchor in ["PullReq", "Commit", "Review"]:
+              pos = svg.find(anchor)
+              if pos != -1:
+                  # 擷取雷達圖所在群組的範圍
+                  chunk_start = max(0, pos - 1500)
+                  chunk_end = min(len(svg), pos + 1500)
+                  radar_chunk = svg[chunk_start:chunk_end]
+
+                  # 找出雷達圖的數值填充多邊形/路徑（排除無填充的網格線）
+                  def make_radar_neon(m):
+                      tag = m.group(0)
+                      if 'fill="none"' in tag or "fill:none" in tag:
+                          return tag
+                      tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
+                      tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
+                      tag = re.sub(r'fill:\s*[^;"]+', 'fill:#39FF14', tag)
+                      tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#00FF66', tag)
+                      return tag
+
+                  new_chunk = re.sub(r'<(polygon|path)[^>]+>', make_radar_neon, radar_chunk, flags=re.IGNORECASE)
+                  svg = svg[:chunk_start] + new_chunk + svg[chunk_end:]
+                  break
+
+          # ==========================================
+          # 3. 語言圓形圖：EVA 全機體官方配色陣列
+          # ==========================================
           pie_replacements = {
               "#f1e05a": "#F29600",  # 零號機 綾波麗橘黃 (EV-05)
               "#3572A5": "#19325C",  # Mark.06 渚薰深藍
@@ -64,19 +112,10 @@ jobs:
           for old_c, new_c in pie_replacements.items():
               svg = re.sub(re.escape(old_c), new_c, svg, flags=re.IGNORECASE)
 
-          # 3. 右上角能力雷達圖：獨立擷取為暴走螢光綠
-          def radar_repl(m):
-              tag = m.group(0)
-              tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
-              tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
-              tag = re.sub(r'fill:\s*[^;"]+', 'fill:#39FF14', tag)
-              tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#00FF66', tag)
-              return tag
-
-          svg = re.sub(r'<polygon[^>]+fill-opacity=[^>]+>', radar_repl, svg, flags=re.IGNORECASE)
-
-          # 4. 核心色彩矩陣：黑底座 + 綠軌道 + 紫矮柱 + 螢光綠高柱
-          protected_colors = [c.upper() for c in pie_replacements.values()] + ["#FF1E27", "#39FF14", "#00FF66"]
+          # ==========================================
+          # 4. 柱狀圖光影分層（高柱螢光綠、矮柱暗夜紫）
+          # ==========================================
+          protected = [c.upper() for c in pie_replacements.values()] + ["#FF1E27", "#39FF14", "#00FF66", "#FFFFFF"]
 
           def process_rgb_tuple(r_val, g_val, b_val):
               r, g, b = r_val / 255.0, g_val / 255.0, b_val / 255.0
@@ -86,7 +125,7 @@ jobs:
               if l < 0.16 and s < 0.25:
                   return "#000000"
 
-              # B. 跑道地盤與底座格線 -> 螢光綠發光導引軌道
+              # B. 跑道發光軌道導引格線
               if 0.16 <= l < 0.40 and s < 0.28:
                   return "#15441E"  # 發光綠底板
               if 0.40 <= l < 0.55 and s < 0.28:
@@ -96,19 +135,19 @@ jobs:
               if s < 0.15 and l >= 0.55:
                   return "#FFFFFF"
 
-              # D. 3D 柱體光影判定（原圖綠色調：色相 70° ~ 165°）
+              # D. 3D 柱狀圖顏色分配（色相 70° ~ 165° 的綠色調）
               if 0.18 <= h <= 0.48 and s > 0.15:
-                  # 判定高柱（原圖 Level 4 高活躍天數）：綠色通道顯著高 (g_val >= 170)
-                  if g_val >= 170:
+                  # 高峰柱體（高活躍天數）：暴走蓄光螢光綠
+                  if g_val >= 165:
                       if l >= 0.50:
-                          return "#39FF14"  # 高柱頂部：暴走蓄光螢光綠
-                      elif l >= 0.40:
-                          return "#28C70E"  # 高柱側面受光
+                          return "#39FF14"  # 柱體頂面
+                      elif l >= 0.38:
+                          return "#28C70E"  # 側面受光面
                       else:
-                          return "#1FA30A"  # 高柱側面背光
-                  # 判定中矮柱（Level 1~3 基礎天數）：Gaia EV-03 / EV-01 初號機夜戰裝甲紫
+                          return "#1FA30A"  # 側面背光面
+                  # 中低矮柱（基礎天數）：Gaia EV-03 夜戰深紫裝甲
                   else:
-                      purple_h = 0.768
+                      purple_h = 0.768  # 官方初號機紫
                       adj_l = min(0.68, max(0.24, l * 0.88))
                       adj_s = min(1.0, max(0.75, s * 1.5))
                       nr, ng, nb = colorsys.hls_to_rgb(purple_h, adj_l, adj_s)
@@ -116,31 +155,28 @@ jobs:
 
               return None
 
-          def hex_replacer(match):
-              hex_code = match.group(0)
-              if hex_code.upper() in protected_colors:
-                  return hex_code
-              r = int(hex_code[1:3], 16)
-              g = int(hex_code[3:5], 16)
-              b = int(hex_code[5:7], 16)
+          def hex_replacer(m):
+              c = m.group(0)
+              if c.upper() in protected:
+                  return c
+              r = int(c[1:3], 16)
+              g = int(c[3:5], 16)
+              b = int(c[5:7], 16)
               new_c = process_rgb_tuple(r, g, b)
-              return new_c if new_c else hex_code
+              return new_c if new_c else c
 
-          def rgb_replacer(match):
-              r = int(match.group(1))
-              g = int(match.group(2))
-              b = int(match.group(3))
+          def rgb_replacer(m):
+              r, g, b = int(m.group(1)), int(m.group(2)), int(m.group(3))
               new_c = process_rgb_tuple(r, g, b)
-              return new_c if new_c else match.group(0)
+              return new_c if new_c else m.group(0)
 
-          # 執行替換
           svg = re.sub(r'#[0-9a-fA-F]{6}', hex_replacer, svg)
           svg = re.sub(r'rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)', rgb_replacer, svg)
 
           with open(dest_path, "w", encoding="utf-8") as f:
               f.write(svg)
 
-          print("Successfully injected Neon Genesis Evangelion Unit-01 Masterpiece.")
+          print("Successfully rendered Eva-01 Masterpiece with Red Count & Neon Radar!")
           EOF
 
       - name: Commit & Push (Signed)
