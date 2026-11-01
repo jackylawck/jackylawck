@@ -31,7 +31,25 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: ${{ github.workspace }}/eva-theme.json
+
+      - name: Generate Evangelion Unit-01 Theme
+        run: |
+          SRC="profile-3d-contrib/profile-night-green.svg"
+          DEST="profile-3d-contrib/profile-eva-01.svg"
+          if [ -f "$SRC" ]; then
+            cp "$SRC" "$DEST"
+            # 替換底色為 EVA 暗黑拘束紫
+            sed -i 's/#222222/#120B1C/gI' "$DEST"
+            sed -i 's/#2d333b/#180d26/gI' "$DEST"
+            sed -i 's/#1c2128/#120B1C/gI' "$DEST"
+            # 替換輔助色與坐標軸為初號機紫色系
+            sed -i 's/#444c56/#5325A6/gI' "$DEST"
+            sed -i 's/#768390/#762DFA/gI' "$DEST"
+            # 確保高亮處為覺醒螢光綠
+            sed -i 's/#57ab5a/#39FF14/gI' "$DEST"
+            sed -i 's/#3fb950/#A4E400/gI' "$DEST"
+            echo "Successfully generated $DEST with Eva-01 palette."
+          fi
 
       - name: Commit & Push (Signed)
         run: |
@@ -39,6 +57,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-3d-contrib/
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "chore: update 3D graph [skip ci]"
+          git commit -m "chore: update Eva-01 3D graph [skip ci]"
           git pull --rebase
           git push
