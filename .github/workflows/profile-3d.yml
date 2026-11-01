@@ -38,17 +38,32 @@ jobs:
           DEST="profile-3d-contrib/profile-eva-01.svg"
           if [ -f "$SRC" ]; then
             cp "$SRC" "$DEST"
-            # 替換底色為 EVA 暗黑拘束紫
-            sed -i 's/#222222/#120B1C/gI' "$DEST"
-            sed -i 's/#2d333b/#180d26/gI' "$DEST"
-            sed -i 's/#1c2128/#120B1C/gI' "$DEST"
-            # 替換輔助色與坐標軸為初號機紫色系
-            sed -i 's/#444c56/#5325A6/gI' "$DEST"
-            sed -i 's/#768390/#762DFA/gI' "$DEST"
-            # 確保高亮處為覺醒螢光綠
-            sed -i 's/#57ab5a/#39FF14/gI' "$DEST"
-            sed -i 's/#3fb950/#A4E400/gI' "$DEST"
-            echo "Successfully generated $DEST with Eva-01 palette."
+
+            # 1. 拘束器黑與深暗紫底座
+            sed -i 's/#222222/#0D0714/gI' "$DEST"
+            sed -i 's/#2d333b/#180928/gI' "$DEST"
+            sed -i 's/#1c2128/#0D0714/gI' "$DEST"
+            sed -i 's/#161b22/#10071A/gI' "$DEST"
+
+            # 2. 坐標軸與輔助網格：初號機紫
+            sed -i 's/#444c56/#38175E/gI' "$DEST"
+            sed -i 's/#768390/#5E239D/gI' "$DEST"
+
+            # 3. 柱體主體色：大面積收攏為初號機暗紫裝甲（低至高階提交全數轉紫）
+            sed -i 's/#0e4429/#280C44/gI' "$DEST"
+            sed -i 's/#006d32/#3E1668/gI' "$DEST"
+            sed -i 's/#196127/#4D1980/gI' "$DEST"
+            sed -i 's/#238636/#5D1E99/gI' "$DEST"
+            sed -i 's/#26a641/#7324BD/gI' "$DEST"
+            sed -i 's/#2e6f40/#4D1980/gI' "$DEST"
+            sed -i 's/#316d39/#5D1E99/gI' "$DEST"
+            sed -i 's/#3fb950/#6D1FB5/gI' "$DEST"
+
+            # 4. 點綴色：僅最高提交峰值與雷達圖線條保留暴走螢光綠
+            sed -i 's/#39d353/#39FF14/gI' "$DEST"
+            sed -i 's/#57ab5a/#00FF66/gI' "$DEST"
+
+            echo "Successfully generated Eva-01 purple & green palette."
           fi
 
       - name: Commit & Push (Signed)
