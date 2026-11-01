@@ -45,7 +45,7 @@ jobs:
               svg = f.read()
 
           # ==========================================
-          # 1. 語言圓形圖：EVA 全機體代表色矩陣 (優先替換)
+          # 1. 語言圓形圖：EVA 全機體代表色矩陣
           # ==========================================
           pie_colors = {
               "#f1e05a": "#F29600",  # 零號機 綾波麗橘黃 (EV-05)
@@ -89,23 +89,24 @@ jobs:
               if 0.40 <= l < 0.55 and s < 0.28:
                   return "#39FF14"
 
-              # C. 標籤文字 (Commit, Issue, Repo 等) -> 使徒純白
+              # C. 標籤文字 -> 使徒純白
               if s < 0.15 and l >= 0.55:
                   return "#FFFFFF"
 
-              # D. 3D 柱體分色處理
+              # D. 3D 柱體處理
               if (g_val > r_val) and (g_val > b_val) and s > 0.15:
-                  # 【最高峰柱 360 度全綠】門檻 g_val >= 100 覆蓋受光與背光面
-                  if g_val >= 100:
-                      if l >= 0.45:
-                          return "#39FF14"  # 頂面：暴走蓄光螢光綠
-                      elif l >= 0.30:
+                  # 【最高峰柱 360 度螢光綠】
+                  # 嚴格限制：僅保留頂尖最高峰 (G >= 205)，其餘全數打入暗紫裝甲
+                  if g_val >= 205:
+                      if l >= 0.52:
+                          return "#39FF14"  # 頂面：EV-04 暴走螢光綠
+                      elif l >= 0.38:
                           return "#28C70E"  # 受光側面：螢光綠中調
                       else:
-                          return "#1A8A08"  # 背光側面：螢光綠暗面
-                  # 【中低矮柱 360 度夜戰暗紫裝甲】
+                          return "#1A8A08"  # 背光側面：螢光綠暗調
+                  # 【中低柱群 360 度初號機夜戰深紫裝甲 (佔 80% 以上)】
                   else:
-                      purple_h = 0.768  # 官方初號機紫
+                      purple_h = 0.768  # Gaia 官方初號機紫
                       adj_l = min(0.68, max(0.24, l * 0.90))
                       adj_s = min(1.0, max(0.75, s * 1.5))
                       nr, ng, nb = colorsys.hls_to_rgb(purple_h, adj_l, adj_s)
@@ -130,55 +131,36 @@ jobs:
               new_c = process_3d_color(r, g, b)
               return new_c if new_c else m.group(0)
 
-          # 全量無損替換色彩
           svg = re.sub(r'#[0-9a-fA-F]{6}', hex_replacer, svg)
           svg = re.sub(r'rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)', rgb_replacer, svg)
 
           # ==========================================
-          # 4. 提交數字：以錨點精準注入 NERV 警戒紅 (#FF1E27)
+          # 4. 提交數字：精準注入 NERV 警戒紅 (#FF1E27)
           # ==========================================
-          # 尋找 contributions 所在位置
           pos = svg.lower().find("contributions")
           if pos != -1:
-              # 取 contributions 前方 300 字元的區域
               start_pos = max(0, pos - 300)
               prefix = svg[start_pos:pos]
 
-              # 在 prefix 中尋找最後出現的純數字標籤（相容 <tspan> 或 <text>）
-              # 匹配形如：<tag ...>6270</tag> 或 >6270<
-              def red_injector(match):
-                  tag_open = match.group(1)
-                  num = match.group(2)
-                  tag_close = match.group(3)
-                  # 若標籤已有 fill 屬性則替換，否則注入 fill 與粗體
-                  if 'fill=' in tag_open:
-                      tag_open = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#FF1E27"', tag_open)
-                  else:
-                      tag_open = tag_open[:-1] + ' fill="#FF1E27" font-weight="bold">'
-                  return f"{tag_open}{num}{tag_close}"
-
-              # 尋找最近的一個包含數字的 XML 標籤並單獨改色
               pattern = r'(<(?:text|tspan)[^>]*>)(\s*\d+\s*)(</(?:text|tspan)>)'
               matches = list(re.finditer(pattern, prefix, flags=re.IGNORECASE))
               if matches:
                   last_m = matches[-1]
-                  new_tag = red_injector(last_m)
+                  tag_open = last_m.group(1)
+                  num = last_m.group(2)
+                  tag_close = last_m.group(3)
+                  if 'fill=' in tag_open:
+                      tag_open = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#FF1E27"', tag_open)
+                  else:
+                      tag_open = tag_open[:-1] + ' fill="#FF1E27" font-weight="bold">'
+                  new_tag = f"{tag_open}{num}{tag_close}"
                   prefix = prefix[:last_m.start()] + new_tag + prefix[last_m.end():]
                   svg = svg[:start_pos] + prefix + svg[pos:]
-              else:
-                  # 備用機制：若直接裸露在標籤內（如 >6270 contributions<）
-                  svg = re.sub(
-                      r'(>\s*)(\d+)(\s*contributions)',
-                      r'\1<tspan fill="#FF1E27" font-weight="bold">\2</tspan> contributions',
-                      svg,
-                      count=1,
-                      flags=re.IGNORECASE
-                  )
 
           with open(dest_path, "w", encoding="utf-8") as f:
               f.write(svg)
 
-          print("Successfully rendered Eva-01 Masterpiece with NERV Red Number!")
+          print("Successfully rendered Eva-01 Masterpiece with precise purple/green ratio!")
           EOF
 
       - name: Commit & Push (Signed)
@@ -187,6 +169,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-3d-contrib/
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "chore: inject NERV red count and complete Eva-01 theme [skip ci]"
+          git commit -m "chore: tighten peak green threshold to 205 for Eva purple dominance [skip ci]"
           git pull --rebase
           git push
