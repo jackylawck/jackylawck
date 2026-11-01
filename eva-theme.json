@@ -1,15 +1,11 @@
 [
   {
+    "type": "normal",
     "fileName": "profile-eva-01.svg",
-    "theme": {
-      "background": "#120B1C",
-      "color0": "#2D1854",
-      "color1": "#5325A6",
-      "color2": "#762DFA",
-      "color3": "#A4E400",
-      "color4": "#39FF14",
-      "axis": "#762DFA",
-      "text": "#A4E400"
-    }
+    "backgroundColor": "#120B1C",
+    "foregroundColor": "#A4E400",
+    "strongColor": "#39FF14",
+    "weakColor": "#5325A6",
+    "radarColor": "#39FF14"
   }
 ]
