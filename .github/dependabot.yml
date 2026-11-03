@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # 追蹤維護 GitHub Actions 的版本與安全性修補
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(ci)"
+      include: "scope"
