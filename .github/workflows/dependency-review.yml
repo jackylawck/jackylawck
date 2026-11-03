@@ -21,12 +21,14 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
       - name: Dependency Review
         uses: actions/dependency-review-action@v4
         with:
-          comment-summary-in-pr: always
+          # 採用精準的 PR 創建者語意判定；非 Dependabot 才在 PR 留言，避開 403 權限陷阱
+          comment-summary-in-pr: ${{ github.event.pull_request.user.login != 'dependabot[bot]' }}
           fail-on-severity: moderate
           deny-licenses: GPL-1.0-or-later, LGPL-2.0-or-later
           retry-on-snapshot-warnings: true
@@ -36,6 +38,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: sbom-dependency-list
+          name: sbom-dependency-list-${{ github.event.pull_request.head.sha }}
           path: dependency-review-sbom.spdx
+          if-no-files-found: ignore
           retention-days: 90
