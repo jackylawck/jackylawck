@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-EVA-01 Masterpiece Theme Processor for GitHub Profile 3D Contrib.
-Applies NERV Tactical Red, EVA-01 Berserk Neon Green, and A.T. Field Amber Orange.
-"""
-
 import colorsys
 import os
 import re
@@ -21,14 +16,11 @@ def main():
     with open(src_path, "r", encoding="utf-8") as f:
         svg = f.read()
 
-    # ==========================================
-    # 1. 提交數字：精準鎖定 NERV 警戒紅 (#FF1E27)
-    # ==========================================
+    # 1. 提交數字：鎖定 NERV 警戒紅 (#FF1E27)
     pos = svg.lower().find("contributions")
     if pos != -1:
         start_pos = max(0, pos - 400)
         prefix = svg[start_pos:pos]
-        
         pattern = r'(<(?:text|tspan)\b[^>]*>)(\s*\d+\s*)(</(?:text|tspan)>)'
         matches = list(re.finditer(pattern, prefix, flags=re.IGNORECASE))
         if matches:
@@ -50,23 +42,19 @@ def main():
         flags=re.IGNORECASE
     )
 
-    # ==========================================
-    # 2. 語言圓形圖：EVA 全機體代表色矩陣
-    # ==========================================
+    # 2. 圓形圖：機體專屬代表色矩陣
     pie_colors = {
-        "#f1e05a": "#F29600",  # 零號機 綾波麗橘黃 (EV-05)
-        "#3572A5": "#19325C",  # Mark.06 渚薰深藍
-        "#e34c26": "#D9001B",  # 二號機 明日香裝甲紅
-        "#3178c6": "#E85298",  # 八號機 真希波特裝粉
-        "#563d7c": "#8A3FFC",  # 初號機 高光亮紫
-        "#89e051": "#39FF14",  # 初號機 螢光綠 (EV-04)
+        "#f1e05a": "#F29600",
+        "#3572A5": "#19325C",
+        "#e34c26": "#D9001B",
+        "#3178c6": "#E85298",
+        "#563d7c": "#8A3FFC",
+        "#89e051": "#39FF14",
     }
     for old_c, new_c in pie_colors.items():
         svg = re.sub(re.escape(old_c), new_c, svg, flags=re.IGNORECASE)
 
-    # ==========================================
-    # 3. 核心 3D 柱體與底座：HLS 運算＋快取回寫
-    # ==========================================
+    # 3. 3D 柱體與使徒黑底座
     color_cache = {}
 
     def process_3d_color(r_val, g_val, b_val):
@@ -77,28 +65,24 @@ def main():
         r, g, b = r_val / 255.0, g_val / 255.0, b_val / 255.0
         h, l, s = colorsys.rgb_to_hls(r, g, b)
 
-        # A. 背景大底座 -> 使徒純黑
         if l < 0.16 and s < 0.25:
             result = "#000000"
-        # B. 跑道地盤與底座格線 -> 螢光綠導引軌道
         elif 0.16 <= l < 0.40 and s < 0.28:
             result = "#15441E"
         elif 0.40 <= l < 0.55 and s < 0.28:
             result = "#39FF14"
-        # C. 標籤文字 -> 使徒純白
         elif s < 0.15 and l >= 0.55:
             result = "#FFFFFF"
-        # D. 3D 柱體分色
         elif (g_val > r_val) and (g_val > b_val) and s > 0.15:
             if (g_val >= 135 and l >= 0.46) or (r_val >= 70 and l >= 0.44):
-                result = "#39FF14"  # 頂面：暴走螢光青綠
+                result = "#39FF14"
             else:
                 if l >= 0.30:
-                    result = "#7B2CBF"  # 側面受光亮紫
+                    result = "#7B2CBF"
                 elif l >= 0.20:
-                    result = "#5A189A"  # 側面中調紫
+                    result = "#5A189A"
                 else:
-                    result = "#3C096C"  # 側面背光暗紫
+                    result = "#3C096C"
         else:
             result = None
 
@@ -129,13 +113,10 @@ def main():
     svg = re.sub(r'#[0-9a-fA-F]{6}', hex_cleaner, svg)
     svg = re.sub(r'rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)', rgb_cleaner, svg)
 
-    # =========================================================================
-    # 4. 右上角能力雷達圖：A.T. Field 琥珀橙相位網格 × 初號機暴走青綠力場侵蝕
-    # =========================================================================
+    # 4. 右上角能力雷達圖：A.T. Field 琥珀橙相位網格 × 初號機暴走青綠
     def replace_radar_polygon(match):
         tag = match.group(0)
-        
-        # A. 外層同心多邊形網格：A.T. Field 經典琥珀橙相位環
+        # 外層同心網格 -> A.T. Field 琥珀橙
         if 'fill="none"' in tag or "fill:none" in tag or "fill='none'" in tag:
             tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#FF7900"', tag)
             tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#FF7900', tag)
@@ -145,12 +126,11 @@ def main():
                 tag = tag[:-1] + ' stroke-opacity="0.75">'
             return tag
 
-        # B. 核心數據多邊形：初號機暴走螢光青綠
+        # 核心數據面 -> 初號機螢光青綠（半透明中和層次）
         tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
         tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
         tag = re.sub(r'fill:\s*[^;"]+', 'fill:#39FF14', tag)
         tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#00FF66', tag)
-        
         if 'fill-opacity=' in tag:
             tag = re.sub(r'fill-opacity=["\'][^"\']+["\']', 'fill-opacity="0.45"', tag)
         else:
@@ -160,12 +140,11 @@ def main():
             tag = re.sub(r'stroke-width=["\'][^"\']+["\']', 'stroke-width="2"', tag)
         else:
             tag = tag[:-1] + ' stroke-width="2">'
-            
         return tag
 
     svg = re.sub(r'<polygon\b[^>]+>', replace_radar_polygon, svg, flags=re.IGNORECASE)
 
-    # C. 雷達圖五軸放射線：A.T. Field 能量軸線
+    # 五軸射線 -> 亮金橙能量軸
     def replace_radar_line(match):
         tag = match.group(0)
         tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#FFA500"', tag)
@@ -178,12 +157,7 @@ def main():
 
     svg = re.sub(r'<line\b[^>]+>', replace_radar_line, svg, flags=re.IGNORECASE)
 
-    # ==========================================
-    # 5. 輸出前結構完整性檢查
-    # ==========================================
-    if not svg.strip().endswith("</svg>"):
-        print("Warning: Generated SVG does not properly close with </svg>", file=sys.stderr)
-
+    # 5. 寫入目標檔案
     with open(dest_path, "w", encoding="utf-8") as f:
         f.write(svg)
 
