@@ -27,9 +27,14 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - language: actions
+          # 1. 前端代碼防線：涵蓋 index.html 與 js/magi.js
+          - language: javascript-typescript
             build-mode: none
+          # 2. 渲染腳本防線：掃描 scripts/eva_theme.py
           - language: python
+            build-mode: none
+          # 3. 供應鏈防線：掃描 .github/workflows/*.yml
+          - language: actions
             build-mode: none
 
     steps:
