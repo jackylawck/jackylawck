@@ -139,7 +139,8 @@ jobs:
           protected = {
               c.strip().upper() for c in list(pie_colors.values()) + [
                   "#FF1E27", "#39FF14", "#00FF66", "#FFFFFF", "#000000",
-                  "#15441E", "#28C70E", "#1A8A08", "#7B2CBF", "#5A189A", "#3C096C"
+                  "#15441E", "#28C70E", "#1A8A08", "#7B2CBF", "#5A189A", "#3C096C",
+                  "#FF7900", "#FFA500", "#FF4500"
               ]
           }
 
@@ -159,26 +160,56 @@ jobs:
           svg = re.sub(r'#[0-9a-fA-F]{6}', hex_cleaner, svg)
           svg = re.sub(r'rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)', rgb_cleaner, svg)
 
-          # ==========================================
-          # 4. 右上角能力雷達圖：實心多邊形螢光綠＋嚴格半透明保護
-          # ==========================================
+          # =========================================================================
+          # 4. 右上角能力雷達圖：A.T. Field 琥珀橙相位網格 × 初號機暴走青綠力場侵蝕
+          # =========================================================================
           def replace_radar_polygon(match):
               tag = match.group(0)
+              
+              # A. 外層同心多邊形網格：使徒 A.T. Field 經典琥珀橙相位環
               if 'fill="none"' in tag or "fill:none" in tag or "fill='none'" in tag:
+                  tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#FF7900"', tag)
+                  tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#FF7900', tag)
+                  if 'stroke-opacity=' in tag:
+                      tag = re.sub(r'stroke-opacity=["\'][^"\']+["\']', 'stroke-opacity="0.75"', tag)
+                  else:
+                      tag = tag[:-1] + ' stroke-opacity="0.75">'
                   return tag
+
+              # B. 核心數據多邊形：初號機暴走螢光青綠（徒手侵蝕中和 A.T. Field）
               tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
               tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
               tag = re.sub(r'fill:\s*[^;"]+', 'fill:#39FF14', tag)
               tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#00FF66', tag)
               
-              # 強制注入與重寫 fill-opacity 為 0.45，杜絕實心遮蔽
+              # 注入半透明 fill-opacity (0.45)，透射下方層層 A.T. Field 橙色相位線
               if 'fill-opacity=' in tag:
                   tag = re.sub(r'fill-opacity=["\'][^"\']+["\']', 'fill-opacity="0.45"', tag)
               else:
                   tag = tag[:-1] + ' fill-opacity="0.45">'
+
+              # 強化邊緣中和撕裂輪廓
+              if 'stroke-width=' in tag:
+                  tag = re.sub(r'stroke-width=["\'][^"\']+["\']', 'stroke-width="2"', tag)
+              else:
+                  tag = tag[:-1] + ' stroke-width="2">'
+                  
               return tag
 
           svg = re.sub(r'<polygon\b[^>]+>', replace_radar_polygon, svg, flags=re.IGNORECASE)
+
+          # C. 雷達圖五軸放射線：A.T. Field 能量軸線 (亮金橙 #FFA500)
+          def replace_radar_line(match):
+              tag = match.group(0)
+              tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#FFA500"', tag)
+              tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#FFA500', tag)
+              if 'stroke-opacity=' in tag:
+                  tag = re.sub(r'stroke-opacity=["\'][^"\']+["\']', 'stroke-opacity="0.55"', tag)
+              else:
+                  tag = tag[:-1] + ' stroke-opacity="0.55">'
+              return tag
+
+          svg = re.sub(r'<line\b[^>]+>', replace_radar_line, svg, flags=re.IGNORECASE)
 
           # ==========================================
           # 5. 輸出前結構完整性檢查
@@ -189,7 +220,7 @@ jobs:
           with open(dest_path, "w", encoding="utf-8") as f:
               f.write(svg)
 
-          print("Successfully rendered EVA-01 Masterpiece!")
+          print("Successfully rendered EVA-01 Masterpiece with A.T. Field!")
           EOF
 
       - name: Commit & Push (Signed)
