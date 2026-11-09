@@ -16,7 +16,9 @@ def main():
     with open(src_path, "r", encoding="utf-8") as f:
         svg = f.read()
 
+    # ==========================================
     # 1. 提交數字：鎖定 NERV 警戒紅 (#FF1E27)
+    # ==========================================
     pos = svg.lower().find("contributions")
     if pos != -1:
         start_pos = max(0, pos - 400)
@@ -42,7 +44,9 @@ def main():
         flags=re.IGNORECASE
     )
 
+    # ==========================================
     # 2. 圓形圖：機體專屬代表色矩陣
+    # ==========================================
     pie_colors = {
         "#f1e05a": "#F29600",
         "#3572A5": "#19325C",
@@ -54,7 +58,9 @@ def main():
     for old_c, new_c in pie_colors.items():
         svg = re.sub(re.escape(old_c), new_c, svg, flags=re.IGNORECASE)
 
+    # ==========================================
     # 3. 3D 柱體與使徒黑底座
+    # ==========================================
     color_cache = {}
 
     def process_3d_color(r_val, g_val, b_val):
@@ -113,55 +119,88 @@ def main():
     svg = re.sub(r'#[0-9a-fA-F]{6}', hex_cleaner, svg)
     svg = re.sub(r'rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)', rgb_cleaner, svg)
 
-    # 4. 右上角能力雷達圖：A.T. Field 琥珀橙相位網格 × 初號機暴走青綠
+    # =========================================================================
+    # 4. 右上角能力雷達圖：真・絕對領域（實線高亮力場光環 × 初號機侵蝕撕裂）
+    # =========================================================================
     def replace_radar_polygon(match):
         tag = match.group(0)
-        # 外層同心網格 -> A.T. Field 琥珀橙
+        
+        # A. 外層同心多邊形網格：A.T. Field 經典實體相位光壁環
         if 'fill="none"' in tag or "fill:none" in tag or "fill='none'" in tag:
+            # 換上經典 A.T. Field 能量橙 (#FF7900)
             tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#FF7900"', tag)
             tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#FF7900', tag)
-            if 'stroke-opacity=' in tag:
-                tag = re.sub(r'stroke-opacity=["\'][^"\']+["\']', 'stroke-opacity="0.75"', tag)
+            
+            # 【關鍵修復】徹底消除虛線 (stroke-dasharray)，轉為強固實線！
+            tag = re.sub(r'stroke-dasharray=["\'][^"\']+["\']', '', tag)
+            tag = re.sub(r'stroke-dasharray:\s*[^;"]+;?', '', tag)
+            
+            # 加粗障壁至 2px，呈現實體力場厚度
+            if 'stroke-width=' in tag:
+                tag = re.sub(r'stroke-width=["\'][^"\']+["\']', 'stroke-width="2"', tag)
             else:
-                tag = tag[:-1] + ' stroke-opacity="0.75">'
+                tag = tag[:-1] + ' stroke-width="2">'
+            
+            # 滿格 100% 能量透明度，不衰減發光
+            if 'stroke-opacity=' in tag:
+                tag = re.sub(r'stroke-opacity=["\'][^"\']+["\']', 'stroke-opacity="1"', tag)
+            else:
+                tag = tag[:-1] + ' stroke-opacity="1">'
             return tag
 
-        # 核心數據面 -> 初號機螢光青綠（半透明中和層次）
+        # B. 核心數據面：初號機暴走螢光青綠（徒手侵蝕中和）
         tag = re.sub(r'fill=["\'][^"\']+["\']', 'fill="#39FF14"', tag)
         tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#00FF66"', tag)
         tag = re.sub(r'fill:\s*[^;"]+', 'fill:#39FF14', tag)
         tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#00FF66', tag)
+        
+        # 維持 0.5 半透明，清晰透出底層加粗的實心橙色力場圈
         if 'fill-opacity=' in tag:
-            tag = re.sub(r'fill-opacity=["\'][^"\']+["\']', 'fill-opacity="0.45"', tag)
+            tag = re.sub(r'fill-opacity=["\'][^"\']+["\']', 'fill-opacity="0.5"', tag)
         else:
-            tag = tag[:-1] + ' fill-opacity="0.45">'
+            tag = tag[:-1] + ' fill-opacity="0.5">'
 
         if 'stroke-width=' in tag:
-            tag = re.sub(r'stroke-width=["\'][^"\']+["\']', 'stroke-width="2"', tag)
+            tag = re.sub(r'stroke-width=["\'][^"\']+["\']', 'stroke-width="2.5"', tag)
         else:
-            tag = tag[:-1] + ' stroke-width="2">'
+            tag = tag[:-1] + ' stroke-width="2.5">'
         return tag
 
     svg = re.sub(r'<polygon\b[^>]+>', replace_radar_polygon, svg, flags=re.IGNORECASE)
 
-    # 五軸射線 -> 亮金橙能量軸
+    # C. 雷達圖五軸放射線：A.T. Field 亮金橙能量軸（實線加粗）
     def replace_radar_line(match):
         tag = match.group(0)
         tag = re.sub(r'stroke=["\'][^"\']+["\']', 'stroke="#FFA500"', tag)
         tag = re.sub(r'stroke:\s*[^;"]+', 'stroke:#FFA500', tag)
-        if 'stroke-opacity=' in tag:
-            tag = re.sub(r'stroke-opacity=["\'][^"\']+["\']', 'stroke-opacity="0.55"', tag)
+        
+        # 移除軸線可能存在的虛線
+        tag = re.sub(r'stroke-dasharray=["\'][^"\']+["\']', '', tag)
+        tag = re.sub(r'stroke-dasharray:\s*[^;"]+;?', '', tag)
+        
+        if 'stroke-width=' in tag:
+            tag = re.sub(r'stroke-width=["\'][^"\']+["\']', 'stroke-width="1.6"', tag)
         else:
-            tag = tag[:-1] + ' stroke-opacity="0.55">'
+            tag = tag[:-1] + ' stroke-width="1.6">'
+            
+        if 'stroke-opacity=' in tag:
+            tag = re.sub(r'stroke-opacity=["\'][^"\']+["\']', 'stroke-opacity="0.9"', tag)
+        else:
+            tag = tag[:-1] + ' stroke-opacity="0.9">'
         return tag
 
     svg = re.sub(r'<line\b[^>]+>', replace_radar_line, svg, flags=re.IGNORECASE)
 
-    # 5. 寫入目標檔案
+    # ==========================================
+    # 5. 輸出前結構完整性檢查
+    # ==========================================
+    if not svg.strip().endswith("</svg>"):
+        print("Warning: Generated SVG does not properly close with </svg>", file=sys.stderr)
+
     with open(dest_path, "w", encoding="utf-8") as f:
         f.write(svg)
 
-    print("Successfully rendered EVA-01 Masterpiece with A.T. Field!")
+    print("Successfully rendered EVA-01 Masterpiece with True A.T. Field!")
 
 if __name__ == "__main__":
     main()
