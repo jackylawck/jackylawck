@@ -146,8 +146,9 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 > **"Science is not abstract memorization, but an interactive, auditable, and living universe."**  
 > 聯合應用科學研究系列：利用 WebGL/WebGPU 與數值物理引擎，實現高保真度科研級視覺化與下一代科學探索。
 
+- ⚛️ **[JAR QubitLab 量子微境](https://github.com/jackylawck/JAR-QubitLab):** High-fidelity, physically honest 3D quantum mechanics sandbox powered by a Zero-GC complex matrix state-vector evolution engine. Features Hadamard superposition, projective wavefunction collapse, and Mach-Zehnder continuous phase interference with Web Audio synthesis. (純前端零垃圾回收單量子位元態向量演化引擎・阿達馬疊加波函數坍縮與馬赫-曾德爾相位干涉 3D 微觀量子實驗室)
 - 🌌 **[JAR Black Hole 黑洞奇異點](https://github.com/jackylawck/JAR-Black-Hole):** Kerr black hole ray-tracer featuring 4D Carter geodesics and Novikov-Thorne relativistic accretion disks. (廣義相對論克爾黑洞光線追蹤與相對論吸積盤模擬)
-- ⚛️ **[JAR Fusion Core 聚變核心](https://github.com/jackylawck/jar-fusion-core):** Research-grade 1.5D Tokamak nuclear fusion simulator with Crank-Nicolson heat transport modeling. (1.5D 托卡馬克核融合電漿熱傳導數值模擬)
+- ⚡ **[JAR Fusion Core 聚變核心](https://github.com/jackylawck/jar-fusion-core):** Research-grade 1.5D Tokamak nuclear fusion simulator with Crank-Nicolson heat transport modeling. (1.5D 托卡馬克核融合電漿熱傳導數值模擬)
 - 🛰️ **[JAR Above Tiangong 天宮之上](https://github.com/jackylawck/JAR-Above-Tiangong):** 6-DoF space rendezvous & docking simulator with Clohessy-Wiltshire orbital mechanics. (6 自由度太空站交會對接與相對軌道力學沙盒)
 - 🛩 **[JAR Skybound 衝上雲霄](https://github.com/jackylawck/JAR-Skybound):** Aerospace-grade 6-DoF flight simulator with NASA CRM aerodynamics and Pacejka gear dynamics. (基於 NASA CRM 跨音速氣動數據之 6 自由度飛行模擬器)
 - 🚀 **[JarAscent 躍上穹蒼](https://github.com/jackylawck/JarAscent):** Rocket launch and orbital mechanics sandbox implementing RK4 numerical integration and J2 perturbation. (結合 RK4 數值積分與 J2 攝動之運載火箭入軌模擬沙盒)
