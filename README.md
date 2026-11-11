@@ -172,7 +172,7 @@ To enforce **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - **[EnterpriseDemo-Site-KPI](https://github.com/jackylawck/EnterpriseDemo-Site-KPI):** 地盤同事 KPI 考核系統 (Site Staff KPI) - Streamlit/Python real-time ISO-compliant scoring and automated ReportLab PDF generation.
 - **[EnterpriseDemo-Safety-Quiz](https://github.com/jackylawck/EnterpriseDemo-Safety-Quiz):** 入職安全訓練評估系統 (Onboarding Safety Assessment) - Streamlit guided workflow with real-time grading and compliant PDF generation.
 - **[EnterpriseDemo-OnboardingQuiz](https://github.com/jackylawck/EnterpriseDemo-OnboardingQuiz):** 入職培訓考核及問卷系統 (Onboarding Assessment & Feedback) - Streamlit zero-data-retention interactive assessment with Python SMTP dispatch.
-- **[EnterpriseDemo-TAP](https://jackylawck.github.io/EnterpriseDemo-TAP/):** 企業示範培訓簽到平台 (Training Attendance Portal) - Serverless dynamic QR projection and M365 ISO-compliant attendance logging.
+- **[EnterpriseDemo-TAP](https://github.com/jackylawck/EnterpriseDemo-TAP/):** 企業示範培訓簽到平台 (Training Attendance Portal) - Serverless dynamic QR projection and M365 ISO-compliant attendance logging.
 
 ---
 
