@@ -8,6 +8,7 @@ Who is Jacky Law? Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.
 <p align="left">
   <a href="https://www.hkihrm.org/fellow-member-list/" target="_blank"><img src="https://img.shields.io/badge/F.I.H.R.M._(HK)-Fellow-1E3A8A?style=flat-square&logo=handshake&logoColor=white" alt="HKIHRM Fellow"></a>
   <a href="https://www.hkiod.com/weblist-of-candidates-for-ined-appointment-service/" target="_blank"><img src="https://img.shields.io/badge/FHKIoD-Fellow-D4AF37?style=flat-square&logo=pages&logoColor=white" alt="HKIoD Fellow"></a>
+  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096" target="_blank"><img src="https://img.shields.io/badge/Oracle_GenAI-Certified_Pro-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle GenAI Certified"></a>
   <a href="https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url" target="_blank"><img src="https://img.shields.io/badge/Triple--ISO_Lead_Auditor-Credly_Verified-D4AF37?style=flat-square&logo=credly&logoColor=white" alt="Credly Triple-ISO"></a>
   <a href="https://www.doj.gov.hk/tc/legal_dispute/pdf/GBA_Mediator_Panel_2024_tc.pdf" target="_blank"><img src="https://img.shields.io/badge/GBA_Mediator-DoJ_Designated-8B0000?style=flat-square&logo=scales&logoColor=white" alt="GBA Mediator"></a>
 </p>
