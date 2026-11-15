@@ -99,6 +99,7 @@ To practice **Non-repudiation (不可否認性)** and **Source Authenticity (來
 > **Architectural Standard:** 100% Client-Side In-Memory Computing, Zero-Knowledge Encryption, and Zero Data Retention (ZDR).  
 > **核心標準：** 100% 本端記憶體運算、零伺服器留存、零日誌歸檔。
 
+- 🎙️ **[SpeakFlow 順住講](https://github.com/jackylawck/SpeakFlow):** Zero-backend bilingual broadcast teleprompter PWA featuring Unicode UAX #29 semantic segmentation (`Intl.Segmenter`), dynamic breathing-pause pacing, in-memory Web Audio API Voice Activity Detection (zero recording), and WebRTC P2P dual-device director console ([Solo](https://jackylawck.github.io/SpeakFlow/) | [Dual-Device](https://jackylawck.github.io/SpeakFlow/dual.html)). (零後端雙語新聞提詞器 PWA・UAX #29 語意斷句、純本機音壓跟讀與雙機導播控制台)
 - 👨‍👦 **[KidsDictate 童心默書](https://github.com/jackylawck/KidsDictate/):** Privacy-first, offline-capable dictation assistant using Edge OCR (Tesseract.js WASM) and Web Speech synthesis in-memory with zero data upload. (為陪伴學童而設的純本機智能默書小助手・邊緣光學辨識與零隱私外洩)
 - ✍️ **[KidsWriteTC 童寫繁體字](https://github.com/jackylawck/KidsWriteTC/):** Clean-room stroke order & tracing PWA aligned with HK EDB lexical standards, featuring a dual-canvas ink layer and zero telemetry. (專為香港學童設計的繁體字筆順與描紅 PWA・三態資料治理與乾淨室架構)
 - 🌿 **[PauseWell 安心歇](https://github.com/jackylawck/PauseWell/):** Zero-telemetry, local-first career transition journal and pipeline tracker compliant with HK PDPO and GDPR Art. 25. (純本機求職節奏與心態日誌・空窗期彈性修整系統)
@@ -188,4 +189,3 @@ To practice **Non-repudiation (不可否認性)** and **Source Authenticity (來
 - 🏅 **Credly Verification:** [Triple-ISO Lead Auditor Fellow](https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url)
 - 🔐 **Keybase Proofs:** [keybase.io/jackylawck](https://keybase.io/jackylawck)
 - 🎯 *Serving transformation, governance, higher education and dispute resolution initiatives across Hong Kong and the Greater Bay Area.*
-
