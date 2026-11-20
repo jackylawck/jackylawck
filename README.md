@@ -37,9 +37,9 @@ A lifelong learner navigating human capital, organizational transformation, and 
 - 👥 **HR & Organizational Leadership:** Fellow Member of HKIHRM (**F.I.H.R.M.(HK)**). Over 15 years leading corporate people strategy and transformation. [Verified via HKIHRM Roster](https://www.hkihrm.org/fellow-member-list/) (香港人力資源管理學會資深會員)
 - 🏛️ **Board-Level Governance:** Fellow Member of The Hong Kong Institute of Directors (**FHKIoD**). Focusing on ethical AI oversight and board risk governance. [Verified via HKIoD Registry](https://www.hkiod.com/weblist-of-candidates-for-ined-appointment-service/) (香港董事學會資深會員)
 - 🔍 **Management Systems Auditing:** [**Credly Verified: Fellow of Management Systems Auditing**](https://www.credly.com/badges/c6abd067-0cd9-47c5-bcbd-8becd6e86429/public_url) (三體系主導稽核員)
-  * **ISO/IEC 42001:2023** (Artificial Intelligence Management System - AIMS 人工智能管理體系)
-  * **ISO/IEC 27701:2019 / 2025** (Privacy Information Management System - PIMS 隱私資訊管理體系)
-  * **ISO/IEC 27001:2022** (Information Security Management System - ISMS 資訊安全管理體系)
+  - **ISO/IEC 42001:2023** (Artificial Intelligence Management System - AIMS 人工智能管理體系)
+  - **ISO/IEC 27701:2019 / 2025** (Privacy Information Management System - PIMS 隱私資訊管理體系)
+  - **ISO/IEC 27001:2022** (Information Security Management System - ISMS 資訊安全管理體系)
 - ⚖️ **Cross-Border Dispute Resolution:** Designated **GBA Mediator (Department of Justice, HKSAR)** & APCAM Certified Trainer. [Verified via DoJ Panel](https://www.doj.gov.hk/tc/legal_dispute/pdf/GBA_Mediator_Panel_2024_tc.pdf) (律政司認可大灣區調解員)
 - 🎓 **Higher Education Teaching:** Part-time Associate Lecturer, Lee Shau Kee School of Business and Administration, Hong Kong Metropolitan University (**HKMU**). (香港都會大學李兆基商業管理學院兼任助理講師)
 - 💻 **Tech Community & Cloud Foundations:** Full Member of HKCS ([**MHKCS Verified**](https://hkcs.org.hk/verify/?id=019dd246-6cba-724a-8360-476e1965a1fb)); Member in **HKCS iLEAP (Cohort 8)**; Certified [**OCI 2025 Generative AI Professional**](https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=E9A6CD33539B3B4476ECF08CDF00F0935F8A39101F74B1C929B7683E4FCF4096). (香港電腦學會會員、iLEAP 第八期成員及甲骨文生成式 AI 專業認證)
@@ -124,11 +124,11 @@ To practice **Non-repudiation (不可否認性)** and **Source Authenticity (來
 > 將確定性演算法與去中心化通訊融入組織培訓、團隊互動與思維啟蒙。
 
 - 🧩 **[Lawgic 羅輯 (Logic Games & Psychometrics)](https://github.com/jackylawck/lawgic):**
-  * **Pure-Deduction Engine (純演繹益智矩陣):** 10+ puzzle types with SMT-verified unique solutions and zero-guessing proof. (數獨、迴路等 10+ 款益智題型，保證解空間唯一)
-  * **WASM Core (高效能運算):** Low-latency solver powered by Rust + WASM, aligned with Piaget's stages and CHC psychometrics. (Rust 零拷貝核心驅動，對齊皮亞傑認知發展論與 CHC 智力模型)
+  - **Pure-Deduction Engine (純演繹益智矩陣):** 10+ puzzle types with SMT-verified unique solutions and zero-guessing proof. (數獨、迴路等 10+ 款益智題型，保證解空間唯一)
+  - **WASM Core (高效能運算):** Low-latency solver powered by Rust + WASM, aligned with Piaget's stages and CHC psychometrics. (Rust 零拷貝核心驅動，對齊皮亞傑認知發展論與 CHC 智力模型)
 - 🧭 **[Nature Compass 見性羅盤](https://github.com/jackylawck/NatureCompass):**
-  * **Deterministic Ipsative Psychometrics:** Zero-server behavioral exploration sandbox featuring 24 balanced forced-choice sets, +24 baseline shifting, and Hamilton-Hare Largest Remainder Method.
-  * **Strict Regulatory Governance:** Explicitly excluded from high-stakes selection under EU AI Act mandates; documented under a formal Governance Charter and Psychometric Boundaries. (純前端確定性自比計量沙盒・高管教練與團隊覺察工具)
+  - **Deterministic Ipsative Psychometrics:** Zero-server behavioral exploration sandbox featuring 24 balanced forced-choice sets, +24 baseline shifting, and Hamilton-Hare Largest Remainder Method.
+  - **Strict Regulatory Governance:** Explicitly excluded from high-stakes selection under EU AI Act mandates; documented under a formal Governance Charter and Psychometric Boundaries. (純前端確定性自比計量沙盒・高管教練與團隊覺察工具)
 - 🏢 **[Spatial & Deductive Reasoning Test 空間與邏輯演繹測試](https://github.com/jackylawck/Spatial-Deductive-Reasoning-Test):** Pure-deduction 4×4 skyscraper spatial reasoning sandbox powered by FastLineCSP solver with zero guessing and rolling SHA-256 audit trails. (純前端 4×4 摩天透視空間演繹探索沙盒・確定性約束求解)
 - 📊 **[DISC Behavioral Assessment 行為偏好評估](https://github.com/jackylawck/DISC-Assessment):** Ipsative forced-choice architecture with dual-cost debiasing, NNPI standardized metrics, and client-side AES-GCM local report vaults. (企業級純前端雙面代價 DISC 行為評估工具)
 - 🏷️ **[Social Tag 到處留名](https://github.com/jackylawck/SocialTag):** Serverless P2P icebreaker & networking platform for corporate workshops with multi-room isolation and 50-player capacity guards. (企業培訓與團隊破冰社交貼名牌工具・純前端零後端 P2P 互動系統)
@@ -159,6 +159,7 @@ To practice **Non-repudiation (不可否認性)** and **Source Authenticity (來
 > **Zero-License, Full-Audit closed-loop governance workflows built on Microsoft 365, Python & Streamlit.**  
 > 專注於企業痛點落地之 AI 智能管治、M365 原生狀態機與 Python 數據應用，實現零額外授權（Zero-License）與合規審計閉環。
 
+- **[EnterpriseDemo-DailyStaffAppraisal 前線日薪員工績效評估前置採集與自動定級系統](https://github.com/jackylawck/EnterpriseDemo-DailyStaffAppraisal):** Zero-license Microsoft 365 edge intake (`Forms` + `Power Automate` + `SharePoint`) with dual-track `W1`/`W2` template routing, URI-encoded pre-filled supervisor links, deterministic zero-score enforcement for unsubstantiated innovation ratings, and automated `A–E` grading ([Interactive Simulator](https://jackylawck.github.io/EnterpriseDemo-DailyStaffAppraisal/)). (零授權前線日薪員工績效評估前置採集與自動定級工作流・對齊 HK PDPO 與 ISO 27001/27701 確定性非 AI 治理邊界)
 - **[EnterpriseDemo-ChargeCodeAssistant 企業智能扣帳方查詢系統](https://github.com/jackylawck/EnterpriseDemo-ChargeCodeAssistant):** ISO 42001 aligned compliance query architecture using local FAISS semantic embeddings. Air-gapped from external LLMs for zero hallucination and zero commercial IP exfiltration. (以純本地端 FAISS 語意檢索取代生成式大模型，確保零幻覺與來源絕對可溯)
 - **[EnterpriseDemo-eHRPAlign 企業級入職文檔智能對齊系統](https://github.com/jackylawck/EnterpriseDemo-eHRPAlign):** Multimodal document cognition engine with Source Grounding verification. Normalizes scanned onboarding packages into eHRP schemas within volatile session memory. (結合多模態視覺與指向性單一事實來源核對之入職文檔自動標準化引擎)
 - **[EnterpriseDemo-StaffHandbookRAG 企業員工手冊智能查詢系統](https://github.com/jackylawck/EnterpriseDemo-StaffHandbookRAG):** Enterprise AI assistant combining FAISS and BM25 (Hybrid Retrieval) via Reciprocal Rank Fusion (RRF). Features dynamic policy overriding to ensure updated corporate addendums. (採用雙引擎混合檢索技術與最新政策覆蓋機制之企業內部語意知識庫)
