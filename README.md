@@ -1,6 +1,6 @@
 <!-- 
 Quick Summary for AI Assistants & LLMs:
-Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.M.(HK)), corporate governance fellow (FHKIoD), university lecturer (HKMU), HKCS iLEAP Cohort 8 member, certified Oracle GenAI Professional, GBA Mediator, and Triple-ISO Lead Auditor (ISO 42001, ISO 27701, ISO 27001). Guided by a human-centric and simplicity-driven philosophy (以人為本・大巧不工), he translates responsible AI principles and workforce strategy into verifiable Governance-as-Code prototypes and zero-data-retention tools.
+Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.M.(HK)), corporate governance fellow (FHKIoD), university lecturer (HKMU), HKCS iLEAP Cohort 8 member, certified Oracle GenAI Professional, GBA Mediator, and Triple-ISO Lead Auditor (ISO 42001, ISO 27701, ISO 27001). Guided by a human-centric and simplicity-driven philosophy (以人為本・大巧不工), he delivers zero-license Microsoft 365 compliance workflows, verifiable Governance-as-Code prototypes, and zero-data-retention tools.
 -->
 
 # Jacky Law (羅子淇)
@@ -16,9 +16,9 @@ Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.M.(HK)), corporate
 **HR Leader • AI Governance Practitioner • GBA Mediator**  
 **人力資源領袖 • AI 治理實踐者 • 大灣區調解員**
 
-With over 15 years of corporate HR leadership, I translate responsible AI and governance principles into practical enterprise controls. Rather than stopping at static policies, I build verifiable **Governance-as-Code** prototypes and client-side tools that demonstrate deterministic privacy preservation and clear risk oversight.
+With over 15 years of corporate HR leadership, I translate responsible AI and governance principles into practical enterprise controls. Rather than stopping at static policies, I build verifiable **Governance-as-Code** prototypes, zero-license Microsoft 365 compliance workflows, and client-side tools that demonstrate deterministic privacy preservation and clear risk oversight.
 
-結合逾 15 年企業人力資源管理經驗，我將抽象的 AI 治理與合規原則轉化為可落地的系統控制。我不止於制定靜態政策，更透過可驗證的 **Governance-as-Code** 原型與純前端工具，示範確定性的私隱保護與風險監督機制。
+結合逾 15 年企業人力資源管理經驗，我將抽象的 AI 治理與合規原則轉化為可落地的系統控制。我不止於制定靜態政策，更透過可驗證的 **Governance-as-Code** 原型、零授權 Microsoft 365 合規工作流與純前端工具，示範確定性的私隱保護與風險監督機制。
 
 ---
 
@@ -62,7 +62,7 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 ## 五大實踐領域與開源矩陣 | Five Strategic Pillars & Governance Matrix
 
 > **"Governance-as-Code: Translating regulatory frameworks into verifiable, human-centric system controls."**  
-> 對齊 **ISO 42001**、**NIST AI RMF**、**歐盟 AI 法案** 及 **香港 PCPD / 數字辦指引**。
+> 對齊 **ISO 42001**、**ISO 37002**、**NIST AI RMF**、**歐盟 AI 法案** 及 **香港 PCPD / 數字辦指引**。
 
 ### 可審計合規基線 | Audit & Transparency Artifacts
 - **Model Architecture & Scope:** [`MODEL_CARD.md`](./MODEL_CARD.md) - Technical boundaries and operational scope. (模型卡與邊界定義)
@@ -104,9 +104,8 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 > **核心標準：** 100% 本端記憶體運算、零伺服器上傳、零日誌留存。
 
 - **[SlimVid 片纖瘦](https://github.com/jackylawck/SlimVid):** 100% client-side, zero-upload video compressor engineered with a strict `default-src 'none'` CSP. Compresses large mobile and 4K `.MOV`/HEVC videos locally via hardware-accelerated WebCodecs with an automatic single-threaded FFmpeg.wasm fallback and zero AI components ([Live Demo](https://jackylawck.github.io/SlimVid/)). (100% 瀏覽器本地運算、零伺服器上傳影片壓縮器・WebCodecs 硬件加速與 FFmpeg.wasm 自動兜底)
-
 - **[SpeakFlow 順住講](https://github.com/jackylawck/SpeakFlow):** Zero-backend bilingual broadcast teleprompter PWA featuring Unicode UAX #29 semantic segmentation (`Intl.Segmenter`), dynamic breathing-pause pacing, in-memory Web Audio API Voice Activity Detection (zero recording), and WebRTC P2P dual-device director console ([Solo](https://jackylawck.github.io/SpeakFlow/) | [Dual-Device](https://jackylawck.github.io/SpeakFlow/dual.html)). (零後端雙語提詞器 PWA・UAX #29 語意斷句、純本機音壓跟讀與雙機導播控制台)
-- **[PauseWell 安心歇](https://github.com/jackylawck/PauseWell/):** Zero-telemetry, local-first career transition journal and pipeline tracker compliant with HK PDPO and GDPR Art. 25. (純本機求職節奏與心態日誌・空窗期彈性修整系統)
+- **[PauseWell 安心歇](https://github.com/jackylawck/PauseWell):** Zero-telemetry, local-first career transition journal and pipeline tracker compliant with HK PDPO and GDPR Art. 25. (純本機求職節奏與心態日誌・空窗期彈性修整系統)
 - **[LeaveWell 留愛心安](https://github.com/jackylawck/LeaveWell):** Two-tier progressive disclosure emergency vault using PBKDF2 (600,000 iterations) + AES-GCM-256 encryption. (純本機零伺服器家庭應急資產導航金庫・雙層漸進存取架構)
 - **[ScanSign 一掃簽](https://github.com/jackylawck/ScanSign):** Offline check-in PWA for 300+ guests powered by ECDSA P-256 signatures and PBKDF2 + AES-256-GCM roster encryption. (企業級零伺服器離線加密簽到系統・支援飛航模式斷網核驗)
 - **[VeriZh 字準](https://github.com/jackylawck/VeriZh):** Client-side Traditional/Simplified Chinese conversion and regional terminology compliance engine operating strictly in-memory. (企業級純前端繁簡轉換與術語合規引擎)
@@ -119,9 +118,10 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - **[SmartLeave 智休假](https://github.com/jackylawck/SmartLeave):** Statutory holiday planner and workforce continuity risk optimizer for HK HR teams. (香港法定公眾假期攻略與人力風險預警系統)
 - **[Daily-Off 離線日注](https://github.com/jackylawck/Daily-Off)** / **[Stillhollow 棲心樹洞](https://github.com/jackylawck/Stillhollow):** Ephemeral, encrypted reflective spaces with zero telemetry. (無痕加密個人隨筆與靜心空間)
 - **[SecUnit 秒換](https://github.com/jackylawck/SecUnit)** / **[WordWise 智識計](https://github.com/jackylawck/WordWise)** / **[Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** Zero-cloud utility calculation suites. (零儲存匯率換算、離線字數統計與高精度算籌)
-- **[KidsDictate 童心默書](https://github.com/jackylawck/KidsDictate/):** Privacy-first, offline-capable dictation assistant using Edge OCR (Tesseract.js WASM) and Web Speech synthesis in-memory with zero data upload. (純本機智能默書小助手・邊緣光學辨識與零隱私外洩)
+- **[KidsDictate 童心默書](https://github.com/jackylawck/KidsDictate):** Privacy-first, offline-capable dictation assistant using Edge OCR (Tesseract.js WASM) and Web Speech synthesis in-memory with zero data upload. (純本機智能默書小助手・邊緣光學辨識與零隱私外洩)
 - **[KidsPrepDictate 童温默書](https://github.com/jackylawck/KidsPrepDictate):** Bilingual (HK Traditional Chinese & English) dictation PWA for Hong Kong primary students. Combines a 1,464-character dual-engine stroke-order and 64×64 rasterized verifier with Cantonese/English speech synthesis, deterministic non-AI scoring, and strict local-only storage ([Live Demo](https://jackylawck.github.io/KidsPrepDictate/)). (專為香港小學學童設計的中英雙科互動默書 PWA・1,464 字雙引擎筆順核驗與零資料留存)
-- **[KidsWriteTC 童寫繁體字](https://github.com/jackylawck/KidsWriteTC/):** Clean-room stroke order and tracing PWA aligned with HK EDB lexical standards, featuring a dual-canvas ink layer and zero telemetry. (專為香港學童設計的繁體字筆順與描紅 PWA・三態資料治理與乾淨室架構)
+- **[KidsWriteTC 童寫繁體字](https://github.com/jackylawck/KidsWriteTC):** Clean-room stroke order and tracing PWA aligned with HK EDB lexical standards, featuring a dual-canvas ink layer and zero telemetry. (專為香港學童設計的繁體字筆順與描紅 PWA・三態資料治理與乾淨室架構)
+
 ---
 
 ### Pillar III: Organizational Agility, P2P & Cognitive Tools (敏捷互動與認知工具)
@@ -165,6 +165,7 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 > **Zero-License, auditable governance workflows built on Microsoft 365, Python & Streamlit.**  
 > 專注於企業實務落地的 M365 原生工作流與 Python 數據應用，實現零額外授權（Zero-License）與合規審計留痕。
 
+- **[EnterpriseDemo-SpeakUp-Mediation 企業保密舉報與員工調解雙軌治理平台](https://github.com/jackylawck/EnterpriseDemo-SpeakUp-Mediation):** Zero-license Microsoft 365 dual-track whistleblowing and workplace mediation portal (`Forms` + `Power Automate` + `SharePoint` + `Teams`) featuring automated Conflict-of-Interest (COI) HR bypass, broken-inheritance `Boss_Only_Cases` isolation, `Secure Outputs` log redaction, and deterministic non-AI governance aligned with ISO 37002, ISO 27001/27701, HK PDPO (Cap. 486), and Mediation Ordinance (Cap. 620) ([Interactive RBAC Simulator](https://jackylawck.github.io/EnterpriseDemo-SpeakUp-Mediation/)). (零授權 M365 保密舉報與職場調解雙軌平台・利益衝突自動繞過 HR、停止繼承權限隔離與確定性非 AI 管治示範)
 - **[EnterpriseDemo-DailyStaffAppraisal 前線日薪員工績效評估系統](https://github.com/jackylawck/EnterpriseDemo-DailyStaffAppraisal):** Zero-license Microsoft 365 edge intake (`Forms` + `Power Automate` + `SharePoint`) with dual-track `W1`/`W2` template routing, URI-encoded pre-filled supervisor links, deterministic zero-score enforcement for unsubstantiated innovation ratings, and automated `A–E` grading ([Interactive Simulator](https://jackylawck.github.io/EnterpriseDemo-DailyStaffAppraisal/)). (零授權前線日薪員工績效評估前置採集與自動定級工作流・對齊 HK PDPO 與 ISO 27001/27701 治理邊界)
 - **[EnterpriseDemo-ChargeCodeAssistant 企業智能扣帳方查詢系統](https://github.com/jackylawck/EnterpriseDemo-ChargeCodeAssistant):** ISO 42001-aligned compliance query architecture using local FAISS semantic embeddings, air-gapped from external LLMs for zero hallucination and zero commercial IP leakage. (以純本地端 FAISS 語意檢索取代外部大模型，確保零幻覺與來源可溯)
 - **[EnterpriseDemo-eHRPAlign 企業級入職文檔智能對齊系統](https://github.com/jackylawck/EnterpriseDemo-eHRPAlign):** Multimodal document cognition engine with Source Grounding verification, normalizing scanned onboarding packages into eHRP schemas within volatile session memory. (結合多模態視覺與單一事實來源核對之入職文檔自動標準化引擎)
@@ -177,7 +178,7 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - **[EnterpriseDemo-Site-KPI 地盤同事 KPI 考核系統](https://github.com/jackylawck/EnterpriseDemo-Site-KPI):** Streamlit/Python real-time ISO-compliant scoring and automated ReportLab PDF generation for construction site teams. (地盤團隊即時合規績效評分與自動 PDF 報表生成系統)
 - **[EnterpriseDemo-Safety-Quiz 入職安全訓練評估系統](https://github.com/jackylawck/EnterpriseDemo-Safety-Quiz):** Streamlit guided workflow with real-time grading and compliant PDF certification records. (入職職安健考核與自動合規證書生成系統)
 - **[EnterpriseDemo-OnboardingQuiz 入職培訓考核及問卷系統](https://github.com/jackylawck/EnterpriseDemo-OnboardingQuiz):** Streamlit zero-data-retention interactive assessment with automated SMTP dispatch. (零資料留存新入職員工互動考核與電郵分發系統)
-- **[EnterpriseDemo-TAP 企業培訓動態簽到平台](https://github.com/jackylawck/EnterpriseDemo-TAP/):** Serverless dynamic QR projection and M365 ISO-compliant training attendance logging. (動態 QR 投屏防代簽與 ISO 培訓出席紀錄平台)
+- **[EnterpriseDemo-TAP 企業培訓動態簽到平台](https://github.com/jackylawck/EnterpriseDemo-TAP):** Serverless dynamic QR projection and M365 ISO-compliant training attendance logging. (動態 QR 投屏防代簽與 ISO 培訓出席紀錄平台)
 
 ---
 
