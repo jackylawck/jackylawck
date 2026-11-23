@@ -104,10 +104,8 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 > **核心標準：** 100% 本端記憶體運算、零伺服器上傳、零日誌留存。
 
 - **[SlimVid 片纖瘦](https://github.com/jackylawck/SlimVid):** 100% client-side, zero-upload video compressor engineered with a strict `default-src 'none'` CSP. Compresses large mobile and 4K `.MOV`/HEVC videos locally via hardware-accelerated WebCodecs with an automatic single-threaded FFmpeg.wasm fallback and zero AI components ([Live Demo](https://jackylawck.github.io/SlimVid/)). (100% 瀏覽器本地運算、零伺服器上傳影片壓縮器・WebCodecs 硬件加速與 FFmpeg.wasm 自動兜底)
-- **[KidsPrepDictate 童温默書](https://github.com/jackylawck/KidsPrepDictate):** Bilingual (HK Traditional Chinese & English) dictation PWA for Hong Kong primary students. Combines a 1,464-character dual-engine stroke-order and 64×64 rasterized verifier with Cantonese/English speech synthesis, deterministic non-AI scoring, and strict local-only storage ([Live Demo](https://jackylawck.github.io/KidsPrepDictate/)). (專為香港小學學童設計的中英雙科互動默書 PWA・1,464 字雙引擎筆順核驗與零資料留存)
+
 - **[SpeakFlow 順住講](https://github.com/jackylawck/SpeakFlow):** Zero-backend bilingual broadcast teleprompter PWA featuring Unicode UAX #29 semantic segmentation (`Intl.Segmenter`), dynamic breathing-pause pacing, in-memory Web Audio API Voice Activity Detection (zero recording), and WebRTC P2P dual-device director console ([Solo](https://jackylawck.github.io/SpeakFlow/) | [Dual-Device](https://jackylawck.github.io/SpeakFlow/dual.html)). (零後端雙語提詞器 PWA・UAX #29 語意斷句、純本機音壓跟讀與雙機導播控制台)
-- **[KidsDictate 童心默書](https://github.com/jackylawck/KidsDictate/):** Privacy-first, offline-capable dictation assistant using Edge OCR (Tesseract.js WASM) and Web Speech synthesis in-memory with zero data upload. (純本機智能默書小助手・邊緣光學辨識與零隱私外洩)
-- **[KidsWriteTC 童寫繁體字](https://github.com/jackylawck/KidsWriteTC/):** Clean-room stroke order and tracing PWA aligned with HK EDB lexical standards, featuring a dual-canvas ink layer and zero telemetry. (專為香港學童設計的繁體字筆順與描紅 PWA・三態資料治理與乾淨室架構)
 - **[PauseWell 安心歇](https://github.com/jackylawck/PauseWell/):** Zero-telemetry, local-first career transition journal and pipeline tracker compliant with HK PDPO and GDPR Art. 25. (純本機求職節奏與心態日誌・空窗期彈性修整系統)
 - **[LeaveWell 留愛心安](https://github.com/jackylawck/LeaveWell):** Two-tier progressive disclosure emergency vault using PBKDF2 (600,000 iterations) + AES-GCM-256 encryption. (純本機零伺服器家庭應急資產導航金庫・雙層漸進存取架構)
 - **[ScanSign 一掃簽](https://github.com/jackylawck/ScanSign):** Offline check-in PWA for 300+ guests powered by ECDSA P-256 signatures and PBKDF2 + AES-256-GCM roster encryption. (企業級零伺服器離線加密簽到系統・支援飛航模式斷網核驗)
@@ -121,7 +119,9 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - **[SmartLeave 智休假](https://github.com/jackylawck/SmartLeave):** Statutory holiday planner and workforce continuity risk optimizer for HK HR teams. (香港法定公眾假期攻略與人力風險預警系統)
 - **[Daily-Off 離線日注](https://github.com/jackylawck/Daily-Off)** / **[Stillhollow 棲心樹洞](https://github.com/jackylawck/Stillhollow):** Ephemeral, encrypted reflective spaces with zero telemetry. (無痕加密個人隨筆與靜心空間)
 - **[SecUnit 秒換](https://github.com/jackylawck/SecUnit)** / **[WordWise 智識計](https://github.com/jackylawck/WordWise)** / **[Calc-OFF 離線算籌](https://github.com/jackylawck/Calc-OFF):** Zero-cloud utility calculation suites. (零儲存匯率換算、離線字數統計與高精度算籌)
-
+- **[KidsDictate 童心默書](https://github.com/jackylawck/KidsDictate/):** Privacy-first, offline-capable dictation assistant using Edge OCR (Tesseract.js WASM) and Web Speech synthesis in-memory with zero data upload. (純本機智能默書小助手・邊緣光學辨識與零隱私外洩)
+- **[KidsPrepDictate 童温默書](https://github.com/jackylawck/KidsPrepDictate):** Bilingual (HK Traditional Chinese & English) dictation PWA for Hong Kong primary students. Combines a 1,464-character dual-engine stroke-order and 64×64 rasterized verifier with Cantonese/English speech synthesis, deterministic non-AI scoring, and strict local-only storage ([Live Demo](https://jackylawck.github.io/KidsPrepDictate/)). (專為香港小學學童設計的中英雙科互動默書 PWA・1,464 字雙引擎筆順核驗與零資料留存)
+- **[KidsWriteTC 童寫繁體字](https://github.com/jackylawck/KidsWriteTC/):** Clean-room stroke order and tracing PWA aligned with HK EDB lexical standards, featuring a dual-canvas ink layer and zero telemetry. (專為香港學童設計的繁體字筆順與描紅 PWA・三態資料治理與乾淨室架構)
 ---
 
 ### Pillar III: Organizational Agility, P2P & Cognitive Tools (敏捷互動與認知工具)
