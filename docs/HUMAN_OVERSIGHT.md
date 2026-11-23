@@ -1,85 +1,70 @@
-# Human Oversight & Redress Framework (HITL / HOTL / HIC)
+# Human Oversight, Escalation & Redress Framework
 
-> **Regulatory & Governance Alignment:** Formulated in strict accordance with **ISO/IEC 42001:2023 (Controls A.8.4 & A.7)**, **EU AI Act (Regulation (EU) 2024/1689 Articles 14 & 86)**, **Hong Kong PCPD Model Framework (2024 Principles 2 & 4)**, and **IAPP AIGP Domain IV (Human Agency & Oversight)**.
+> **Regulatory & Governance Alignment:** Maintained in alignment with **ISO/IEC 42001:2023 (AIMS)** (Clauses 8.2, 8.4 & Annex A.6.2.6, A.8.2–A.8.4, A.9.2–A.9.4), **ISO 37002** (Whistleblowing Management), **EU AI Act (Regulation (EU) 2024/1689, Articles 14 & 86)**, **Hong Kong PCPD Model Personal Data Protection Framework (2024 — Areas 2 & 4)**, **Hong Kong PDPO (Cap. 486)**, **Hong Kong Mediation Ordinance (Cap. 620)**, and **IAPP AIGP Domain IV (Human Oversight & Governance)**.
 
 ---
 
-## 1. Human Agency & Oversight Governance Hierarchy (人類監督三階梯模型)
+## 1. Human Oversight Governance Tiers (HITL / HOTL / HIC)
 
-All AI-assisted governance workstations, intake assessors, and decision-support sandboxes operate under strict non-autonomous boundaries. Automation is categorized into three distinct layers of operational oversight:
+All AI-assisted governance sandboxes, compliance advisors, and deterministic workflow prototypes in this portfolio operate under non-autonomous boundaries. Human oversight is structured across three operational tiers:
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│               HUMAN AGENCY & OVERSIGHT GOVERNANCE TIERS                │
-├────────────────────────────────────────────────────────────────────────┤
-│ 1. Human-in-the-Loop (HITL) - Pre-Execution Sign-Off                  │
-│    • AI models generate formative candidate scores, risk tags, or     │
-│      compliance briefs only.                                          │
-│    • Zero binding corporate decisions take effect without explicit    │
-│      affirmative human authorization.                                 │
-│                                                                        │
-│ 2. Human-on-the-Loop (HOTL) - Real-Time Supervisory Gatekeeping        │
-│    • Live monitoring of algorithmic drift, unexpected bias surges,    │
-│      or heuristic scoring anomalies during batch evaluations.         │
-│    • Human supervisors retain real-time intervention privileges.      │
-│                                                                        │
-│ 3. Human-in-Command (HIC) - Executive Sovereign Kill-Switch           │
-│    • Ultimate managerial authority held by CHRO and Board Committees. │
-│    • Immediate operational override, model rollback, or sandbox       │
-│      disconnection upon ethical or statutory breach.                  │
-└────────────────────────────────────────────────────────────────────────┘
++----------------------------------------------------------------------+
+|                HUMAN OVERSIGHT GOVERNANCE HIERARCHY                  |
++----------------------------------------------------------------------+
+| 1. Human-in-the-Loop (HITL) - Pre-Action Sign-Off                    |
+|    * Systems generate draft risk classifications, statutory citations|
+|      or rubric bias flags only.                                      |
+|    * No binding organizational action takes effect without explicit  |
+|      human review and approval.                                      |
+|                                                                      |
+| 2. Human-on-the-Loop (HOTL) - Operational Monitoring & Intervention  |
+|    * Designated owners monitor retrieval confidence, deterministic   |
+|      rule triggers, and fairness indicators during ongoing use.      |
+|    * Reviewers retain immediate authority to pause execution or      |
+|      route edge cases to manual inspection.                          |
+|                                                                      |
+| 3. Human-in-Command (HIC) - Executive Override & Decommissioning     |
+|    * Ultimate governance authority rests with executive leadership   |
+|      and Board Risk or Audit Committees.                             |
+|    * Includes full authority to override outputs, suspend workflows, |
+|      or decommission a system upon legal, ethical, or safety risk.   |
++----------------------------------------------------------------------+
 
-```
+2. Prohibition of Fully Automated High-Stakes Decisions
+ * Non-ADM Boundary: No prototype or reference workflow in this repository is authorized for deployment as a sole automated decision-making (ADM) mechanism for candidate rejection, disciplinary action, contract termination, compensation adjustment, or statutory entitlement determination.
+ * Advisory & Workflow Accountability: AI-assisted prototypes (such as local RAG compliance advisors and vendor rubric sandboxes) serve strictly as advisory decision support, while deterministic workflows (such as SpeakUp-Mediation and DailyStaffAppraisal) enforce mandatory human evaluation. Legal and managerial accountability rests 100% with designated human decision-makers.
+3. Escalation, Blind Review & Conflict-of-Interest (COI) Protocol
+[ Automated Triage / Deterministic Rule Check ]
+       |
+       v (Confidence < 0.82, Boundary Margin, or Proxy-Bias Flag)
+[ Tier 1: Independent Human Blind Review ]
+       | (Primary documents reviewed with system rationale masked)
+       |
+       +--> [ COI Gate: Implicates Reviewing HR Owner? ]
+       |         |
+       |         +--> YES --> [ Direct Bypass to Managing Director / Audit Committee ]
+       |
+       v (Contested Finding or Residual Compliance Risk)
+[ Tier 2: Governance & Compliance Review ]
+       | (Verification against HK PDPO, Cap. 57, EOC Cap. 480/487/527/602 & ISO 42001)
+       v (Unresolved Workplace or Governance Dispute)
+[ Tier 3: Voluntary ADR & Workplace Mediation ] (HK Mediation Ordinance Cap. 620)
 
----
+ * Threshold & Anomaly Escalation: Any advisory output falling below the configured retrieval confidence threshold (0.82), landing within a borderline grading margin, or flagging a statutory protected-ground proxy automatically halts synthesis and routes to manual review.
+ * De-Biased Blind Review: To mitigate automation bias and anchoring bias, Tier 1 reviewers inspect primary source documents or submissions before viewing system-generated summaries or tags.
+ * Conflict-of-Interest (COI) Bypass: Consistent with ISO 37002 and the SpeakUp-Mediation reference architecture, any escalated HR or governance matter implicating the reviewing HR function automatically bypasses HR queues and routes directly to executive leadership or an independent oversight committee.
+4. Individual Explanation, Re-Evaluation & Mediation Redress
+To uphold procedural fairness across applicable jurisdictions — including EU AI Act Article 86 and GDPR Article 22 (where EU scope applies), and Hong Kong PDPO (Cap. 486, DPP1, DPP2, DPP6) alongside HK PCPD Model Framework (2024, Area 4) in Hong Kong:
+ * Clear Human Explanation: Affected individuals are entitled to plain-language explanations of the evaluation criteria, rule weights, and statutory or policy clauses relied upon in any decision affecting them.
+ * Formal Human Re-Evaluation:
+   * Individuals may request a manual review within 14 calendar days of receiving an assessed outcome.
+   * Re-evaluation must be conducted by an independent human reviewer who was not involved in the initial review cycle.
+ * Voluntary Mediation Pathway (ADR):
+   * For contested workplace or governance matters, organizations adopting these reference frameworks should provide a voluntary, neutral workplace mediation option prior to formal disciplinary or legal escalation.
+   * Consistent with the Hong Kong Mediation Ordinance (Cap. 620), mediation communications operate on a confidential, "without prejudice" basis and are kept strictly separate from formal HR personnel files.
+5. Auditability & Execution-Tier Logging Boundaries (ISO/IEC 27001 & ISO/IEC 42001)
+Logging and retention of oversight actions follow each architecture's execution boundary, consistent with SECURITY.md and docs/DATA_LINEAGE.md:
+ * Enterprise Tenant Deployments (M365 Workflows & Azure Audit Gateways): Human overrides, approval timestamps, and escalation outcomes are recorded within the adopting organization's own tenant using tamper-evident mechanisms (such as read-only SharePoint audit lists, SHA-256 hash-chained logs in MCD Privacy Audit Gateway, broken-inheritance RBAC, and Power Automate Secure Outputs redaction). Override patterns are reviewed semi-annually to detect systematic rubric drift or recurring control gaps.
+ * Client-Side Zero-Data-Retention Sandboxes: Static browser tools execute strictly in local volatile memory and retain no server-side logs. Where formal corporate audit trails are required, reviewers export sanitized assessment summaries into their internal enterprise risk or compliance registers under corporate retention policies.
 
-## 2. Prohibition of Fully Automated Employment Decisions (高利害決策排他性排除)
-
-* **Negative Scope Declaration:** Under no circumstances shall any tool within this repository be deployed as a sole, automated decision-making system (ADM) for candidate rejection, contract termination, compensation adjustment, or statutory entitlement calculation.
-* **Decision Support Mandate:** All outputs are legally classified as advisory analytical telemetry. Responsibility for workforce decisions rests 100% with accredited human executives (F.I.H.R.M. / Board of Directors).
-
----
-
-## 3. End-to-End Escalation & Discrepancy Protocol (異常升級處置協定)
-
-```text
-[ Algorithmic Triage ] 
-         │
-         ▼ (Discrepancy / Margin Flag: ΔConfidence < 0.85 OR Protected Class Proxy Alert)
-[ Tier 1: HR Executive Blind Audit ] 
-         │ (Manual review of unmasked credentials; AI reasoning masked to prevent anchor bias)
-         ▼ (Contested Decision / Residual Impact)
-[ Tier 2: Governance & Compliance Committee Review ]
-         │ (Alignment check against HK PCPD, Cap. 57, and ISO 42001 registers)
-         ▼ (Statutory Dispute / External Appeal)
-[ Tier 3: Independent ADR & Mediation Recourse ] (APCAM / GBA Mediator Oversight)
-
-```
-
-1. **Threshold Borderline Escalation:** Any assessment score falling within a $\pm 10\%$ borderline margin or triggering algorithmic fairness warnings automatically locks the profile and routes it to manual review.
-2. **De-Biased Human Audit:** To combat automation bias and confirmation bias, reviewers evaluate raw qualifications without viewing initial AI score recommendations.
-3. **Executive Governance Escalation:** Disputed findings escalate directly to the Corporate Governance Advisor and Board Risk Committee.
-
----
-
-## 4. Individual Redress & Statutory Rights of Explanation (權利救濟與反向解釋機制)
-
-To ensure procedural fairness under EU AI Act Article 86, GDPR Article 22, and Hong Kong Personal Data (Privacy) Ordinance (Cap. 486):
-
-* **Right to Human Explanation (實質可解釋性要求):** Affected individuals are entitled to receive clear, human-understandable explanations regarding the key parameters, weighting criteria, and reasoning logic contributing to their assessment.
-* **Formal Request for Human Re-Evaluation (強制人工覆核申請):**
-* Individuals may submit a formal request for human reconsideration within 14 calendar days of receiving an evaluated outcome.
-* Re-evaluation must be executed by a human manager who was not involved in the original automated screening run.
-
-
-* **Alternative Dispute Resolution (ADR) Integration:**
-* Consistent with professional cross-border dispute resolution standards, contested governance or workforce evaluations provide an expedited mediation option before formal administrative or legal litigation is pursued.
-
-
-
----
-
-## 5. Auditability & Evidence Provenance (ISO/IEC 27001 & ISO 42001)
-
-* **Tamper-Evident Incident Logging:** Every human override, manual score adjustment, and appeal resolution is cryptographically appended with timestamped operator signatures into an immutable audit trail.
-* **Retention & Retrospective Review:** Override logs are audited semi-annually by the Lead Auditor to detect systemic algorithmic bias trends and inform model recalibration.
