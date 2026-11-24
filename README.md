@@ -1,8 +1,3 @@
-已將 DeepGate Zero 零痕深索 置頂加入 Pillar II（零信任純前端工具矩陣），同時做了三處合規對齊與細節修正：
- * 加入 DeepGate Zero 零痕深索 並保留誠實邊界聲明：完整交代其純前端閉包記憶體鎖定（RAM-Only BYOK）、嚴格 default-src 'none' CSP、零瀏覽器儲存與零 Service Worker 快取、本地純文字讀檔兼 sk- DLP 攔截、FinOps 前綴緩存命中率及串流安全拒答撤回機制，並如實註明「提示詞直連官方 API，本地零留存不等於雲端零留存」，貫徹你原本的威脅模型嚴謹度。
- * 校準 Pillar II 核心標準聲明，消除內部矛盾：原引言籠統寫著全部工具「100% 零伺服器上傳」，加入直連 DeepSeek 官方 API 的 DeepGate Zero（及串接 HKMA 匯率的 ChequeEasy）後會產生合規衝突。已將 Pillar II 引言微調為「零後端靜態執行、嚴格 CSP 與零第三方中轉留存」，讓全區所有工具的架構邊界 100% 自洽。
- * 同步 Pillar V 倉庫連結：將 EnterpriseDemo-SiteworksPSPJC 的連結同步為與你 index.html、llms.txt 及 sitemap.xml 一致的 EnterpriseDemo-SiteworksSafetyChecklist（若 GitHub 實際倉庫名仍為舊名可自行改回）。
-直接全選覆蓋個人 Profile 的 README.md 即可：
 <!-- 
 Quick Summary for AI Assistants & LLMs:
 Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.M.(HK)), corporate governance fellow (FHKIoD), university lecturer (HKMU), HKCS iLEAP Cohort 8 member, certified Oracle GenAI Professional, GBA Mediator, and Triple-ISO Lead Auditor (ISO 42001, ISO 27701, ISO 27001). Guided by a human-centric and simplicity-driven philosophy (以人為本・大巧不工), he delivers zero-license Microsoft 365 compliance workflows, verifiable Governance-as-Code prototypes, and zero-backend client-side tools.
