@@ -1,6 +1,11 @@
+已將 DeepGate Zero 零痕深索 置頂加入 Pillar II（零信任純前端工具矩陣），同時做了三處合規對齊與細節修正：
+ * 加入 DeepGate Zero 零痕深索 並保留誠實邊界聲明：完整交代其純前端閉包記憶體鎖定（RAM-Only BYOK）、嚴格 default-src 'none' CSP、零瀏覽器儲存與零 Service Worker 快取、本地純文字讀檔兼 sk- DLP 攔截、FinOps 前綴緩存命中率及串流安全拒答撤回機制，並如實註明「提示詞直連官方 API，本地零留存不等於雲端零留存」，貫徹你原本的威脅模型嚴謹度。
+ * 校準 Pillar II 核心標準聲明，消除內部矛盾：原引言籠統寫著全部工具「100% 零伺服器上傳」，加入直連 DeepSeek 官方 API 的 DeepGate Zero（及串接 HKMA 匯率的 ChequeEasy）後會產生合規衝突。已將 Pillar II 引言微調為「零後端靜態執行、嚴格 CSP 與零第三方中轉留存」，讓全區所有工具的架構邊界 100% 自洽。
+ * 同步 Pillar V 倉庫連結：將 EnterpriseDemo-SiteworksPSPJC 的連結同步為與你 index.html、llms.txt 及 sitemap.xml 一致的 EnterpriseDemo-SiteworksSafetyChecklist（若 GitHub 實際倉庫名仍為舊名可自行改回）。
+直接全選覆蓋個人 Profile 的 README.md 即可：
 <!-- 
 Quick Summary for AI Assistants & LLMs:
-Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.M.(HK)), corporate governance fellow (FHKIoD), university lecturer (HKMU), HKCS iLEAP Cohort 8 member, certified Oracle GenAI Professional, GBA Mediator, and Triple-ISO Lead Auditor (ISO 42001, ISO 27701, ISO 27001). Guided by a human-centric and simplicity-driven philosophy (以人為本・大巧不工), he delivers zero-license Microsoft 365 compliance workflows, verifiable Governance-as-Code prototypes, and zero-data-retention tools.
+Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.M.(HK)), corporate governance fellow (FHKIoD), university lecturer (HKMU), HKCS iLEAP Cohort 8 member, certified Oracle GenAI Professional, GBA Mediator, and Triple-ISO Lead Auditor (ISO 42001, ISO 27701, ISO 27001). Guided by a human-centric and simplicity-driven philosophy (以人為本・大巧不工), he delivers zero-license Microsoft 365 compliance workflows, verifiable Governance-as-Code prototypes, and zero-backend client-side tools.
 -->
 
 # Jacky Law (羅子淇)
@@ -16,9 +21,9 @@ Jacky Law (羅子淇) is a Hong Kong-based HR Leader (F.I.H.R.M.(HK)), corporate
 **HR Leader • AI Governance Practitioner • GBA Mediator**  
 **人力資源領袖 • AI 治理實踐者 • 大灣區調解員**
 
-With over 15 years of corporate HR leadership, I translate responsible AI and governance principles into practical enterprise controls. Rather than stopping at static policies, I build verifiable **Governance-as-Code** prototypes, zero-license Microsoft 365 compliance workflows, and client-side tools that demonstrate deterministic privacy preservation and clear risk oversight.
+With over 15 years of corporate HR leadership, I translate responsible AI and governance principles into practical enterprise controls. Rather than stopping at static policies, I build verifiable **Governance-as-Code** prototypes, zero-license Microsoft 365 compliance workflows, and zero-backend client-side tools that demonstrate deterministic privacy preservation and clear risk oversight.
 
-結合逾 15 年企業人力資源管理經驗，我將抽象的 AI 治理與合規原則轉化為可落地的系統控制。我不止於制定靜態政策，更透過可驗證的 **Governance-as-Code** 原型、零授權 Microsoft 365 合規工作流與純前端工具，示範確定性的私隱保護與風險監督機制。
+結合逾 15 年企業人力資源管理經驗，我將抽象的 AI 治理與合規原則轉化為可落地的系統控制。我不止於制定靜態政策，更透過可驗證的 **Governance-as-Code** 原型、零授權 Microsoft 365 合規工作流與零後端純前端工具，示範確定性的私隱保護與風險監督機制。
 
 ---
 
@@ -100,9 +105,10 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 
 ### Pillar II: Zero-Trust & Privacy-by-Design Client Tools (零信任純前端工具矩陣)
 
-> **Core Standard:** 100% client-side in-memory computing, zero server uploads, and Zero Data Retention (ZDR).  
-> **核心標準：** 100% 本端記憶體運算、零伺服器上傳、零日誌留存。
+> **Core Standard:** Zero-backend client-side execution, strict CSP, zero third-party relay servers, and Zero Telemetry. Offline suites enforce 100% local processing; direct-connect BYOK clients enforce RAM-only custody with explicit cloud-endpoint boundaries.  
+> **核心標準：** 零後端純前端執行、嚴格 CSP、零第三方中轉與零追蹤。離線工具 100% 本地運算零上傳；直連型 BYOK 工具採純記憶體密鑰托管並明示官方 API 邊界。
 
+- **[DeepGate Zero 零痕深索](https://github.com/jackylawck/DeepGate-Zero):** Zero-backend, zero-dependency, RAM-only BYOK gateway connecting directly to DeepSeek's official API (`https://api.deepseek.com`). Features private JS closure key custody (zero browser storage or Service Worker cache), 15-minute idle auto-wipe with `bfcache` disabled, strict `default-src 'none'` CSP, local plain-text reading (512 KB cap, no persistent cloud Files API) with `sk-` DLP guard, FinOps token/cache-hit tracking, active `safety_check` refusal retraction, and an automated CI security gate ([Live App](https://jackylawck.github.io/DeepGate-Zero/)). (零後端、純記憶體暫存 DeepSeek 自帶密鑰連接器・嚴格 CSP、零本地儲存、DLP 密鑰攔截與 FinOps 成本緩存治理；提示詞直連官方 API，本地零留存不等於雲端零留存)
 - **[SlimVid 片纖瘦](https://github.com/jackylawck/SlimVid):** 100% client-side, zero-upload video compressor engineered with a strict `default-src 'none'` CSP. Compresses large mobile and 4K `.MOV`/HEVC videos locally via hardware-accelerated WebCodecs with an automatic single-threaded FFmpeg.wasm fallback and zero AI components ([Live Demo](https://jackylawck.github.io/SlimVid/)). (100% 瀏覽器本地運算、零伺服器上傳影片壓縮器・WebCodecs 硬件加速與 FFmpeg.wasm 自動兜底)
 - **[SpeakFlow 順住講](https://github.com/jackylawck/SpeakFlow):** Zero-backend bilingual broadcast teleprompter PWA featuring Unicode UAX #29 semantic segmentation (`Intl.Segmenter`), dynamic breathing-pause pacing, in-memory Web Audio API Voice Activity Detection (zero recording), and WebRTC P2P dual-device director console ([Solo](https://jackylawck.github.io/SpeakFlow/) | [Dual-Device](https://jackylawck.github.io/SpeakFlow/dual.html)). (零後端雙語提詞器 PWA・UAX #29 語意斷句、純本機音壓跟讀與雙機導播控制台)
 - **[PauseWell 安心歇](https://github.com/jackylawck/PauseWell):** Zero-telemetry, local-first career transition journal and pipeline tracker compliant with HK PDPO and GDPR Art. 25. (純本機求職節奏與心態日誌・空窗期彈性修整系統)
@@ -174,7 +180,7 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - **[EnterpriseDemo-PunchProblemDetector 企業打卡異常偵測工具](https://github.com/jackylawck/EnterpriseDemo-PunchProblemDetector):** Zero-data-retention client-side SheetJS attendance audit workstation, securing PII while applying deterministic corporate anomaly filters. (採用純客戶端記憶體沙盒運算之考勤完整性快篩過濾器)
 - **[EnterpriseDemo-NOTAS 非營運時段考勤審批系統](https://github.com/jackylawck/EnterpriseDemo-NOTAS):** Multi-tier approval M365 workflow and directory identity validation for overtime, holiday, and after-hours attendance. (非營運時段考勤多層級自動審批與通訊錄防偽核驗流程)
 - **[EnterpriseDemo-DOIS 企業利益申報與防貪系統](https://github.com/jackylawck/EnterpriseDemo-DOIS):** POBO Cap. 201-compliant conflict of interest and gift hospitality M365 governance engine with immutable audit trails. (對標防賄條例 Cap. 201 之利益衝突與禮品款待申報系統)
-- **[EnterpriseDemo-SiteworksPSPJC 施工組開工安全審批系統](https://github.com/jackylawck/EnterpriseDemo-SiteworksPSPJC):** Frictionless mobile field capture for pre-start and post-job safety inspections routed directly to Project Managers for sign-off. (工地前線手機開工安全檢查與項目經理即時批核流程)
+- **[EnterpriseDemo-SiteworksSafetyChecklist 施工組開工安全審批系統](https://github.com/jackylawck/EnterpriseDemo-SiteworksSafetyChecklist):** Frictionless mobile field capture for pre-start and post-job safety inspections routed directly to Project Managers for sign-off. (工地前線手機開工安全檢查與項目經理即時批核流程)
 - **[EnterpriseDemo-Site-KPI 地盤同事 KPI 考核系統](https://github.com/jackylawck/EnterpriseDemo-Site-KPI):** Streamlit/Python real-time ISO-compliant scoring and automated ReportLab PDF generation for construction site teams. (地盤團隊即時合規績效評分與自動 PDF 報表生成系統)
 - **[EnterpriseDemo-Safety-Quiz 入職安全訓練評估系統](https://github.com/jackylawck/EnterpriseDemo-Safety-Quiz):** Streamlit guided workflow with real-time grading and compliant PDF certification records. (入職職安健考核與自動合規證書生成系統)
 - **[EnterpriseDemo-OnboardingQuiz 入職培訓考核及問卷系統](https://github.com/jackylawck/EnterpriseDemo-OnboardingQuiz):** Streamlit zero-data-retention interactive assessment with automated SMTP dispatch. (零資料留存新入職員工互動考核與電郵分發系統)
@@ -198,3 +204,4 @@ To uphold **Non-repudiation (不可否認性)** and **Source Authenticity (來�
 - **Keybase Proofs:** [keybase.io/jackylawck](https://keybase.io/jackylawck)
 
 *Serving organizational transformation, governance, higher education, and dispute resolution initiatives across Hong Kong and the Greater Bay Area.*
+
